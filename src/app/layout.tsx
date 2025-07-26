@@ -1,15 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cantarell, Cormorant_Garamond, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import SmoothVideoBackground from "./components/SmoothVideoBackground";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cantarell = Cantarell({
+  variable: "--font-cantarell",
   subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant-garamond",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -25,8 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cantarell.variable} ${cormorantGaramond.variable} ${playfairDisplay.variable} antialiased`}
       >
+        <SmoothVideoBackground />
         {children}
       </body>
     </html>
