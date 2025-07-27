@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cantarell, Cormorant_Garamond, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import VideoOverlay from "./components/VideoOverlay";
+import VideoOverlay from "../components/VideoOverlay";
 
 const cantarell = Cantarell({
   variable: "--font-cantarell",
