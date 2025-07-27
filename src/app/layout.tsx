@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cantarell, Cormorant_Garamond, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import SmoothVideoBackground from "./components/SmoothVideoBackground";
+import VideoOverlay from "./components/VideoOverlay";
 
 const cantarell = Cantarell({
   variable: "--font-cantarell",
@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${cantarell.variable} ${cormorantGaramond.variable} ${playfairDisplay.variable} antialiased`}
       >
-        <SmoothVideoBackground />
+      <VideoOverlay />
         {children}
       </body>
     </html>
