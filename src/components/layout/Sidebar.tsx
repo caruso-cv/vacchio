@@ -1,5 +1,5 @@
 import * as React from "react"
-import { GalleryVerticalEnd } from "lucide-react"
+import { CodeXml } from "lucide-react"
 
 import {
   Sidebar,
@@ -36,24 +36,24 @@ const data = {
       url: "#",
       items: [
         {
-          title: "Routing",
+          title: "Game Studio Site",
           url: "#",
         },
         {
-          title: "Data Fetching",
+          title: "Commerce Website",
           url: "#",
           isActive: true,
         },
         {
-          title: "Rendering",
+          title: "BMS Tech Site",
           url: "#",
         },
         {
-          title: "Caching",
+          title: "Pokedex App",
           url: "#",
         },
         {
-          title: "Styling",
+          title: "SCSS Framework",
           url: "#",
         },
       ],
@@ -63,15 +63,67 @@ const data = {
       url: "#",
       items: [
         {
-          title: "Components",
+          title: "Portfolio Website",
           url: "#",
         },
         {
-          title: "File Conventions",
+          title: "Mobile Ordering App",
           url: "#",
         },
         {
-          title: "Functions",
+          title: "Phone Case Store",
+          url: "#",
+        },
+        {
+          title: "NFT Marketplace",
+          url: "#",
+        },
+        {
+          title: "City of Ottawa Site",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Graphic Design",
+      url: "#",
+      items: [
+        {
+          title: "Roadside Signs",
+          url: "#",
+        },
+        {
+          title: "Magazine Ads",
+          url: "#",
+        },
+        {
+          title: "Ad Campaigns",
+          url: "#",
+        },
+        {
+          title: "Business Cards",
+          url: "#",
+        },
+        {
+          title: "Menus",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Photography",
+      url: "#",
+      items: [
+        {
+          title: "Portraits",
+          url: "#",
+        },
+        {
+          title: "Food",
+          url: "#",
+        },
+        {
+          title: "Golf Shoot",
           url: "#",
         },
       ],
@@ -88,7 +140,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
                 <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                  <GalleryVerticalEnd className="size-4" />
+                  <CodeXml className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
                   <span className="font-medium">Carmen Vacchio</span>
