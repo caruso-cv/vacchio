@@ -109,6 +109,29 @@ function SidebarProvider({
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [toggleSidebar])
 
+  // Adds click outside functionality to close the sidebar
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element
+      const sidebarElement = target.closest('[data-slot="sidebar"]')
+      const sidebarContainer = target.closest('[data-slot="sidebar-container"]')
+      const sidebarTrigger = target.closest('[data-slot="sidebar-trigger"]')
+      
+      if (
+        !isMobile && 
+        open && 
+        !sidebarElement && 
+        !sidebarContainer && 
+        !sidebarTrigger
+      ) {
+        setOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [isMobile, open, setOpen])
+
   // We add a state so that we can do data-state="expanded" or "collapsed".
   // This makes it easier to style the sidebar with Tailwind classes.
   const state = open ? "expanded" : "collapsed"
