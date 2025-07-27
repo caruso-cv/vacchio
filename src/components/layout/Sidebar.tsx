@@ -20,8 +20,21 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+// Type definitions
+type NavItem = {
+  title: string
+  url: string
+  isActive?: boolean
+}
+
+type NavSection = {
+  title: string
+  url: string
+  items?: NavItem[]
+}
+
 // This is sample data.
-const data = {
+const data: { navMain: NavSection[] } = {
   navMain: [
     {
       title: "Home",
@@ -48,7 +61,6 @@ const data = {
         {
           title: "Commerce Website",
           url: "#",
-          isActive: true,
         },
         {
           title: "BMS Tech Site",
@@ -56,6 +68,10 @@ const data = {
         },
         {
           title: "Pokedex App",
+          url: "#",
+        },
+        {
+          title: "Unsplash Clone",
           url: "#",
         },
         {

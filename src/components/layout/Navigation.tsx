@@ -19,6 +19,7 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
 
   return (
     <SidebarProvider
+      defaultOpen={false}
       style={
         {
           "--sidebar-width": "19rem",
