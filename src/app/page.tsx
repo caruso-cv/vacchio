@@ -23,30 +23,32 @@ export default function Home() {
         {/* Card 1 */}
         <div className="bg-muted/50 aspect-video rounded-lg overflow-hidden relative cursor-pointer border border-vacchio-black/50 ">
 
-          <div className='py-10 px-8 flex flex-col gap-4'>
+          <div className='pt-8 px-6 pb-6 flex flex-col gap-4 justify-between h-full relative z-1'>
 
-            <div className='flex gap-0.5 flex-col'>
-              <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Project</p>
-              <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
+            <div className='flex flex-col gap-4'>
+              <div className='flex gap-0.5 flex-col'>
+                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Project</p>
+                <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
+              </div>
+
+              <div className='flex gap-0.5 flex-col'>
+                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Tech Stack</p>
+              </div>
+
+              <div className='flex gap-4'>
+                <Supabase className='w-4 h-4 grayscale'/>
+                <Nextjs className='w-4 h-4 grayscale opacity-50'/>
+                <Tailwind className='w-4 h-4 text-black opacity-50'/>
+                <Typescript className='w-4 h-4  text-black opacity-50'/>
+                <ReactLogo className='w-4 h-4 text-black opacity-50'/>
+                <Solana className='w-4 h-4 grayscale opacity-50'/>
+              </div>
             </div>
 
-            <div className='flex gap-0.5 flex-col'>
-              <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Tech Stack</p>
-         
-            </div>
+            <button className='bg-vacchio-black text-white px-4 py-2 rounded-md cursor-pointer'>
+              View Project
+            </button>
 
-            <div className='flex gap-4'>
-              <Supabase className='w-4 h-4 grayscale' />
-              <Nextjs className='w-4 h-4 grayscale opacity-50' />
-              <Tailwind className='w-4 h-4 text-black opacity-50' />
-              <Typescript className='w-4 h-4  text-black opacity-50' />
-              <ReactLogo className='w-4 h-4 text-black opacity-50' />
-              <Solana className='w-4 h-4 grayscale opacity-50' />
-  
-            </div>
-            
-            
-            
           </div>
 
           <Image 
