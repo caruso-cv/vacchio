@@ -184,7 +184,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     <Accordion type="single" collapsible className="w-full">
                       <AccordionItem value={item.title} className="border-none">
                         <AccordionTrigger className="hover:no-underline py-2 px-2 rounded-md hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground">
-                          <span className="font-bold opacity-70">{item.title}</span>
+                          <span className="font-bold text-vacchio-black/70">{item.title}</span>
                         </AccordionTrigger>
                         <AccordionContent>
                           <SidebarMenuSub className="ml-0 border-l-0 px-1.5">
@@ -207,7 +207,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               return (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url} className="font-bold opacity-70">
+                    <a href={item.url} className="font-bold text-vacchio-black/70">
                       {item.title}
                     </a>
                   </SidebarMenuButton>

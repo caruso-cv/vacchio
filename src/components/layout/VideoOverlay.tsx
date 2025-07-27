@@ -6,7 +6,7 @@ export default function VideoOverlay() {
         loop
         muted
         playsInline
-        className="w-full h-full object-cover opacity-50"
+        className="w-full h-full object-cover opacity-50 scale-x-[-1]"
         poster="/webp/shadow.webp"
       >
         <source src="/webm/shadow.webm" type="video/webm" />
@@ -14,7 +14,7 @@ export default function VideoOverlay() {
         <img 
           src="/webp/shadow.webp" 
           alt="Shadow effect" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-x-[-1]"
         />
       </video>
     </div>

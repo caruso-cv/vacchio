@@ -62,7 +62,7 @@ export default function Home() {
 
         </div>
         
-        {/* Card 1 */}
+        {/* Card 2 */}
         <div className="bg-muted/50 aspect-video rounded-lg overflow-hidden relative border ">
 
           <div className='pt-8 px-6 pb-6 flex flex-col gap-4 justify-between h-full relative z-1'>
@@ -94,17 +94,17 @@ export default function Home() {
           </div>
 
           <Image 
-            src="/webp/ocelot.webp" 
+            src="/webp/caddi.webp" 
             alt="Project 1" 
             width={1506}
             height={1886}
             draggable={false}
-            className=' absolute -right-20 -bottom-50 w-100 object-cover opacity-30' 
+            className=' absolute -right-20 -bottom-70 w-100 object-cover opacity-30' 
           />
 
         </div>
 
-        {/* Card 1 */}
+        {/* Card 3 */}
         <div className="bg-muted/50 aspect-video rounded-lg overflow-hidden relative border ">
 
           <div className='pt-8 px-6 pb-6 flex flex-col gap-4 justify-between h-full relative z-1'>
