@@ -9,9 +9,15 @@ export default function VideoOverlay() {
         muted
         playsInline
         className="w-full h-full object-cover opacity-60"
+        poster="/webp/shadow.webp"
       >
         <source src="/webm/shadow.webm" type="video/webm" />
-        <source src="/mov/shadow.mov" type="video/quicktime" />
+        {/* Fallback image for browsers that don't support WebM */}
+        <img 
+          src="/webp/shadow.webp" 
+          alt="Shadow effect" 
+          className="w-full h-full object-cover opacity-60"
+        />
       </video>
     </div>
   );
