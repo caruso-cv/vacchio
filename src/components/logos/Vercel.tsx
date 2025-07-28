@@ -25,7 +25,7 @@ const Vercel: React.FC<VercelProps> = ({
       style={{ color }}
       {...(color !== "currentColor" && { fill: color })}
     >
-      <path fill="#fff" d="m128 0 128 221.705H0z" />
+      <path fill="currentColor" d="m128 0 128 221.705H0z" />
     </svg>
   );
 };

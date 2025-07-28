@@ -5,6 +5,11 @@ import Tailwind from '@/components/logos/TailwindCSS'
 import Typescript from '@/components/logos/TypeScript'
 import ReactLogo from '@/components/logos/React'
 import Solana from '@/components/logos/Solana'
+import JavaScript from '@/components/logos/JavaScript'
+import AmazonWebServices from '@/components/logos/AmazonWebServices'
+import Stripe from '@/components/logos/Stripe'
+import Vercel from '@/components/logos/Vercel'
+import Link from 'next/link'
 
 export default function ProjectCards() {
   return (
@@ -20,7 +25,7 @@ export default function ProjectCards() {
 
             <div className='flex flex-col gap-4'>
               <div className='flex gap-0.5 flex-col'>
-                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Project</p>
+                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Ocelot Technologies Ltd.</p>
                 <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
               </div>
 
@@ -35,12 +40,13 @@ export default function ProjectCards() {
                 <Typescript className='w-4 h-4  text-black opacity-50'/>
                 <ReactLogo className='w-4 h-4 text-black opacity-50'/>
                 <Solana className='w-4 h-4 grayscale opacity-50'/>
+                <Vercel className='w-4 h-4 text-black opacity-50'/>
               </div>
             </div>
 
-            <button className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-4 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad'>
+            <Link href='/' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-4 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center'>
               View Project
-            </button>
+            </Link>
 
           </div>
 
@@ -62,8 +68,8 @@ export default function ProjectCards() {
 
             <div className='flex flex-col gap-4'>
               <div className='flex gap-0.5 flex-col'>
-                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Project</p>
-                <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
+                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Caddi AI Inc.</p>
+                <p className='text-base font-regular text-vacchio-black/70'>Golf E-Commerce Site</p>
               </div>
 
               <div className='flex gap-0.5 flex-col'>
@@ -76,13 +82,14 @@ export default function ProjectCards() {
                 <Tailwind className='w-4 h-4 text-black opacity-50'/>
                 <Typescript className='w-4 h-4  text-black opacity-50'/>
                 <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-                <Solana className='w-4 h-4 grayscale opacity-50'/>
+                <Vercel className='w-4 h-4 text-black opacity-50'/>
+                <Stripe className='w-7 h-4 mt-px text-black opacity-50'/>
               </div>
             </div>
 
-            <button className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-4 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad'>
+            <Link href='/' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-4 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center'>
               View Project
-            </button>
+            </Link>
 
           </div>
 
@@ -104,8 +111,8 @@ export default function ProjectCards() {
 
             <div className='flex flex-col gap-4'>
               <div className='flex gap-0.5 flex-col'>
-                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Project</p>
-                <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
+                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Neutron Controls</p>
+                <p className='text-base font-regular text-vacchio-black/70'>BMS Technology Site</p>
               </div>
 
               <div className='flex gap-0.5 flex-col'>
@@ -113,18 +120,18 @@ export default function ProjectCards() {
               </div>
 
               <div className='flex gap-4'>
-                <Supabase className='w-4 h-4 grayscale'/>
                 <Nextjs className='w-4 h-4 grayscale opacity-50'/>
                 <Tailwind className='w-4 h-4 text-black opacity-50'/>
-                <Typescript className='w-4 h-4  text-black opacity-50'/>
                 <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-                <Solana className='w-4 h-4 grayscale opacity-50'/>
+                <Vercel className='w-4 h-4 text-black opacity-50'/>
+                <AmazonWebServices className='w-6 h-4 mt-px text-black opacity-50'/>
+                <JavaScript className='w-4 h-4 text-black opacity-50'/>
               </div>
             </div>
 
-            <button className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-4 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad'>
+            <Link href='/' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-4 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center'>
               View Project
-            </button>
+            </Link>
 
           </div>
 

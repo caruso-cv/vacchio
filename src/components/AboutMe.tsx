@@ -34,40 +34,34 @@ export default function AboutMe() {
             {/* Contact Section */}
             <div>
               <div className="flex gap-8">
-                <div className="flex items-start gap-3">
-                  <div className="flex flex-col items-center justify-between h-12">
-                    <Phone className="w-5 h-5 text-vacchio-black" />
-                    <div className="flex-1"></div>
-                    <div className="w-8 h-px bg-vacchio-black/30"></div>
+                <div className="flex items-start gap-4.5">
+                  <div className="flex flex-col items-center justify-between h-full">
+                    <Phone className="w-6.5 h-6.5 text-vacchio-black/40 mt-px" />
+                    <div className="w-7 h-[2px] rounded-full bg-vacchio-black/30 mb-1"></div>
                   </div>
-                  <div className="flex flex-col w-32 justify-between h-12">
-                    <span className="font-bold text-sm text-vacchio-black">Phone</span>
-                    <div className="flex-1"></div>
-                    <span className="text-sm text-vacchio-black/70">613 698 6970</span>
+                  <div className="flex flex-col w-32 justify-between">
+                    <span className="font-bold text-base text-vacchio-black">Phone</span>
+                    <span className="text-sm text-vacchio-black/50">613 698 6970</span>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex flex-col items-center justify-between h-12">
-                    <Mail className="w-5 h-5 text-vacchio-black" />
-                    <div className="flex-1"></div>
-                    <div className="w-8 h-px bg-vacchio-black/30"></div>
+                <div className="flex items-start gap-4.5">
+                  <div className="flex flex-col items-center justify-between h-full">
+                    <Mail className="w-7 h-7 text-vacchio-black/40 mt-px" />
+                    <div className="w-7 h-[2px] rounded-full bg-vacchio-black/30 mb-1"></div>
                   </div>
-                  <div className="flex flex-col w-32 justify-between h-12">
-                    <span className="font-bold text-sm text-vacchio-black">Email</span>
-                    <div className="flex-1"></div>
-                    <span className="text-sm text-vacchio-black/70">carmen@zolas.ca</span>
+                  <div className="flex flex-col w-32 justify-between">
+                    <span className="font-bold text-base text-vacchio-black">Email</span>
+                    <span className="text-sm text-vacchio-black/50">carmen@zolas.ca</span>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex flex-col items-center justify-between h-12">
-                    <LinkedIn className="w-5 h-5 text-vacchio-black" />
-                    <div className="flex-1"></div>
-                    <div className="w-8 h-px bg-vacchio-black/30"></div>
+                <div className="flex items-start gap-4.5">
+                  <div className="flex flex-col items-center justify-between h-full">
+                    <LinkedIn className="w-6 h-6 text-vacchio-black/40 mt-1" />
+                    <div className="w-7 h-[2px] rounded-full bg-vacchio-black/30 mb-1"></div>
                   </div>
-                  <div className="flex flex-col w-32 justify-between h-12">
-                    <span className="font-bold text-sm text-vacchio-black">LinkedIn</span>
-                    <div className="flex-1"></div>
-                    <span className="text-sm text-vacchio-black/70">linkedin.com/in/carmenvac</span>
+                  <div className="flex flex-col w-32 justify-between">
+                    <span className="font-bold text-base text-vacchio-black">LinkedIn</span>
+                    <span className="text-sm text-vacchio-black/50">linkedin.com/in/carmenvac</span>
                   </div>
                 </div>
               </div>
@@ -115,7 +109,7 @@ export default function AboutMe() {
                   <h3 className="font-bold text-vacchio-black text-sm uppercase mb-4">Skills</h3>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 text-xs font-medium text-vacchio-black/70 border border-vacchio-black/20 rounded-full">
-                      FULL-STACK DEVELOPMENT
+                      FRONT-END DEVELOPMENT
                     </span>
                     <span className="px-3 py-1 text-xs font-medium text-vacchio-black/70 border border-vacchio-black/20 rounded-full">
                       REACT & NEXT.JS
