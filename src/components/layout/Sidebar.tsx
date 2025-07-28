@@ -39,7 +39,7 @@ const data: { navMain: NavSection[] } = {
   navMain: [
     {
       title: "Home",
-      url: "#",
+      url: "/",
       items: [
         {
           title: "About",
@@ -61,11 +61,11 @@ const data: { navMain: NavSection[] } = {
         },
         {
           title: "Commerce Website",
-          url: "#",
+          url: "/software/caddi",
         },
         {
           title: "BMS Tech Site",
-          url: "#",
+          url: "/software/neutron",
         },
         {
           title: "Pokedex App",
@@ -161,7 +161,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <a href="#">
+              <Link href="/">
                 <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
                   <CodeXml className="size-4" />
                 </div>
@@ -169,7 +169,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <span className="font-medium">Carmen Vacchio</span>
                   <span className="font-cormorant-garamond">Software Developer</span>
                 </div>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>

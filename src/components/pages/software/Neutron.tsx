@@ -4,11 +4,10 @@ import Image from 'next/image'
 import { Github, ExternalLink } from 'lucide-react'
 import Nextjs from '@/components/logos/Nextjs'
 import Tailwind from '@/components/logos/TailwindCSS'
-import Typescript from '@/components/logos/TypeScript'
 import ReactLogo from '@/components/logos/React'
-import Supabase from '@/components/logos/Supabase'
 import Vercel from '@/components/logos/Vercel'
-import Solana from '@/components/logos/Solana'
+import AmazonWebServices from '@/components/logos/AmazonWebServices'
+import JavaScript from '@/components/logos/JavaScript'
 
 export default function Neutron() {
   return (
@@ -25,23 +24,22 @@ export default function Neutron() {
             <div className="flex flex-col gap-4">
                 <h3 className='text-sm font-bold text-vacchio-black/80 uppercase'>Tech Stack</h3>
                 <div className='flex gap-4'>
-                    <Supabase className='w-4 h-4 grayscale'/>
                     <Nextjs className='w-4 h-4 grayscale opacity-50'/>
                     <Tailwind className='w-4 h-4 text-black opacity-50'/>
-                    <Typescript className='w-4 h-4  text-black opacity-50'/>
                     <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-                    <Solana className='w-4 h-4 grayscale opacity-50'/>
                     <Vercel className='w-4 h-4 text-black opacity-50'/>
+                    <AmazonWebServices className='w-6 h-4 mt-px text-black opacity-50'/>
+                    <JavaScript className='w-4 h-4 text-black opacity-50'/>
                 </div>
             </div>
 
             {/* Links */}
             <div className="flex gap-4">
-                <Link href='https://github.com/SolCaruso/ocelot' target='_blank' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
+                <Link href='https://github.com/SolCaruso/vercel' target='_blank' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
                 <Github className="w-4 h-4" />
                 <span>View Repo</span>
                 </Link>
-                <Link href='https://ocelot-pearl.vercel.app/' target='_blank' className='border-vacchio-black/80 border font-bold px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer bg-vacchio-black hover:bg-vacchio-black/80 text-white/80 transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
+                <Link href='https://www.neutroncontrols.com/' target='_blank' className='border-vacchio-black/80 border font-bold px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer bg-vacchio-black hover:bg-vacchio-black/80 text-white/80 transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
                 <ExternalLink className="w-4 h-4 opacity-80" />
                 <span>Visit Site</span>
                 </Link>
@@ -63,20 +61,21 @@ export default function Neutron() {
                 <section id="short-explanation">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Summary</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    Ocelot Technologies is a comprehensive website built for a game development studio that needed both 
-                    a professional web presence and integrated blockchain functionality. The site serves as both a 
-                    showcase for their games and a platform for community engagement through their native GGEM token.
+                    Neutron Controls required a complete website rebuild as part of their business pivot from EV battery 
+                    technology to Battery Management Systems (BMS) and Energy Storage Systems (ESS). The project was 
+                    completed during a co-op placement and needed to reflect their new direction with modern design 
+                    and exceptional performance.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-8">
-                    The website features a custom-built Solana token swap powered by Jupiter, allowing users to trade 
-                    for GGEM tokens directly on the site, alongside a Supabase-powered blog system for development 
-                    updates and bug fix reports.
+                    The website features lightning-fast 4K video loading through AWS optimization, comprehensive contact 
+                    and job application forms, proper cookie handling, Google Ad Sense integration, and a complex CI/CD 
+                    pipeline connecting their internal GitLab repository to GitHub and Vercel deployment.
                     </p>
                     
                     {/* Home Page Screenshot */}
                     <div className="mb-12 rounded-lg overflow-hidden border border-vacchio-black/10">
                     <Image
-                        src="/png/Screenshot 2025-07-28 at 1.59.18 AM.png" 
+                        src="/png/Screenshot 2025-07-28 at 2.59.11 AM.png" 
                         alt="Ocelot Technologies Homepage"
                         width={800}
                         height={500}
@@ -88,49 +87,49 @@ export default function Neutron() {
                 <section id="project-goals">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Project Goals</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The primary goal was to create a professional online presence for the game studio that would:
+                    The primary goal was to create a high-performance corporate website that would:
                     </p>
                     <ul className="list-disc pl-6 text-vacchio-black/80 space-y-2 mb-12">
-                    <li>Create a professional web presence for the game development studio</li>
-                    <li>Build a Supabase-powered blog system for development updates and bug reports</li>
-                    <li>Integrate a custom Solana token swap for their native GGEM token</li>
-                    <li>Ensure seamless user experience between traditional web and blockchain features</li>
-                    <li>Provide fast loading times and excellent SEO performance</li>
-                    <li>Create an engaging platform that reflects the studio's innovative approach</li>
+                    <li>Reflect Neutron Controls' pivot from EV batteries to BMS and ESS technology</li>
+                    <li>Deliver exceptional loading speeds to convey performance and technical excellence</li>
+                    <li>Implement comprehensive contact and job application forms for client and talent acquisition</li>
+                    <li>Integrate Google Ad Sense and tracking for marketing analytics</li>
+                    <li>Establish a robust CI/CD pipeline from internal GitLab to public GitHub and Vercel</li>
+                    <li>Create a modern, professional design that appeals to enterprise clients</li>
                     </ul>
                 </section>
 
                 <section id="tech-stack-details">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Technical Implementation</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The website is built using Next.js 14 with React 18, providing server-side rendering and 
-                    excellent performance optimization. TypeScript ensures type safety throughout the codebase, 
-                    while Tailwind CSS provides a utility-first approach to styling.
+                    The website is built using Next.js with React, utilizing JavaScript/JSX for rapid development and 
+                    component-based architecture. Tailwind CSS provides a utility-first approach to styling, enabling 
+                    quick implementation of the modern, professional design requirements.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
-                    Supabase serves as the backend for the blog system, providing authentication, database management, 
-                    and real-time capabilities for development updates and bug reports. The custom Solana integration 
-                    uses Jupiter's swap API to enable seamless GGEM token trading, while Vercel provides optimal 
-                    deployment performance and seamless CI/CD integration.
+                    AWS S3 serves as the content delivery solution for 4K video assets, implementing advanced caching 
+                    techniques and video chunking for lightning-fast load times. The CI/CD pipeline connects Neutron's 
+                    internal GitLab repository to GitHub, then automatically deploys to Vercel, ensuring seamless 
+                    updates while maintaining corporate security protocols.
                     </p>
                 </section>
 
                 <section id="features">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Key Features</h2>
                     <ul className="list-disc pl-6 text-vacchio-black/80 mb-8 space-y-2">
-                    <li>Custom embedded Solana token swap powered by Jupiter for GGEM tokens</li>
-                    <li>Supabase-powered blog system for development updates and bug fix reports</li>
-                    <li>Real-time content management for game development announcements</li>
-                    <li>Responsive design that works perfectly on all devices</li>
-                    <li>Seamless integration between traditional web and blockchain features</li>
-                    <li>SEO optimization for better search visibility</li>
-                    <li>Fast loading times with optimized performance for both web and DeFi features</li>
+                    <li>Lightning-fast 4K video delivery through AWS S3 with advanced caching and chunking</li>
+                    <li>Comprehensive contact forms for client inquiries and business development</li>
+                    <li>Professional job application system for talent acquisition</li>
+                    <li>Google Ad Sense integration with proper tracking and analytics</li>
+                    <li>Cookie consent and management system for GDPR compliance</li>
+                    <li>Complex CI/CD pipeline connecting internal GitLab to public GitHub and Vercel</li>
+                    <li>Modern, enterprise-grade design optimized for BMS and ESS industry clients</li>
                     </ul>
 
                     {/* Blog Page Screenshot */}
                     <div className="mb-12 rounded-lg overflow-hidden border border-vacchio-black/10">
                     <Image
-                        src="/png/Screenshot 2025-07-28 at 2.03.40 AM.png"
+                        src="/png/Screenshot 2025-07-28 at 2.59.26 AM.png"
                         alt="Ocelot Technologies Blog Page"
                         width={800}
                         height={500}
@@ -140,22 +139,24 @@ export default function Neutron() {
                 </section>
 
                 <section id="challenges">
-                    <h2 className="text-2xl font-bold text-vacchio-black mb-6">Challenges & Solutions</h2>
+                    <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Challenges & Solutions</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    One of the main challenges was integrating blockchain functionality (Solana token swap) into 
-                    a traditional web application while maintaining excellent UX. We solved this by creating a 
-                    seamless embedded swap interface powered by Jupiter that feels native to the website experience.
+                    The primary challenge was achieving exceptional loading speeds for 4K video content on the hero section. 
+                    We solved this by implementing advanced AWS S3 caching strategies and video chunking techniques, 
+                    allowing massive video files to load almost instantly and giving visitors an immediate impression 
+                    of Neutron Controls' technical capabilities and performance standards.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-8">
-                    Another challenge was building a robust blog system for technical content like development updates 
-                    and bug reports. We implemented a Supabase-powered CMS that allows the development team to easily 
-                    publish updates, manage content, and engage with their community in real-time.
+                    Another significant challenge was establishing a secure CI/CD pipeline that connected Neutron's internal 
+                    GitLab repository to the public deployment infrastructure. We created a complex but seamless pipeline 
+                    that maintains corporate security while enabling rapid deployment through GitHub to Vercel, ensuring 
+                    code never leaves their controlled environment inappropriately.
                     </p>
 
                     {/* Swap Page Screenshot */}
                     <div className="my-8 rounded-lg overflow-hidden border border-vacchio-black/10">
                     <Image
-                        src="/png/Screenshot 2025-07-28 at 2.06.20 AM.png" 
+                        src="/png/Screenshot 2025-07-28 at 2.59.45 AM.png" 
                         alt="Ocelot Technologies GGEM Token Swap Page"
                         width={800}
                         height={500}

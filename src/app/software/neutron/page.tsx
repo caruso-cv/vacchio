@@ -1,4 +1,4 @@
-import Caddi from '@/components/pages/software/Caddi'
+import Neutron from '@/components/pages/software/Neutron'
 
 export default function Projects() {
   return (
@@ -8,15 +8,15 @@ export default function Projects() {
     <div className="pt-12 pb-12">
       <div className="text-start">
         <h1 className="text-5xl font-light font-playfair text-vacchio-black mb-4 ">
-          Caddi AI Inc.
+          Neutron Controls
         </h1>
         <p className="text-base text-vacchio-black/70">
-          Game development studio website with integrated blog system and blockchain token swap.
+          Neutron is a platform for creating and sharing 3D models.
         </p>
       </div>
     </div>
 
-    <Caddi />
+    <Neutron />
     
   </div>
   )
