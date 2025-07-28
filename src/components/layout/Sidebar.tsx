@@ -1,5 +1,6 @@
 import * as React from "react"
 import { CodeXml, ChevronDown } from "lucide-react"
+import Link from "next/link"
 
 import {
   Sidebar,
@@ -56,7 +57,7 @@ const data: { navMain: NavSection[] } = {
       items: [
         {
           title: "Game Studio Site",
-          url: "#",
+          url: "/software/ocelot",
         },
         {
           title: "Commerce Website",
@@ -191,7 +192,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                             {item.items?.map((subItem) => (
                               <SidebarMenuSubItem key={subItem.title}>
                                 <SidebarMenuSubButton asChild isActive={subItem.isActive}>
-                                  <a href={subItem.url}>{subItem.title}</a>
+                                  <Link href={subItem.url}>{subItem.title}</Link>
                                 </SidebarMenuSubButton>
                               </SidebarMenuSubItem>
                             ))}
@@ -207,16 +208,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               return (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url} className="font-bold text-vacchio-black/70">
+                    <Link href={item.url} className="font-bold text-vacchio-black/70">
                       {item.title}
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                   {item.items?.length ? (
                     <SidebarMenuSub className="ml-0 border-l-0 px-1.5">
                       {item.items.map((subItem) => (
                         <SidebarMenuSubItem key={subItem.title}>
                           <SidebarMenuSubButton asChild isActive={subItem.isActive}>
-                            <a href={subItem.url}>{subItem.title}</a>
+                            <Link href={subItem.url}>{subItem.title}</Link>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                       ))}

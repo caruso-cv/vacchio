@@ -1,5 +1,5 @@
-import ProjectCards from '@/components/ProjectCards'
-import AboutMe from '@/components/AboutMe'
+import ProjectCards from '@/components/pages/home/ProjectCards'
+import AboutMe from '@/components/pages/home/AboutMe'
 
 export default function Home() {
   return (

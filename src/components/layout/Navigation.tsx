@@ -37,7 +37,7 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem className="hidden md:block">
-                <BreadcrumbLink href="#">
+                <BreadcrumbLink href="/">
                   Carmen Vacchio
                 </BreadcrumbLink>
               </BreadcrumbItem>

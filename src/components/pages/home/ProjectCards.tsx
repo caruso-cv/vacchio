@@ -10,12 +10,23 @@ import AmazonWebServices from '@/components/logos/AmazonWebServices'
 import Stripe from '@/components/logos/Stripe'
 import Vercel from '@/components/logos/Vercel'
 import Link from 'next/link'
+import { ChevronRight } from 'lucide-react'
 
 export default function ProjectCards() {
   return (
     <section className='pt-12'>
       {/* Recent Projects */}
-      <h2 className="font-bold font-cantarell uppercase text-sm text-vacchio-black">Recent Projects</h2>
+      
+      {/* See all projects link */}
+      <div className="flex justify-between">
+        <h2 className="font-bold font-cantarell uppercase text-sm text-vacchio-black">Recent Projects</h2>
+        <Link 
+          href="/" 
+          className="text-sm font-medium text-vacchio-black/70 hover:text-vacchio-black transition-colors duration-200 flex gap-1 items-center"
+        >
+          <span>See all projects</span> <ChevronRight className="w-3 h-3 mt-1" />
+        </Link>
+      </div>
       <div className="grid auto-rows-min gap-4 md:grid-cols-3 mb-12 mt-6">
 
         {/* Card 1 */}
@@ -44,21 +55,10 @@ export default function ProjectCards() {
               </div>
             </div>
 
-            <Link href='/' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-4 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center'>
+            <Link href='/software/ocelot' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-4 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center'>
               View Project
             </Link>
-
           </div>
-
-          {/* <Image 
-            src="/webp/ocelot.webp" 
-            alt="Ocelot Game Studio Website Project" 
-            width={1506}
-            height={1886}
-            draggable={false}
-            className=' absolute -right-20 -bottom-50 w-100 object-cover opacity-20' 
-          /> */}
-
         </div>
         
         {/* Card 2 */}
@@ -93,15 +93,6 @@ export default function ProjectCards() {
 
           </div>
 
-          {/* <Image 
-            src="/webp/caddi2.webp" 
-            alt="Caddi AI Commerce Web Project" 
-            width={1506}
-            height={1886}
-            draggable={false}
-            className=' absolute -right-30 -bottom-20 w-100 object-cover opacity-20' 
-          /> */}
-
         </div>
 
         {/* Card 3 */}
@@ -135,18 +126,10 @@ export default function ProjectCards() {
 
           </div>
 
-          {/* <Image 
-            src="/webp/neutron.webp" 
-            alt="Neutron Controls Website Project" 
-            width={1506}
-            height={1886}
-            draggable={false}
-            className=' absolute -right-40 -bottom-15 w-100 object-cover opacity-15' 
-          /> */}
-
         </div>
 
       </div>
+      
     </section>
   )
 } 

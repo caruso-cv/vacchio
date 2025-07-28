@@ -33,6 +33,7 @@ export default function AboutMe() {
                 width={400}
                 height={400}
                 className="rounded-lg object-cover w-[400px] h-[400px]"
+                draggable={false}
               />
             </div>
           </div>
@@ -98,10 +99,10 @@ export default function AboutMe() {
                 <div>
                   <h3 className="font-bold text-vacchio-black text-sm uppercase mb-4">Favourite Brands</h3>
                   <div className="flex flex-wrap gap-7 grayscale pt-4">
-                      <Apple className="w-8 h-8 opacity-40" />
                       <Notion className="w-8 h-8 opacity-40" />
                       <Cursor className="w-8 h-8 opacity-50" />
                       <Figma className="w-8 h-8" />
+                      <Apple className="w-8 h-8 opacity-40" />
                       <Raycast className="w-8 h-8" />
                       <Superhuman className="w-8 h-8 opacity-50" />
                       <Dia className="w-12 h-8 opacity-50" />
