@@ -43,11 +43,11 @@ const data: { navMain: NavSection[] } = {
       items: [
         {
           title: "About",
-          url: "#",
+          url: "/",
         },
         {
           title: "Contact",
-          url: "#",
+          url: "/contact",
         },
       ],
     },

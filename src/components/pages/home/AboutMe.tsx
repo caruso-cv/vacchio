@@ -42,7 +42,7 @@ export default function AboutMe() {
           <div className="md:col-span-2 flex flex-col justify-between h-full">
 
             {/* Contact Section */}
-            <div>
+            <div className='hidden xl:block'>
               <div className="flex gap-8">
                 <div className="flex items-start gap-4.5">
                   <div className="flex flex-col items-center justify-between h-full">
