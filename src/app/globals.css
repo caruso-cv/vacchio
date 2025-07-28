@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
 
   --font-sans: var(--font-cantarell);
@@ -159,6 +157,9 @@ body {
 @layer base {
   * {
     @apply border-border outline-ring/50;
+  }
+  html {
+    @apply scroll-smooth;
   }
   body {
     @apply bg-background text-foreground;

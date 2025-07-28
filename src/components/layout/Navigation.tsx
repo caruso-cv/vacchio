@@ -1,3 +1,6 @@
+"use client"
+
+import React from "react"
 import { AppSidebar } from "@/components/layout/Sidebar"
 import {
   Breadcrumb,
@@ -13,9 +16,26 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { usePathname } from "next/navigation"
 
 export default function Navigation({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname()
 
+  // Generate breadcrumb from pathname
+  const generateBreadcrumb = () => {
+    if (pathname === "/") {
+      return [{ name: "Portfolio", href: null }]
+    }
+    
+    const segments = pathname.split("/").filter(Boolean)
+    return segments.map((segment, index) => {
+      const href = index === segments.length - 1 ? null : `/${segments.slice(0, index + 1).join("/")}`
+      const name = segment.charAt(0).toUpperCase() + segment.slice(1)
+      return { name, href }
+    })
+  }
+
+  const breadcrumbItems = generateBreadcrumb()
 
   return (
     <SidebarProvider
@@ -36,15 +56,28 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
           />
           <Breadcrumb>
             <BreadcrumbList>
-              <BreadcrumbItem className="hidden md:block">
+              <BreadcrumbItem className="hidden xs:block">
                 <BreadcrumbLink href="/">
                   Carmen Vacchio
                 </BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator className="hidden md:block" />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Portfolio</BreadcrumbPage>
-              </BreadcrumbItem>
+              <BreadcrumbSeparator className="hidden xs:block" />
+              {breadcrumbItems.map((item, index) => (
+                <React.Fragment key={index}>
+                  <BreadcrumbItem className="hidden xs:block">
+                    {item.href ? (
+                      <BreadcrumbLink href={item.href}>
+                        {item.name}
+                      </BreadcrumbLink>
+                    ) : (
+                      <BreadcrumbPage>{item.name}</BreadcrumbPage>
+                    )}
+                  </BreadcrumbItem>
+                  {index < breadcrumbItems.length - 1 && (
+                    <BreadcrumbSeparator className="hidden xs:block" />
+                  )}
+                </React.Fragment>
+              ))}
             </BreadcrumbList>
           </Breadcrumb>
         </header>
