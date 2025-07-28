@@ -1,12 +1,12 @@
 export default function VideoOverlay() {
   return (
-    <div className="fixed inset-0 z-50 pointer-events-none">
+    <div className="fixed inset-0 z-10 pointer-events-none">
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="w-full h-full object-cover opacity-50 scale-x-[-1]"
+        className="w-full h-full object-cover opacity-40 scale-x-[-1]"
         poster="/webp/shadow.webp"
       >
         <source src="/webm/shadow.webm" type="video/webm" />

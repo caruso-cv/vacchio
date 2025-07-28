@@ -142,11 +142,11 @@ body {
   --chart-3: #7A7B79;
   --chart-4: #BBBCBA;
   --chart-5: #9E9F9D;
-  --sidebar: #E2E3E1;
+  --sidebar: rgba(226, 227, 225, 0.545);
   --sidebar-foreground: #535357;
   --sidebar-primary: #1D1D1F;
   --sidebar-primary-foreground: #F0F1EF;
-  --sidebar-accent: #dcdddc;
+  --sidebar-accent: #d7d7d7;
   --sidebar-accent-foreground: #3A3B39;
   --sidebar-border: #B8B9B7;
   --sidebar-ring: #9A9B99;
