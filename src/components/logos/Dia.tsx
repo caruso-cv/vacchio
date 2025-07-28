@@ -6,8 +6,8 @@ const Dia = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
+    viewBox="0 0 96 30"
     fill="none"
-    className="h-auto w-100 800:w-135 1000:w-96"
     {...props}
   >
     <path

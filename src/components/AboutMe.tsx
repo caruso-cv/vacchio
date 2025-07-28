@@ -2,6 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import { Phone, Mail } from 'lucide-react'
 import LinkedIn from '@/components/logos/LinkedIn'
+import Notion from '@/components/logos/Notion'
+import Raycast from '@/components/logos/Raycast'
+import Cursor from '@/components/logos/Cursor'
+import Warp from '@/components/logos/Warp'
+import Figma from '@/components/logos/Figma'
+import Superhuman from '@/components/logos/Superhuman'
+import Dia from '@/components/logos/Dia'
+import Apple from '@/components/logos/Apple'
+import Vercel from '@/components/logos/Vercel'
 
 export default function AboutMe() {
   return (
@@ -46,7 +55,7 @@ export default function AboutMe() {
                 </div>
                 <div className="flex items-start gap-4.5">
                   <div className="flex flex-col items-center justify-between h-full">
-                    <Mail className="w-7 h-7 text-vacchio-black/40 mt-[2px]"/>
+                    <Mail className="w-7 h-7 text-[#8C8C8B] mt-[2px]"/>
                     <div className="w-7 h-[2px] rounded-full bg-vacchio-black/30 mb-1"></div>
                   </div>
                   <div className="flex flex-col w-32 justify-between">
@@ -71,7 +80,7 @@ export default function AboutMe() {
             <div className="grid md:grid-cols-2 gap-8">
 
               {/* Bio Column */}
-              <div className="space-y-6 pr-12">
+              <div className="flex flex-col justify-end pr-12">
 
                 {/* BIO */}
                 <div>
@@ -88,19 +97,14 @@ export default function AboutMe() {
                 {/* FAVOURITE BRANDS */}
                 <div>
                   <h3 className="font-bold text-vacchio-black text-sm uppercase mb-4">Favourite Brands</h3>
-                  <div className="flex gap-4">
-                    <div className="w-8 h-8 bg-vacchio-black/70 rounded flex items-center justify-center">
-                      <div className="w-4 h-4 bg-vacchio-black/70 rounded-sm"></div>
-                    </div>
-                    <div className="w-8 h-8 bg-vacchio-black/70 rounded flex items-center justify-center">
-                      <div className="w-3 h-4 bg-vacchio-black/70 rounded-sm"></div>
-                    </div>
-                    <div className="w-8 h-8 bg-vacchio-black/70 rounded flex items-center justify-center">
-                      <div className="w-4 h-2 bg-vacchio-black/70 rounded-sm"></div>
-                    </div>
-                    <div className="w-8 h-8 bg-vacchio-black/70 rounded flex items-center justify-center">
-                      <div className="w-3 h-4 bg-vacchio-black/70 rounded-sm border border-vacchio-black/70"></div>
-                    </div>
+                  <div className="flex flex-wrap gap-7 grayscale pt-4">
+                      <Apple className="w-8 h-8 opacity-40" />
+                      <Notion className="w-8 h-8 opacity-40" />
+                      <Cursor className="w-8 h-8 opacity-50" />
+                      <Figma className="w-8 h-8" />
+                      <Raycast className="w-8 h-8" />
+                      <Superhuman className="w-8 h-8 opacity-50" />
+                      <Dia className="w-12 h-8 opacity-50" />
                   </div>
                 </div>
 
