@@ -5,6 +5,9 @@ import Tailwind from '@/components/logos/TailwindCSS'
 import Typescript from '@/components/logos/TypeScript'
 import ReactLogo from '@/components/logos/React'
 import Solana from '@/components/logos/Solana'
+import Stripe from '@/components/logos/Stripe'
+import AmazonWebServices from '@/components/logos/AmazonWebServices'
+import JavaScript from '@/components/logos/JavaScript'
 
 export default function Home() {
   return (
@@ -21,13 +24,13 @@ export default function Home() {
       <div className="grid auto-rows-min gap-4 md:grid-cols-3 mb-12">
 
         {/* Card 1 */}
-        <div className="bg-muted/50 aspect-video rounded-lg overflow-hidden relative border ">
+        <div className="bg-[#E2E3E1]/20 aspect-video rounded-lg overflow-hidden relative border ">
 
           <div className='pt-8 px-6 pb-6 flex flex-col gap-4 justify-between h-full relative z-1'>
 
             <div className='flex flex-col gap-4'>
               <div className='flex gap-0.5 flex-col'>
-                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Project</p>
+                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Ocelot Technologies</p>
                 <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
               </div>
 
@@ -35,13 +38,13 @@ export default function Home() {
                 <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Tech Stack</p>
               </div>
 
-              <div className='flex gap-4'>
+              <div className='flex gap-4 items-center'>
                 <Supabase className='w-4 h-4 grayscale'/>
-                <Nextjs className='w-4 h-4 grayscale opacity-50'/>
+                <Nextjs className='w-4 h-4 grayscale opacity-40'/>
                 <Tailwind className='w-4 h-4 text-black opacity-50'/>
-                <Typescript className='w-4 h-4  text-black opacity-50'/>
+                <Typescript className='w-4 h-4  text-black opacity-40'/>
                 <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-                <Solana className='w-4 h-4 grayscale opacity-50'/>
+                <Solana className='w-4 h-4 grayscale opacity-40'/>
               </div>
             </div>
 
@@ -53,37 +56,37 @@ export default function Home() {
 
           <Image 
             src="/webp/ocelot.webp" 
-            alt="Project 1" 
-            width={1506}
-            height={1886}
+            alt="Ocelot Game Studio Website Project" 
+            width={479}
+            height={600}
             draggable={false}
-            className=' absolute -right-20 -bottom-50 w-100 object-cover opacity-30' 
+            className=' absolute -right-20 -bottom-50 w-100 object-cover opacity-20' 
           />
 
         </div>
         
         {/* Card 2 */}
-        <div className="bg-muted/50 aspect-video rounded-lg overflow-hidden relative border ">
+        <div className="bg-[#E2E3E1]/20 aspect-video rounded-lg overflow-hidden relative border ">
 
           <div className='pt-8 px-6 pb-6 flex flex-col gap-4 justify-between h-full relative z-1'>
 
             <div className='flex flex-col gap-4'>
               <div className='flex gap-0.5 flex-col'>
-                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Project</p>
-                <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
+                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Caddi AI</p>
+                <p className='text-base font-regular text-vacchio-black/70'>Golf Ecommerce Website</p>
               </div>
 
               <div className='flex gap-0.5 flex-col'>
                 <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Tech Stack</p>
               </div>
 
-              <div className='flex gap-4'>
+              <div className='flex gap-4 items-center'>
                 <Supabase className='w-4 h-4 grayscale'/>
-                <Nextjs className='w-4 h-4 grayscale opacity-50'/>
+                <Nextjs className='w-4 h-4 grayscale opacity-40'/>
                 <Tailwind className='w-4 h-4 text-black opacity-50'/>
-                <Typescript className='w-4 h-4  text-black opacity-50'/>
+                <Typescript className='w-4 h-4  text-black opacity-40'/>
                 <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-                <Solana className='w-4 h-4 grayscale opacity-50'/>
+                <Stripe className='w-7 h-4 text-black opacity-40'/>
               </div>
             </div>
 
@@ -94,38 +97,37 @@ export default function Home() {
           </div>
 
           <Image 
-            src="/webp/caddi.webp" 
-            alt="Project 1" 
-            width={1506}
-            height={1886}
+            src="/webp/caddi2.webp" 
+            alt="Caddi AI Commerce Web Project" 
+            width={355}
+            height={600}
             draggable={false}
-            className=' absolute -right-20 -bottom-70 w-100 object-cover opacity-30' 
+            className=' absolute -right-30 -bottom-20 w-100 object-cover opacity-20' 
           />
 
         </div>
 
         {/* Card 3 */}
-        <div className="bg-muted/50 aspect-video rounded-lg overflow-hidden relative border ">
+        <div className="bg-[#E2E3E1]/20 aspect-video rounded-lg overflow-hidden relative border ">
 
           <div className='pt-8 px-6 pb-6 flex flex-col gap-4 justify-between h-full relative z-1'>
 
             <div className='flex flex-col gap-4'>
               <div className='flex gap-0.5 flex-col'>
-                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Project</p>
-                <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
+                <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Neutron Controls</p>
+                <p className='text-base font-regular text-vacchio-black/70'>BMS Technology Website</p>
               </div>
 
               <div className='flex gap-0.5 flex-col'>
                 <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Tech Stack</p>
               </div>
 
-              <div className='flex gap-4'>
-                <Supabase className='w-4 h-4 grayscale'/>
-                <Nextjs className='w-4 h-4 grayscale opacity-50'/>
+              <div className='flex gap-4 items-center'>
+                <Nextjs className='w-4 h-4 grayscale opacity-40'/>
                 <Tailwind className='w-4 h-4 text-black opacity-50'/>
-                <Typescript className='w-4 h-4  text-black opacity-50'/>
+                <JavaScript className='w-4 h-4  text-black opacity-40'/>
                 <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-                <Solana className='w-4 h-4 grayscale opacity-50'/>
+                <AmazonWebServices className='w-5 h-4 grayscale opacity-50'/>
               </div>
             </div>
 
@@ -136,12 +138,12 @@ export default function Home() {
           </div>
 
           <Image 
-            src="/webp/ocelot.webp" 
-            alt="Project 1" 
-            width={1506}
-            height={1886}
+            src="/webp/neutron.webp" 
+            alt="Neutron Controls Website Project" 
+            width={550}
+            height={600}
             draggable={false}
-            className=' absolute -right-20 -bottom-50 w-100 object-cover opacity-30' 
+            className=' absolute -right-40 -bottom-15 w-100 object-cover opacity-15' 
           />
 
         </div>
