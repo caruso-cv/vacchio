@@ -5,11 +5,11 @@ import LinkedIn from '@/components/logos/LinkedIn'
 
 export default function AboutMe() {
   return (
-    <section className='pt-12 relative z-20'>
+    <section className='pt-20 relative z-20'>
       {/* About Me */}
       <h2 className="font-bold font-cantarell uppercase text-sm text-vacchio-black">About Me</h2>
 
-      <div className="pt-12 pb-42">
+      <div className="pt-6 pb-42">
 
         {/* Main Content Grid - 1/3 Image + 2/3 Content */}
         <div className="grid md:grid-cols-3 gap-8">
@@ -36,7 +36,7 @@ export default function AboutMe() {
               <div className="flex gap-8">
                 <div className="flex items-start gap-4.5">
                   <div className="flex flex-col items-center justify-between h-full">
-                    <Phone className="w-6.5 h-6.5 text-vacchio-black/40 mt-px" />
+                    <Phone className="w-6.5 h-6.5 text-vacchio-black/40 mt-1"/>
                     <div className="w-7 h-[2px] rounded-full bg-vacchio-black/30 mb-1"></div>
                   </div>
                   <div className="flex flex-col w-32 justify-between">
@@ -46,7 +46,7 @@ export default function AboutMe() {
                 </div>
                 <div className="flex items-start gap-4.5">
                   <div className="flex flex-col items-center justify-between h-full">
-                    <Mail className="w-7 h-7 text-vacchio-black/40 mt-px" />
+                    <Mail className="w-7 h-7 text-vacchio-black/40 mt-[2px]"/>
                     <div className="w-7 h-[2px] rounded-full bg-vacchio-black/30 mb-1"></div>
                   </div>
                   <div className="flex flex-col w-32 justify-between">
@@ -56,7 +56,7 @@ export default function AboutMe() {
                 </div>
                 <div className="flex items-start gap-4.5">
                   <div className="flex flex-col items-center justify-between h-full">
-                    <LinkedIn className="w-6 h-6 text-vacchio-black/40 mt-1" />
+                    <LinkedIn className="w-6 h-6 text-vacchio-black/40 mt-1"/>
                     <div className="w-7 h-[2px] rounded-full bg-vacchio-black/30 mb-1"></div>
                   </div>
                   <div className="flex flex-col w-32 justify-between">

@@ -13,10 +13,10 @@ import Link from 'next/link'
 
 export default function ProjectCards() {
   return (
-    <>
+    <section className='pt-12'>
       {/* Recent Projects */}
       <h2 className="font-bold font-cantarell uppercase text-sm text-vacchio-black">Recent Projects</h2>
-      <div className="grid auto-rows-min gap-4 md:grid-cols-3 mb-12">
+      <div className="grid auto-rows-min gap-4 md:grid-cols-3 mb-12 mt-6">
 
         {/* Card 1 */}
         <div className="bg-[#E2E3E1]/20 backdrop-blur-lg aspect-video rounded-lg overflow-hidden relative border z-20">
@@ -26,7 +26,7 @@ export default function ProjectCards() {
             <div className='flex flex-col gap-4'>
               <div className='flex gap-0.5 flex-col'>
                 <p className='text-sm font-bold text-vacchio-black/80 uppercase'>Ocelot Technologies Ltd.</p>
-                <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Website</p>
+                <p className='text-base font-regular text-vacchio-black/70'>Indie Game Studio Site</p>
               </div>
 
               <div className='flex gap-0.5 flex-col'>
@@ -147,6 +147,6 @@ export default function ProjectCards() {
         </div>
 
       </div>
-    </>
+    </section>
   )
 } 
