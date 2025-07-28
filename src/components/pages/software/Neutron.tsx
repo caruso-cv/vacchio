@@ -90,7 +90,7 @@ export default function Neutron() {
                     The primary goal was to create a high-performance corporate website that would:
                     </p>
                     <ul className="list-disc pl-6 text-vacchio-black/80 space-y-2 mb-12">
-                    <li>Reflect Neutron Controls' pivot from EV batteries to BMS and ESS technology</li>
+                    <li>Reflect Neutron Controls&apos; pivot from EV batteries to BMS and ESS technology</li>
                     <li>Deliver exceptional loading speeds to convey performance and technical excellence</li>
                     <li>Implement comprehensive contact and job application forms for client and talent acquisition</li>
                     <li>Integrate Google Ad Sense and tracking for marketing analytics</li>
@@ -108,7 +108,7 @@ export default function Neutron() {
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
                     AWS S3 serves as the content delivery solution for 4K video assets, implementing advanced caching 
-                    techniques and video chunking for lightning-fast load times. The CI/CD pipeline connects Neutron's 
+                    techniques and video chunking for lightning-fast load times. The CI/CD pipeline connects Neutron&apos;s 
                     internal GitLab repository to GitHub, then automatically deploys to Vercel, ensuring seamless 
                     updates while maintaining corporate security protocols.
                     </p>
@@ -144,10 +144,10 @@ export default function Neutron() {
                     The primary challenge was achieving exceptional loading speeds for 4K video content on the hero section. 
                     We solved this by implementing advanced AWS S3 caching strategies and video chunking techniques, 
                     allowing massive video files to load almost instantly and giving visitors an immediate impression 
-                    of Neutron Controls' technical capabilities and performance standards.
+                    of Neutron Controls&apos; technical capabilities and performance standards.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-8">
-                    Another significant challenge was establishing a secure CI/CD pipeline that connected Neutron's internal 
+                    Another significant challenge was establishing a secure CI/CD pipeline that connected Neutron&apos;s internal 
                     GitLab repository to the public deployment infrastructure. We created a complex but seamless pipeline 
                     that maintains corporate security while enabling rapid deployment through GitHub to Vercel, ensuring 
                     code never leaves their controlled environment inappropriately.

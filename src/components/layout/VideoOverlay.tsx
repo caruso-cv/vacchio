@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function VideoOverlay() {
   return (
     <div className="fixed inset-0 z-10 pointer-events-none">
@@ -11,10 +13,11 @@ export default function VideoOverlay() {
       >
         <source src="/webm/shadow.webm" type="video/webm" />
         {/* Fallback image for browsers that don't support WebM */}
-        <img 
+        <Image 
           src="/webp/shadow.webp" 
           alt="Shadow effect" 
-          className="w-full h-full object-cover scale-x-[-1]"
+          fill
+          className="object-cover scale-x-[-1]"
         />
       </video>
     </div>

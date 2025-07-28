@@ -11,7 +11,7 @@ export default function Contact() {
               Get in touch
             </h2>
             <p className="mt-6 text-lg/8 text-vacchio-black/80">
-              Ready to bring your next project to life? Let's discuss how we can work together to create something amazing.
+              Ready to bring your next project to life? Let&apos;s discuss how we can work together to create something amazing.
             </p>
             <dl className="mt-10 space-y-4 text-base/7 text-vacchio-black/80">
               <div className="flex gap-x-4">

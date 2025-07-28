@@ -1,5 +1,5 @@
 import * as React from "react"
-import { CodeXml, ChevronDown } from "lucide-react"
+import { CodeXml } from "lucide-react"
 import Link from "next/link"
 
 import {

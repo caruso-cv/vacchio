@@ -96,7 +96,7 @@ export default function Ocelot() {
                     <li>Integrate a custom Solana token swap for their native GGEM token</li>
                     <li>Ensure seamless user experience between traditional web and blockchain features</li>
                     <li>Provide fast loading times and excellent SEO performance</li>
-                    <li>Create an engaging platform that reflects the studio's innovative approach</li>
+                    <li>Create an engaging platform that reflects the studio&apos;s innovative approach</li>
                     </ul>
                 </section>
 
@@ -110,7 +110,7 @@ export default function Ocelot() {
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
                     Supabase serves as the backend for the blog system, providing authentication, database management, 
                     and real-time capabilities for development updates and bug reports. The custom Solana integration 
-                    uses Jupiter's swap API to enable seamless GGEM token trading, while Vercel provides optimal 
+                    uses Jupiter&apos;s swap API to enable seamless GGEM token trading, while Vercel provides optimal 
                     deployment performance and seamless CI/CD integration.
                     </p>
                 </section>

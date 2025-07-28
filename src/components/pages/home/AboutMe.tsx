@@ -5,12 +5,10 @@ import LinkedIn from '@/components/logos/LinkedIn'
 import Notion from '@/components/logos/Notion'
 import Raycast from '@/components/logos/Raycast'
 import Cursor from '@/components/logos/Cursor'
-import Warp from '@/components/logos/Warp'
 import Figma from '@/components/logos/Figma'
 import Superhuman from '@/components/logos/Superhuman'
 import Dia from '@/components/logos/Dia'
 import Apple from '@/components/logos/Apple'
-import Vercel from '@/components/logos/Vercel'
 
 export default function AboutMe() {
   return (
