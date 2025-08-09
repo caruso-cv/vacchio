@@ -17,6 +17,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { usePathname } from "next/navigation"
+import Footer from "../Foorter"
 
 export default function Navigation({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
@@ -48,7 +49,7 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
     >
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 px-4">
+        <header className="sticky top-0 z-50 flex h-16 shrink-0 items-center gap-2 px-4 bg-background border-b md:border-b-0">
           <SidebarTrigger className="-ml-1" />
           <Separator
             orientation="vertical"
@@ -81,9 +82,10 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
             </BreadcrumbList>
           </Breadcrumb>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
+        <div className="flex flex-1 flex-col gap-4 p-4 pt-0 relative">
           {children}
         </div>
+        <Footer />
       </SidebarInset>
     </SidebarProvider>
     

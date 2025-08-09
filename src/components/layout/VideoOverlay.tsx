@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function VideoOverlay() {
   return (
-    <div className="fixed inset-0 z-10 pointer-events-none">
+    <div className="fixed inset-0 z-[60] pointer-events-none">
       <video
         autoPlay
         loop

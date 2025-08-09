@@ -9,6 +9,8 @@ import ReactLogo from '@/components/logos/React'
 import Supabase from '@/components/logos/Supabase'
 import Vercel from '@/components/logos/Vercel'
 import Solana from '@/components/logos/Solana'
+import ScrollColorImage from '@/components/ui/ScrollColorImage'
+import ScrollColorVideo from '@/components/ui/ScrollColorVideo'
 
 export default function Ocelot() {
   return (
@@ -73,16 +75,11 @@ export default function Ocelot() {
                     updates and bug fix reports.
                     </p>
                     
-                    {/* Home Page Screenshot */}
-                    <div className="mb-12 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Screenshot 2025-07-28 at 1.59.18 AM.png" 
-                        alt="Ocelot Technologies Homepage"
-                        width={800}
-                        height={500}
+                    {/* Home Page Media (Video) */}
+                    <ScrollColorVideo
+                        src="/webm/MagicImage.webm"
                         className="w-full h-auto"
                     />
-                    </div>
                 </section>
 
                 <section id="project-goals">
@@ -128,15 +125,11 @@ export default function Ocelot() {
                     </ul>
 
                     {/* Blog Page Screenshot */}
-                    <div className="mb-12 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Screenshot 2025-07-28 at 2.03.40 AM.png"
+                    <ScrollColorImage
+                        src="/png/ocelot2.png"
                         alt="Ocelot Technologies Blog Page"
-                        width={800}
-                        height={500}
-                        className="w-full h-auto"
+                        className="w-full h-auto opacity-90 rounded-lg border"
                     />
-                    </div>
                 </section>
 
                 <section id="challenges">
@@ -153,15 +146,11 @@ export default function Ocelot() {
                     </p>
 
                     {/* Swap Page Screenshot */}
-                    <div className="my-8 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Screenshot 2025-07-28 at 2.06.20 AM.png" 
+                    <ScrollColorImage
+                        src="/png/ocelot3.png" 
                         alt="Ocelot Technologies GGEM Token Swap Page"
-                        width={800}
-                        height={500}
-                        className="w-full h-auto"
+                        className="w-full h-auto opacity-90"
                     />
-                    </div>
                 </section>
 
                 </article>
@@ -169,7 +158,7 @@ export default function Ocelot() {
 
             {/* Sticky Navigation - 1/4 width */}
             <div className="w-1/4 hidden lg:block">
-                <div className="sticky top-8">
+                <div className="sticky top-22">
                 <nav className="bg-[#E2E3E1]/20 backdrop-blur-lg rounded-lg overflow-hidden border p-6">
                     <h3 className="font-bold text-vacchio-black mb-4">On This Page</h3>
                     <ul className="space-y-2">

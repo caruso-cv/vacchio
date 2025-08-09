@@ -2,7 +2,7 @@ import Ocelot from '@/components/pages/software/Ocelot'
 
 export default function OcelotPage() {
   return (
-    <div className="min-h-screen w-full max-w-8xl mx-auto relative z-20">
+    <div className="min-h-screen w-full max-w-7xl mx-auto relative z-20">
       
       {/* Hero Banner */}
       <div className="pt-12 pb-12">

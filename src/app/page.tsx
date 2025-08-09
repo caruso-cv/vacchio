@@ -3,7 +3,7 @@ import AboutMe from '@/components/pages/home/AboutMe'
 
 export default function Home() {
   return (
-    <main className="pt-12 max-w-8xl mx-auto w-full flex flex-col gap-4 ">
+    <main className="pt-12 max-w-7xl mx-auto w-full flex flex-col gap-4 ">
 
       {/* Hero */}
       <div className='pb-12'>

@@ -3,7 +3,6 @@ import { Cantarell, Cormorant_Garamond, Playfair_Display, Inter } from "next/fon
 import "./globals.css";
 import VideoOverlay from "../components/layout/VideoOverlay";
 import Navigation from "../components/layout/Navigation";
-import Footer from "../components/Foorter";
 
 const cantarell = Cantarell({
   variable: "--font-cantarell",
@@ -52,8 +51,6 @@ export default function RootLayout({
       >
         <VideoOverlay/>
         <Navigation>{children}</Navigation>
-        <Footer/>
-
       </body>
     </html>
   );
