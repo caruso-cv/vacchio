@@ -49,7 +49,7 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
     >
       <AppSidebar />
       <SidebarInset>
-        <header className="sticky top-0 z-50 flex h-16 shrink-0 items-center gap-2 px-4 bg-background border-b md:border-b-0">
+        <header className="relative flex h-16 shrink-0 items-center gap-2 px-4">
           <SidebarTrigger className="-ml-1" />
           <Separator
             orientation="vertical"

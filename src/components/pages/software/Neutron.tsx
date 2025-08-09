@@ -8,6 +8,7 @@ import ReactLogo from '@/components/logos/React'
 import Vercel from '@/components/logos/Vercel'
 import AmazonWebServices from '@/components/logos/AmazonWebServices'
 import JavaScript from '@/components/logos/JavaScript'
+import ScrollColorImage from '@/components/ui/ScrollColorImage'
 
 export default function Neutron() {
   return (
@@ -71,16 +72,24 @@ export default function Neutron() {
                     and job application forms, proper cookie handling, Google Ad Sense integration, and a complex CI/CD 
                     pipeline connecting their internal GitLab repository to GitHub and Vercel deployment.
                     </p>
-                    
+                    <div className="mb-12">
+                        <p className="text-vacchio-black/80 leading-relaxed mb-4">
+                        The landing sequence establishes mood and pace, letting the world speak through motion and sound. 
+                        Subtle UI overlays invite exploration without distracting from the core experience.
+                        </p>
+                        <p className="text-vacchio-black/80 leading-relaxed">
+                        The launch trailer follows with a cinematic cut that anchors the game's themes while showcasing 
+                        polished combat and environment art.
+                        </p>
+                    </div>
+
                     {/* Home Page Screenshot */}
-                    <div className="mb-12 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Screenshot 2025-07-28 at 2.59.11 AM.png" 
-                        alt="Ocelot Technologies Homepage"
-                        width={800}
-                        height={500}
-                        className="w-full h-auto"
-                    />
+                    <div className="mb-8">
+                        <ScrollColorImage
+                            src="/png/neutron1.png" 
+                            alt="Ocelot Technologies Homepage"
+                            className="w-full h-auto opacity-90 rounded-lg border"
+                        />
                     </div>
                 </section>
 
@@ -90,7 +99,7 @@ export default function Neutron() {
                     The primary goal was to create a high-performance corporate website that would:
                     </p>
                     <ul className="list-disc pl-6 text-vacchio-black/80 space-y-2 mb-12">
-                    <li>Reflect Neutron Controls&apos; pivot from EV batteries to BMS and ESS technology</li>
+                    <li>Reflect Neutron Controls' pivot from EV batteries to BMS and ESS technology</li>
                     <li>Deliver exceptional loading speeds to convey performance and technical excellence</li>
                     <li>Implement comprehensive contact and job application forms for client and talent acquisition</li>
                     <li>Integrate Google Ad Sense and tracking for marketing analytics</li>
@@ -108,13 +117,27 @@ export default function Neutron() {
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
                     AWS S3 serves as the content delivery solution for 4K video assets, implementing advanced caching 
-                    techniques and video chunking for lightning-fast load times. The CI/CD pipeline connects Neutron&apos;s 
+                    techniques and video chunking for lightning-fast load times. The CI/CD pipeline connects Neutron's 
                     internal GitLab repository to GitHub, then automatically deploys to Vercel, ensuring seamless 
                     updates while maintaining corporate security protocols.
                     </p>
                 </section>
 
                 <section id="features">
+                    
+
+                    {/* Blog Page Screenshot */}
+                    <div className="mb-12">
+                        <ScrollColorImage
+                            src="/png/neutron2.png"
+                            alt="Ocelot Technologies Blog Page"
+                            className="w-full h-auto opacity-90 rounded-lg border"
+                        />
+                    </div>
+                </section>
+
+                {/* Narrative between second and third media (balanced with earlier text) */}
+                <section id="characters-overview">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Key Features</h2>
                     <ul className="list-disc pl-6 text-vacchio-black/80 mb-8 space-y-2">
                     <li>Lightning-fast 4K video delivery through AWS S3 with advanced caching and chunking</li>
@@ -125,44 +148,44 @@ export default function Neutron() {
                     <li>Complex CI/CD pipeline connecting internal GitLab to public GitHub and Vercel</li>
                     <li>Modern, enterprise-grade design optimized for BMS and ESS industry clients</li>
                     </ul>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-4">
+                    Beyond gameplay, the site spotlights the world and its characters. Each hero is introduced with a 
+                    concise bio and striking artwork, designed to immerse players in the game's universe.
+                    </p>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-12">
+                    This section balances visuals with copy, making it easy to scan while still telling a cohesive story 
+                    about the cast and their roles in the game.
+                    </p>
 
-                    {/* Blog Page Screenshot */}
-                    <div className="mb-12 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Screenshot 2025-07-28 at 2.59.26 AM.png"
-                        alt="Ocelot Technologies Blog Page"
-                        width={800}
-                        height={500}
-                        className="w-full h-auto"
-                    />
+                    {/* Character Showcase Screenshot */}
+                    <div className="mb-12">
+                        <ScrollColorImage
+                            src="/png/neutron3.png"
+                            alt="Character Showcase Section"
+                            className="w-full h-auto opacity-90 rounded-lg border"
+                        />
                     </div>
                 </section>
 
+                {/* Challenges & Solutions moved to the end */}
                 <section id="challenges">
-                    <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Challenges & Solutions</h2>
+                    <h2 className="text-2xl font-bold text-vacchio-black mb-6">Challenges & Solutions</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
                     The primary challenge was achieving exceptional loading speeds for 4K video content on the hero section. 
                     We solved this by implementing advanced AWS S3 caching strategies and video chunking techniques, 
                     allowing massive video files to load almost instantly and giving visitors an immediate impression 
-                    of Neutron Controls&apos; technical capabilities and performance standards.
+                    of Neutron Controls' technical capabilities and performance standards.
                     </p>
-                    <p className="text-vacchio-black/80 leading-relaxed mb-8">
-                    Another significant challenge was establishing a secure CI/CD pipeline that connected Neutron&apos;s internal 
+                    <p className="text-vacchio-black/80 leading-relaxed mb-6">
+                    Another significant challenge was establishing a secure CI/CD pipeline that connected Neutron's internal 
                     GitLab repository to the public deployment infrastructure. We created a complex but seamless pipeline 
                     that maintains corporate security while enabling rapid deployment through GitHub to Vercel, ensuring 
                     code never leaves their controlled environment inappropriately.
                     </p>
-
-                    {/* Swap Page Screenshot */}
-                    <div className="my-8 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Screenshot 2025-07-28 at 2.59.45 AM.png" 
-                        alt="Ocelot Technologies GGEM Token Swap Page"
-                        width={800}
-                        height={500}
-                        className="w-full h-auto"
-                    />
-                    </div>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-0">
+                    Presenting character bios in a highly visual yet accessible layout drove a responsive grid with semantic 
+                    headings, keyboard focus states, and readable color contrast.
+                    </p>
                 </section>
 
                 </article>

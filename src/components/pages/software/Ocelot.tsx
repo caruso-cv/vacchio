@@ -65,92 +65,116 @@ export default function Ocelot() {
                 <section id="short-explanation">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Summary</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    Ocelot Technologies is a comprehensive website built for a game development studio that needed both 
-                    a professional web presence and integrated blockchain functionality. The site serves as both a 
-                    showcase for their games and a platform for community engagement through their native GGEM token.
+                    Ocelot Technologies is a modern site for a game studio that prioritizes the in-game experience, 
+                    character storytelling, and a fast, reliable blog for updates.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-8">
-                    The website features a custom-built Solana token swap powered by Jupiter, allowing users to trade 
-                    for GGEM tokens directly on the site, alongside a Supabase-powered blog system for development 
-                    updates and bug fix reports.
+                    The home screen features a high-quality looping gameplay video alongside a dedicated launch trailer. 
+                    A production-ready blog with advanced caching keeps readers up to date with instant load times.
                     </p>
+                    <div className="mb-12">
+                        <p className="text-vacchio-black/80 leading-relaxed mb-4">
+                        The landing sequence establishes mood and pace, letting the world speak through motion and sound. 
+                        Subtle UI overlays invite exploration without distracting from the core experience.
+                        </p>
+                        <p className="text-vacchio-black/80 leading-relaxed">
+                        The launch trailer follows with a cinematic cut that anchors the game&apos;s themes while showcasing 
+                        polished combat and environment art.
+                        </p>
+                    </div>
+
+                    {/* Gameplay Loop */}
+                    <div className="mb-8">
+                        <ScrollColorVideo
+                            src="/webm/MagicImage.webm"
+                            className="w-full h-auto"
+                        />
+                    </div>
                     
-                    {/* Home Page Media (Video) */}
-                    <ScrollColorVideo
-                        src="/webm/MagicImage.webm"
-                        className="w-full h-auto"
-                    />
                 </section>
 
                 <section id="project-goals">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Project Goals</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The primary goal was to create a professional online presence for the game studio that would:
+                    The primary goal was to build a site that would:
                     </p>
                     <ul className="list-disc pl-6 text-vacchio-black/80 space-y-2 mb-12">
-                    <li>Create a professional web presence for the game development studio</li>
-                    <li>Build a Supabase-powered blog system for development updates and bug reports</li>
-                    <li>Integrate a custom Solana token swap for their native GGEM token</li>
-                    <li>Ensure seamless user experience between traditional web and blockchain features</li>
-                    <li>Provide fast loading times and excellent SEO performance</li>
-                    <li>Create an engaging platform that reflects the studio&apos;s innovative approach</li>
+                    <li>Showcase the game with a looping hero video and a dedicated launch trailer</li>
+                    <li>Highlight key characters with bios in a visually rich, immersive layout</li>
+                    <li>Provide a robust blog for studio updates, dev logs, and patch notes</li>
+                    <li>Use advanced caching for instant reads while keeping content fresh</li>
+                    <li>Deliver responsive design, strong accessibility, and great SEO</li>
                     </ul>
                 </section>
 
                 <section id="tech-stack-details">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Technical Implementation</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The website is built using Next.js 14 with React 18, providing server-side rendering and 
-                    excellent performance optimization. TypeScript ensures type safety throughout the codebase, 
-                    while Tailwind CSS provides a utility-first approach to styling.
+                    Built with Next.js 14 and React 18 using TypeScript and Tailwind CSS for a fast, maintainable UI.
+                    Supabase powers the blog (content, auth, storage), and Vercel handles deployment and edge caching.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
-                    Supabase serves as the backend for the blog system, providing authentication, database management, 
-                    and real-time capabilities for development updates and bug reports. The custom Solana integration 
-                    uses Jupiter&apos;s swap API to enable seamless GGEM token trading, while Vercel provides optimal 
-                    deployment performance and seamless CI/CD integration.
+                    The blog leverages stale-while-revalidate and tag-based revalidation for instant loads, with route 
+                    segment caching to keep popular posts fast while ensuring updates propagate quickly.
                     </p>
                 </section>
 
                 <section id="features">
-                    <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Key Features</h2>
-                    <ul className="list-disc pl-6 text-vacchio-black/80 mb-8 space-y-2">
-                    <li>Custom embedded Solana token swap powered by Jupiter for GGEM tokens</li>
-                    <li>Supabase-powered blog system for development updates and bug fix reports</li>
-                    <li>Real-time content management for game development announcements</li>
-                    <li>Responsive design that works perfectly on all devices</li>
-                    <li>Seamless integration between traditional web and blockchain features</li>
-                    <li>SEO optimization for better search visibility</li>
-                    <li>Fast loading times with optimized performance for both web and DeFi features</li>
-                    </ul>
+                    
 
                     {/* Blog Page Screenshot */}
-                    <ScrollColorImage
-                        src="/png/ocelot2.png"
-                        alt="Ocelot Technologies Blog Page"
-                        className="w-full h-auto opacity-90 rounded-lg border"
-                    />
+                    <div className="mb-12">
+                        <ScrollColorImage
+                            src="/png/ocelot2.png"
+                            alt="Ocelot Blog Page"
+                            className="w-full h-auto opacity-90 rounded-lg border"
+                        />
+                    </div>
                 </section>
 
+                {/* Narrative between second and third media (balanced with earlier text) */}
+                <section id="characters-overview">
+                    <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Key Features</h2>
+                    <ul className="list-disc pl-6 text-vacchio-black/80 mb-8 space-y-2">
+                    <li>High-quality looping gameplay video and a dedicated launch trailer</li>
+                    <li>Supabase-powered blog with advanced caching and instant loads</li>
+                    <li>Character showcase with bios in a visually aesthetic layout</li>
+                    <li>Responsive design, accessibility, and SEO optimizations</li>
+                    </ul>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-4">
+                    Beyond gameplay, the site spotlights the world and its characters. Each hero is introduced with a 
+                    concise bio and striking artwork, designed to immerse players in the game&apos;s universe.
+                    </p>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-12">
+                    This section balances visuals with copy, making it easy to scan while still telling a cohesive story 
+                    about the cast and their roles in the game.
+                    </p>
+
+                    {/* Character Showcase Screenshot */}
+                    <div className="mb-12">
+                        <ScrollColorImage
+                            src="/png/ocelot3.png"
+                            alt="Character Showcase Section"
+                            className="w-full h-auto opacity-90 rounded-lg border"
+                        />
+                    </div>
+                </section>
+
+                {/* Challenges & Solutions moved to the end */}
                 <section id="challenges">
                     <h2 className="text-2xl font-bold text-vacchio-black mb-6">Challenges & Solutions</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    One of the main challenges was integrating blockchain functionality (Solana token swap) into 
-                    a traditional web application while maintaining excellent UX. We solved this by creating a 
-                    seamless embedded swap interface powered by Jupiter that feels native to the website experience.
+                    Delivering high-fidelity video while preserving performance required careful encoding and lazy loading. 
+                    We optimized media formats and deferrals so the hero loop and trailer feel instant without blocking interaction.
                     </p>
-                    <p className="text-vacchio-black/80 leading-relaxed mb-8">
-                    Another challenge was building a robust blog system for technical content like development updates 
-                    and bug reports. We implemented a Supabase-powered CMS that allows the development team to easily 
-                    publish updates, manage content, and engage with their community in real-time.
+                    <p className="text-vacchio-black/80 leading-relaxed mb-6">
+                    For the blog, balancing freshness with speed led to cache tagging and stale-while-revalidate, so popular 
+                    posts render immediately while edits propagate quickly.
                     </p>
-
-                    {/* Swap Page Screenshot */}
-                    <ScrollColorImage
-                        src="/png/ocelot3.png" 
-                        alt="Ocelot Technologies GGEM Token Swap Page"
-                        className="w-full h-auto opacity-90"
-                    />
+                    <p className="text-vacchio-black/80 leading-relaxed mb-0">
+                    Presenting character bios in a highly visual yet accessible layout drove a responsive grid with semantic 
+                    headings, keyboard focus states, and readable color contrast.
+                    </p>
                 </section>
 
                 </article>
@@ -158,7 +182,7 @@ export default function Ocelot() {
 
             {/* Sticky Navigation - 1/4 width */}
             <div className="w-1/4 hidden lg:block">
-                <div className="sticky top-22">
+                <div className="sticky top-8">
                 <nav className="bg-[#E2E3E1]/20 backdrop-blur-lg rounded-lg overflow-hidden border p-6">
                     <h3 className="font-bold text-vacchio-black mb-4">On This Page</h3>
                     <ul className="space-y-2">

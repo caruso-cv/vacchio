@@ -1,5 +1,6 @@
 import ProjectCards from '@/components/pages/home/ProjectCards'
 import AboutMe from '@/components/pages/home/AboutMe'
+import Education from '@/components/pages/home/Education'
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <ProjectCards />
 
       <AboutMe />
+
+      <Education />
 
     </main>
   )

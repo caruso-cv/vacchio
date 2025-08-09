@@ -27,7 +27,7 @@ export default function ProjectCards() {
           <span>See all projects</span> <ChevronRight className="w-3 h-3 mt-1" />
         </Link>
       </div>
-      <div className="grid auto-rows-min gap-4 md:grid-cols-3 mb-12 mt-6">
+      <div className="grid auto-rows-min gap-4 md:grid-cols-3  mt-6">
 
         {/* Card 1 */}
         <div className="bg-[#E2E3E1]/20 backdrop-blur-lg rounded-lg overflow-hidden relative border z-20 min-h-[200px]">

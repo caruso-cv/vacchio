@@ -9,6 +9,7 @@ import ReactLogo from '@/components/logos/React'
 import Supabase from '@/components/logos/Supabase'
 import Vercel from '@/components/logos/Vercel'
 import Stripe from '@/components/logos/Stripe'
+import ScrollColorImage from '@/components/ui/ScrollColorImage'
 
 export default function Caddi() {
   return (
@@ -72,16 +73,24 @@ export default function Caddi() {
                     where users can select wood grains and upload custom logos, and a comprehensive product showcase for 
                     both the golf app and merchandise offerings.
                     </p>
-                    
+                    <div className="mb-12">
+                        <p className="text-vacchio-black/80 leading-relaxed mb-4">
+                        The landing sequence establishes mood and pace, letting the world speak through motion and sound. 
+                        Subtle UI overlays invite exploration without distracting from the core experience.
+                        </p>
+                        <p className="text-vacchio-black/80 leading-relaxed">
+                        The launch trailer follows with a cinematic cut that anchors the game's themes while showcasing 
+                        polished combat and environment art.
+                        </p>
+                    </div>
+
                     {/* Home Page Screenshot */}
-                    <div className="mb-12 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Screenshot 2025-07-28 at 2.42.30 AM.png" 
-                        alt="Ocelot Technologies Homepage"
-                        width={800}
-                        height={500}
-                        className="w-full h-auto"
-                    />
+                    <div className="mb-8">
+                        <ScrollColorImage
+                            src="/png/caddi1.png" 
+                            alt="Ocelot Technologies Homepage"
+                            className="w-full h-auto opacity-90 rounded-lg border"
+                        />
                     </div>
                 </section>
 
@@ -116,6 +125,20 @@ export default function Caddi() {
                 </section>
 
                 <section id="features">
+                    
+
+                    {/* Blog Page Screenshot */}
+                    <div className="mb-12">
+                        <ScrollColorImage
+                            src="/png/caddi2.png"
+                            alt="Ocelot Technologies Blog Page"
+                            className="w-full h-auto opacity-90 rounded-lg border"
+                        />
+                    </div>
+                </section>
+
+                {/* Narrative between second and third media (balanced with earlier text) */}
+                <section id="characters-overview">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Key Features</h2>
                     <ul className="list-disc pl-6 text-vacchio-black/80 mb-8 space-y-2">
                     <li>Interactive 3D divot tool builder with real-time wood grain and logo visualization</li>
@@ -126,43 +149,43 @@ export default function Caddi() {
                     <li>Responsive design optimized for both mobile shopping and desktop browsing</li>
                     <li>SEO optimization for golf-related keywords and local golf pro shop visibility</li>
                     </ul>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-4">
+                    Beyond gameplay, the site spotlights the world and its characters. Each hero is introduced with a 
+                    concise bio and striking artwork, designed to immerse players in the game's universe.
+                    </p>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-12">
+                    This section balances visuals with copy, making it easy to scan while still telling a cohesive story 
+                    about the cast and their roles in the game.
+                    </p>
 
-                    {/* Blog Page Screenshot */}
-                    <div className="mb-12 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Screenshot 2025-07-28 at 2.42.53 AM.png"
-                        alt="Ocelot Technologies Blog Page"
-                        width={800}
-                        height={500}
-                        className="w-full h-auto"
-                    />
+                    {/* Character Showcase Screenshot */}
+                    <div className="mb-12">
+                        <ScrollColorImage
+                            src="/png/caddi3.png"
+                            alt="Character Showcase Section"
+                            className="w-full h-auto opacity-90 rounded-lg border"
+                        />
                     </div>
                 </section>
 
+                {/* Challenges & Solutions moved to the end */}
                 <section id="challenges">
-                    <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Challenges & Solutions</h2>
+                    <h2 className="text-2xl font-bold text-vacchio-black mb-6">Challenges & Solutions</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
                     One of the main challenges was building a comprehensive ecommerce database from scratch to handle 
                     the complex product variations of custom hardwood divot tools. We created a flexible database schema 
                     that accommodates different wood types, divot styles, logo placements, and custom engraving options 
                     while maintaining efficient inventory management.
                     </p>
-                    <p className="text-vacchio-black/80 leading-relaxed mb-8">
+                    <p className="text-vacchio-black/80 leading-relaxed mb-6">
                     Another significant challenge was developing the 3D divot tool builder that allows users to visualize 
                     their custom selections in real-time. We implemented advanced web rendering techniques to show wood grain 
                     textures and logo placement accurately, giving customers confidence in their custom orders before purchase.
                     </p>
-
-                    {/* Swap Page Screenshot */}
-                    <div className="my-8 rounded-lg overflow-hidden border border-vacchio-black/10">
-                    <Image
-                        src="/png/Database Structure.png" 
-                        alt="Ocelot Technologies GGEM Token Swap Page"
-                        width={800}
-                        height={500}
-                        className="w-full h-auto"
-                    />
-                    </div>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-0">
+                    Presenting character bios in a highly visual yet accessible layout drove a responsive grid with semantic 
+                    headings, keyboard focus states, and readable color contrast.
+                    </p>
                 </section>
 
                 </article>

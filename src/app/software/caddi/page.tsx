@@ -2,7 +2,7 @@ import Caddi from '@/components/pages/software/Caddi'
 
 export default function Projects() {
   return (
-    <div className="min-h-screen w-full max-w-8xl mx-auto relative z-20">
+    <div className="min-h-screen w-full max-w-7xl mx-auto relative z-20">
       
     {/* Hero Banner */}
     <div className="pt-12 pb-12">
