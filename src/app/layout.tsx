@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   title: "Carmen Vacchio - Software Developer",
   description: "Portfolio and projects of Carmen Vacchio, Software Developer",
   icons: {
-    icon: '/icon.svg',
+    icon: '/svg/favicon.svg',
   },
 };
 
