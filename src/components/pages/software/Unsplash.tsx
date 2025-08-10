@@ -2,20 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Github, ExternalLink } from 'lucide-react'
-import Nextjs from '@/components/logos/Nextjs'
-import Tailwind from '@/components/logos/TailwindCSS'
-import ReactLogo from '@/components/logos/React'
-import Vercel from '@/components/logos/Vercel'
-import AmazonWebServices from '@/components/logos/AmazonWebServices'
 import JavaScript from '@/components/logos/JavaScript'
 import ScrollColorImage from '@/components/ui/ScrollColorImage'
 import ScrollColorVideo from '@/components/ui/ScrollColorVideo'
 
-export default function Neutron() {
+export default function Unsplash() {
   return (
 
     <>
-    
+
         {/* First Border */}
         <div className="border-t border-vacchio-black/10"></div>
 
@@ -26,22 +21,17 @@ export default function Neutron() {
             <div className="flex flex-col gap-4">
                 <h3 className='text-sm font-bold text-vacchio-black/80 uppercase'>Tech Stack</h3>
                 <div className='flex gap-4'>
-                    <Nextjs className='w-4 h-4 grayscale opacity-50'/>
-                    <Tailwind className='w-4 h-4 text-black opacity-50'/>
-                    <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-                    <Vercel className='w-4 h-4 text-black opacity-50'/>
-                    <AmazonWebServices className='w-6 h-4 mt-px text-black opacity-50'/>
                     <JavaScript className='w-4 h-4 text-black opacity-50'/>
                 </div>
             </div>
 
             {/* Links */}
             <div className="flex gap-4">
-                <Link href='https://github.com/SolCaruso/vercel' target='_blank' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
+                <Link href='https://github.com/SolCaruso/unsplash-clone' target='_blank' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
                 <Github className="w-4 h-4" />
                 <span>View Repo</span>
                 </Link>
-                <Link href='https://www.neutroncontrols.com/' target='_blank' className='border-vacchio-black/80 border font-bold px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer bg-vacchio-black hover:bg-vacchio-black/80 text-white/80 transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
+                <Link href='https://solcaruso.github.io/unsplash-clone/' target='_blank' className='border-vacchio-black/80 border font-bold px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer bg-vacchio-black hover:bg-vacchio-black/80 text-white/80 transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
                 <ExternalLink className="w-4 h-4 opacity-80" />
                 <span>Visit Site</span>
                 </Link>
@@ -59,36 +49,38 @@ export default function Neutron() {
             {/* Blog Content - 3/4 width */}
             <div className="flex-1 max-w-none w-3/4">
                 <article className="prose prose-lg max-w-none">
-                
+
                 <section id="short-explanation">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Summary</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    Neutron Controls required a complete website rebuild as part of their business pivot from EV battery 
-                    technology to Battery Management Systems (BMS) and Energy Storage Systems (ESS). The project was 
-                    completed during a co-op placement and needed to reflect their new direction with modern design 
-                    and exceptional performance.
+                    A simple Unsplash clone built for a school assignment that allows users to browse and view high-quality 
+                    photography. The application provides a clean, intuitive interface for discovering beautiful images 
+                    from talented photographers around the world.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-8">
-                    The website features lightning-fast 4K video loading through AWS optimization, comprehensive contact 
-                    and job application forms, proper cookie handling, Google Ad Sense integration, and a complex CI/CD 
-                    pipeline connecting their internal GitLab repository to GitHub and Vercel deployment.
+                    Users can explore a curated collection of images, click to view detailed information about each photograph, 
+                    and see the camera specifications and settings used to capture the shot. Clicking on an image opens a detailed 
+                    view where users can see the image in glorious full-screen mode and download the high-resolution version. 
+                    Each image is linked to the photographer's Unsplash profile, creating a seamless connection between the 
+                    viewer and the artist.
                     </p>
                     <div className="mb-12">
                         <p className="text-vacchio-black/80 leading-relaxed mb-4">
-                        The landing sequence establishes mood and pace, letting the world speak through motion and sound. 
-                        Subtle UI overlays invite exploration without distracting from the core experience.
+                        The design focuses on simplicity and visual appeal, allowing the photography to take center stage. 
+                        The interface provides essential functionality without overwhelming users with unnecessary features.
                         </p>
                         <p className="text-vacchio-black/80 leading-relaxed">
-                        The launch trailer follows with a cinematic cut that anchors the game's themes while showcasing 
-                        polished combat and environment art.
+                        Built with vanilla HTML, CSS, and JavaScript, this project demonstrates fundamental web development 
+                        skills while creating a functional and visually appealing application.
                         </p>
                     </div>
 
                     {/* Home Page Video */}
-                    <div className="mb-8">
-                        <ScrollColorVideo
-                            src="/webm/neutron.webm"
-                            className="w-full h-auto opacity-90 rounded-lg"
+                    <div className="mb-12">
+                        <ScrollColorImage
+                            src="/webp/unsplash.webp"
+                            alt="Unsplash Clone Interface"
+                            className="w-full h-auto opacity-90 rounded-lg border"
                         />
                     </div>
                 </section>
@@ -96,41 +88,42 @@ export default function Neutron() {
                 <section id="project-goals">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Project Goals</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The primary goal was to create a high-performance corporate website that would:
+                    The primary goal was to create a simple, functional Unsplash clone that would:
                     </p>
                     <ul className="list-disc pl-6 text-vacchio-black/80 space-y-2 mb-12">
-                    <li>Reflect Neutron Controls' pivot from EV batteries to BMS and ESS technology</li>
-                    <li>Deliver exceptional loading speeds to convey performance and technical excellence</li>
-                    <li>Implement comprehensive contact and job application forms for client and talent acquisition</li>
-                    <li>Integrate Google Ad Sense and tracking for marketing analytics</li>
-                    <li>Establish a robust CI/CD pipeline from internal GitLab to public GitHub and Vercel</li>
-                    <li>Create a modern, professional design that appeals to enterprise clients</li>
+                    <li>Display high-quality images in an organized grid layout</li>
+                    <li>Provide detailed information about each photograph including camera specifications</li>
+                    <li>Link each image to the photographer's Unsplash profile for attribution</li>
+                    <li>Create a clean, responsive design that works well on different screen sizes</li>
+                    <li>Implement smooth image loading and modal interactions for enhanced user experience</li>
+                    <li>Provide full-screen image viewing and download functionality for high-resolution images</li>
+                    <li>Demonstrate proficiency with vanilla HTML, CSS, and JavaScript fundamentals</li>
+                    <li>Ensure proper image loading and error handling for reliable content display</li>
+                    <li>Maintain fast loading times and optimal performance for image-heavy content</li>
                     </ul>
                 </section>
 
                 <section id="tech-stack-details">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Technical Implementation</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The website is built using Next.js with React, utilizing JavaScript/JSX for rapid development and 
-                    component-based architecture. Tailwind CSS provides a utility-first approach to styling, enabling 
-                    quick implementation of the modern, professional design requirements.
+                    The application is built using vanilla HTML, CSS, and JavaScript, demonstrating fundamental web development 
+                    skills without relying on frameworks or libraries. The project showcases clean, semantic HTML structure, 
+                    modern CSS techniques for responsive design, and efficient JavaScript for dynamic functionality.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
-                    AWS S3 serves as the content delivery solution for 4K video assets, implementing advanced caching 
-                    techniques and video chunking for lightning-fast load times. The CI/CD pipeline connects Neutron's 
-                    internal GitLab repository to GitHub, then automatically deploys to Vercel, ensuring seamless 
-                    updates while maintaining corporate security protocols.
+                    The application features smooth modal interactions for detailed image views, responsive grid layouts 
+                    that adapt to different screen sizes, and efficient image loading with proper error handling. The 
+                    design prioritizes visual appeal while maintaining excellent performance and accessibility standards.
                     </p>
                 </section>
 
                 <section id="features">
-                    
 
                     {/* Blog Page Screenshot */}
                     <div className="mb-12">
                         <ScrollColorImage
-                            src="/webp/neutron2.webp"
-                            alt="Ocelot Technologies Blog Page"
+                            src="/webp/unsplash2.webp"
+                            alt="Unsplash Clone Interface"
                             className="w-full h-auto opacity-90 rounded-lg border"
                         />
                     </div>
@@ -140,28 +133,31 @@ export default function Neutron() {
                 <section id="characters-overview">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Key Features</h2>
                     <ul className="list-disc pl-6 text-vacchio-black/80 mb-8 space-y-2">
-                    <li>Lightning-fast 4K video delivery through AWS S3 with advanced caching and chunking</li>
-                    <li>Comprehensive contact forms for client inquiries and business development</li>
-                    <li>Professional job application system for talent acquisition</li>
-                    <li>Google Ad Sense integration with proper tracking and analytics</li>
-                    <li>Cookie consent and management system for GDPR compliance</li>
-                    <li>Complex CI/CD pipeline connecting internal GitLab to public GitHub and Vercel</li>
-                    <li>Modern, enterprise-grade design optimized for BMS and ESS industry clients</li>
+                    <li>Image gallery with responsive grid layout displaying high-quality Unsplash photographs</li>
+                    <li>Detailed image modal showing camera specifications and capture settings</li>
+                    <li>Full-screen image viewing mode for immersive photography experience</li>
+                    <li>Image download functionality for high-resolution versions</li>
+                    <li>Photographer attribution with direct links to Unsplash profiles</li>
+                    <li>Responsive design optimized for desktop, tablet, and mobile viewing</li>
+                    <li>Smooth modal interactions and image loading with proper error handling</li>
+                    <li>Clean, minimalistic interface that puts focus on the photography</li>
+                    <li>Static image content with photographer information and camera specifications</li>
+                    <li>Semantic HTML structure with modern CSS and vanilla JavaScript functionality</li>
                     </ul>
                     <p className="text-vacchio-black/80 leading-relaxed mb-4">
-                    Beyond gameplay, the site spotlights the world and its characters. Each hero is introduced with a 
-                    concise bio and striking artwork, designed to immerse players in the game's universe.
+                    The application successfully demonstrates core web development principles while creating a functional 
+                    and visually appealing photography browsing experience.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
-                    This section balances visuals with copy, making it easy to scan while still telling a cohesive story 
-                    about the cast and their roles in the game.
+                    This project showcases the ability to build practical applications using fundamental web technologies, 
+                    emphasizing clean code, responsive design, and user experience best practices.
                     </p>
 
                     {/* Character Showcase Screenshot */}
                     <div className="mb-12">
                         <ScrollColorImage
-                            src="/webp/neutron3.webp"
-                            alt="Character Showcase Section"
+                            src="/webp/unsplash3.webp"
+                            alt="Image Detail Modal"
                             className="w-full h-auto opacity-90 rounded-lg border"
                         />
                     </div>
@@ -171,20 +167,25 @@ export default function Neutron() {
                 <section id="challenges">
                     <h2 className="text-2xl font-bold text-vacchio-black mb-6">Challenges & Solutions</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The primary challenge was achieving exceptional loading speeds for 4K video content on the hero section. 
-                    We solved this by implementing advanced AWS S3 caching strategies and video chunking techniques, 
-                    allowing massive video files to load almost instantly and giving visitors an immediate impression 
-                    of Neutron Controls' technical capabilities and performance standards.
+                    One of the main challenges was implementing a responsive grid layout that would display images 
+                    beautifully across different screen sizes. We used CSS Grid and Flexbox techniques to create a 
+                    flexible layout that adapts seamlessly from desktop to mobile devices while maintaining visual appeal.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    Another significant challenge was establishing a secure CI/CD pipeline that connected Neutron's internal 
-                    GitLab repository to the public deployment infrastructure. We created a complex but seamless pipeline 
-                    that maintains corporate security while enabling rapid deployment through GitHub to Vercel, ensuring 
-                    code never leaves their controlled environment inappropriately.
+                    Another significant challenge was creating smooth modal interactions for detailed image views and 
+                    full-screen functionality. We implemented vanilla JavaScript event handling to manage modal states, 
+                    image loading, full-screen transitions, and download functionality while ensuring proper accessibility 
+                    and keyboard navigation support.
+                    </p>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-6">
+                    Managing image data and handling potential loading errors gracefully was important for reliability. We 
+                    implemented proper error handling for image loading and created fallback states to ensure 
+                    users always have a good experience even when images fail to load.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-0">
-                    Presenting character bios in a highly visual yet accessible layout drove a responsive grid with semantic 
-                    headings, keyboard focus states, and readable color contrast.
+                    Optimizing image loading performance while maintaining visual quality required careful consideration 
+                    of image sizing, lazy loading techniques, and efficient DOM manipulation to ensure fast, smooth 
+                    user interactions.
                     </p>
                 </section>
 

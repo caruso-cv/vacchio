@@ -48,6 +48,12 @@ export default function Footer() {
                   BMS Tech Site
                 </Link>
                 <Link 
+                  href="/software/pokedex" 
+                  className="text-xs text-vacchio-black/60 hover:text-vacchio-black transition-colors duration-200 cursor-pointer"
+                >
+                  Pokedex App
+                </Link>
+                <Link 
                   href="/software" 
                   className="text-xs text-vacchio-black/60 hover:text-vacchio-black transition-colors duration-200 cursor-pointer"
                 >

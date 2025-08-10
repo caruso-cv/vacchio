@@ -1,0 +1,23 @@
+import TailFeather from '@/components/pages/software/TailFeather'
+
+export default function TailFeatherPage() {
+  return (
+    <div className="min-h-screen w-full max-w-7xl mx-auto relative z-20">
+      
+      {/* Hero Banner */}
+      <div className="pt-12 pb-12">
+        <div className="text-start">
+          <h1 className="text-5xl font-light font-playfair text-vacchio-black mb-4 ">
+            TailFeather CSS
+          </h1>
+          <p className="text-base text-vacchio-black/70">
+            Lightweight utility-first CSS framework built with Sass, inspired by Tailwind CSS.
+          </p>
+        </div>
+      </div>
+
+      <TailFeather />
+      
+    </div>
+  )
+}

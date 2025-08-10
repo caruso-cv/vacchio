@@ -69,15 +69,15 @@ const data: { navMain: NavSection[] } = {
         },
         {
           title: "Pokedex App",
-          url: "#",
+          url: "/software/pokedex",
         },
         {
           title: "Unsplash Clone",
-          url: "#",
+          url: "/software/unsplash",
         },
         {
           title: "SCSS Framework",
-          url: "#",
+          url: "/software/tailfeather",
         },
       ],
     },

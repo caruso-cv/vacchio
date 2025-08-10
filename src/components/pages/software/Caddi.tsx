@@ -10,6 +10,7 @@ import Supabase from '@/components/logos/Supabase'
 import Vercel from '@/components/logos/Vercel'
 import Stripe from '@/components/logos/Stripe'
 import ScrollColorImage from '@/components/ui/ScrollColorImage'
+import ScrollColorVideo from '@/components/ui/ScrollColorVideo'
 
 export default function Caddi() {
   return (
@@ -84,11 +85,11 @@ export default function Caddi() {
                         </p>
                     </div>
 
-                    {/* Home Page Screenshot */}
-                    <div className="mb-8">
+                    {/* Blog Page Screenshot */}
+                    <div className="mb-12">
                         <ScrollColorImage
-                            src="/png/caddi1.png" 
-                            alt="Ocelot Technologies Homepage"
+                            src="/webp/caddi2.webp"
+                            alt="Ocelot Technologies Blog Page"
                             className="w-full h-auto opacity-90 rounded-lg border"
                         />
                     </div>
@@ -127,12 +128,13 @@ export default function Caddi() {
                 <section id="features">
                     
 
-                    {/* Blog Page Screenshot */}
-                    <div className="mb-12">
-                        <ScrollColorImage
-                            src="/png/caddi2.png"
-                            alt="Ocelot Technologies Blog Page"
-                            className="w-full h-auto opacity-90 rounded-lg border"
+
+
+                                        {/* Home Page Video */}
+                                        <div className="mb-8">
+                        <ScrollColorVideo
+                            src="/webm/caddi.webm"
+                            className="w-full h-auto opacity-90 rounded-lg"
                         />
                     </div>
                 </section>
@@ -161,7 +163,7 @@ export default function Caddi() {
                     {/* Character Showcase Screenshot */}
                     <div className="mb-12">
                         <ScrollColorImage
-                            src="/png/caddi3.png"
+                            src="/webp/caddi3.webp"
                             alt="Character Showcase Section"
                             className="w-full h-auto opacity-90 rounded-lg border"
                         />

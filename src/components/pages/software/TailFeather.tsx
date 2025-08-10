@@ -2,20 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Github, ExternalLink } from 'lucide-react'
-import Nextjs from '@/components/logos/Nextjs'
-import Tailwind from '@/components/logos/TailwindCSS'
-import ReactLogo from '@/components/logos/React'
-import Vercel from '@/components/logos/Vercel'
-import AmazonWebServices from '@/components/logos/AmazonWebServices'
 import JavaScript from '@/components/logos/JavaScript'
 import ScrollColorImage from '@/components/ui/ScrollColorImage'
 import ScrollColorVideo from '@/components/ui/ScrollColorVideo'
 
-export default function Neutron() {
+export default function TailFeather() {
   return (
 
     <>
-    
+
         {/* First Border */}
         <div className="border-t border-vacchio-black/10"></div>
 
@@ -26,22 +21,17 @@ export default function Neutron() {
             <div className="flex flex-col gap-4">
                 <h3 className='text-sm font-bold text-vacchio-black/80 uppercase'>Tech Stack</h3>
                 <div className='flex gap-4'>
-                    <Nextjs className='w-4 h-4 grayscale opacity-50'/>
-                    <Tailwind className='w-4 h-4 text-black opacity-50'/>
-                    <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-                    <Vercel className='w-4 h-4 text-black opacity-50'/>
-                    <AmazonWebServices className='w-6 h-4 mt-px text-black opacity-50'/>
                     <JavaScript className='w-4 h-4 text-black opacity-50'/>
                 </div>
             </div>
 
             {/* Links */}
             <div className="flex gap-4">
-                <Link href='https://github.com/SolCaruso/vercel' target='_blank' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
+                <Link href='https://github.com/vacc0003/custom-css-framework' target='_blank' className='border-vacchio-black/80 border font-bold text-vacchio-black/80 px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer hover:bg-vacchio-yellow hover:border-vacchio-yellow hover:text-vacchio-dark-yellow transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
                 <Github className="w-4 h-4" />
                 <span>View Repo</span>
                 </Link>
-                <Link href='https://www.neutroncontrols.com/' target='_blank' className='border-vacchio-black/80 border font-bold px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer bg-vacchio-black hover:bg-vacchio-black/80 text-white/80 transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
+                <Link href='https://vacc0003.github.io/custom-css-framework/' target='_blank' className='border-vacchio-black/80 border font-bold px-8 py-3.5 rounded-full uppercase text-xs cursor-pointer bg-vacchio-black hover:bg-vacchio-black/80 text-white/80 transition-all duration-200 ease-in-out-quad text-center flex items-center gap-2'>
                 <ExternalLink className="w-4 h-4 opacity-80" />
                 <span>Visit Site</span>
                 </Link>
@@ -59,36 +49,37 @@ export default function Neutron() {
             {/* Blog Content - 3/4 width */}
             <div className="flex-1 max-w-none w-3/4">
                 <article className="prose prose-lg max-w-none">
-                
+
                 <section id="short-explanation">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Summary</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    Neutron Controls required a complete website rebuild as part of their business pivot from EV battery 
-                    technology to Battery Management Systems (BMS) and Energy Storage Systems (ESS). The project was 
-                    completed during a co-op placement and needed to reflect their new direction with modern design 
-                    and exceptional performance.
+                    TailFeather CSS is a lightweight, customizable utility-first CSS framework inspired by Tailwind CSS. 
+                    Built with Sass, it offers a simplified set of utility classes and base styles for rapid web development, 
+                    providing developers with a streamlined alternative to larger CSS frameworks.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-8">
-                    The website features lightning-fast 4K video loading through AWS optimization, comprehensive contact 
-                    and job application forms, proper cookie handling, Google Ad Sense integration, and a complex CI/CD 
-                    pipeline connecting their internal GitLab repository to GitHub and Vercel deployment.
+                    The framework features utility-first class naming conventions, making it easy to apply styles directly 
+                    in HTML markup. With built-in SCSS compilation and a modular architecture, developers can easily 
+                    customize and extend the framework to suit their specific project needs while maintaining fast 
+                    compilation times and optimal performance.
                     </p>
                     <div className="mb-12">
                         <p className="text-vacchio-black/80 leading-relaxed mb-4">
-                        The landing sequence establishes mood and pace, letting the world speak through motion and sound. 
-                        Subtle UI overlays invite exploration without distracting from the core experience.
+                        The design philosophy focuses on simplicity and efficiency, offering essential utility classes 
+                        without the complexity of larger frameworks. This makes TailFeather ideal for projects that need 
+                        rapid styling capabilities without unnecessary overhead.
                         </p>
                         <p className="text-vacchio-black/80 leading-relaxed">
-                        The launch trailer follows with a cinematic cut that anchors the game's themes while showcasing 
-                        polished combat and environment art.
+                        Built with modern Sass features, the framework provides a solid foundation for building responsive, 
+                        maintainable web applications with clean, semantic markup and efficient CSS output.
                         </p>
                     </div>
 
-                    {/* Home Page Video */}
-                    <div className="mb-8">
-                        <ScrollColorVideo
-                            src="/webm/neutron.webm"
-                            className="w-full h-auto opacity-90 rounded-lg"
+                    <div className="mb-12">
+                        <ScrollColorImage
+                            src="/webp/tailfeather.webp"
+                            alt="TailFeather CSS Framework"
+                            className="w-full h-auto opacity-90 rounded-lg border"
                         />
                     </div>
                 </section>
@@ -96,41 +87,42 @@ export default function Neutron() {
                 <section id="project-goals">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Project Goals</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The primary goal was to create a high-performance corporate website that would:
+                    The primary goal was to create a lightweight CSS framework that would:
                     </p>
                     <ul className="list-disc pl-6 text-vacchio-black/80 space-y-2 mb-12">
-                    <li>Reflect Neutron Controls' pivot from EV batteries to BMS and ESS technology</li>
-                    <li>Deliver exceptional loading speeds to convey performance and technical excellence</li>
-                    <li>Implement comprehensive contact and job application forms for client and talent acquisition</li>
-                    <li>Integrate Google Ad Sense and tracking for marketing analytics</li>
-                    <li>Establish a robust CI/CD pipeline from internal GitLab to public GitHub and Vercel</li>
-                    <li>Create a modern, professional design that appeals to enterprise clients</li>
+                    <li>Provide utility-first class naming inspired by Tailwind CSS for rapid development</li>
+                    <li>Build a lightweight framework that compiles quickly and efficiently</li>
+                    <li>Create a modular SCSS architecture for easy customization and extension</li>
+                    <li>Offer simplified utility classes without the complexity of larger frameworks</li>
+                    <li>Implement a Sass-based build system with automatic compilation and watching</li>
+                    <li>Ensure fast loading times and optimal performance for web applications</li>
+                    <li>Provide comprehensive documentation and usage examples</li>
+                    <li>Maintain clean, semantic CSS output with minimal file size</li>
                     </ul>
                 </section>
 
                 <section id="tech-stack-details">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Technical Implementation</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The website is built using Next.js with React, utilizing JavaScript/JSX for rapid development and 
-                    component-based architecture. Tailwind CSS provides a utility-first approach to styling, enabling 
-                    quick implementation of the modern, professional design requirements.
+                    The framework is built using Sass (SCSS) with a modular architecture that separates concerns into 
+                    organized directories. The build system uses Sass compilation with automatic watching capabilities, 
+                    allowing developers to make changes and see immediate updates in their compiled CSS.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
-                    AWS S3 serves as the content delivery solution for 4K video assets, implementing advanced caching 
-                    techniques and video chunking for lightning-fast load times. The CI/CD pipeline connects Neutron's 
-                    internal GitLab repository to GitHub, then automatically deploys to Vercel, ensuring seamless 
-                    updates while maintaining corporate security protocols.
+                    The project structure includes base styles, component styles, and utility classes organized in separate 
+                    SCSS files. The framework provides essential utility classes for spacing, colors, typography, and layout, 
+                    while maintaining a lightweight footprint. The modular approach allows developers to easily customize 
+                    variables, extend functionality, and remove unused features to optimize for their specific use cases.
                     </p>
                 </section>
 
                 <section id="features">
-                    
 
                     {/* Blog Page Screenshot */}
                     <div className="mb-12">
                         <ScrollColorImage
-                            src="/webp/neutron2.webp"
-                            alt="Ocelot Technologies Blog Page"
+                            src="/webp/tailfeather2.webp"
+                            alt="TailFeather CSS Framework"
                             className="w-full h-auto opacity-90 rounded-lg border"
                         />
                     </div>
@@ -140,28 +132,29 @@ export default function Neutron() {
                 <section id="characters-overview">
                     <h2 className="text-xl uppercase font-bold text-vacchio-black mb-5">Key Features</h2>
                     <ul className="list-disc pl-6 text-vacchio-black/80 mb-8 space-y-2">
-                    <li>Lightning-fast 4K video delivery through AWS S3 with advanced caching and chunking</li>
-                    <li>Comprehensive contact forms for client inquiries and business development</li>
-                    <li>Professional job application system for talent acquisition</li>
-                    <li>Google Ad Sense integration with proper tracking and analytics</li>
-                    <li>Cookie consent and management system for GDPR compliance</li>
-                    <li>Complex CI/CD pipeline connecting internal GitLab to public GitHub and Vercel</li>
-                    <li>Modern, enterprise-grade design optimized for BMS and ESS industry clients</li>
+                    <li>Utility-first class naming convention inspired by Tailwind CSS</li>
+                    <li>Built with SCSS for easy customization and extension</li>
+                    <li>Lightweight and fast compilation with minimal file size</li>
+                    <li>Modular architecture with organized base, component, and utility styles</li>
+                    <li>Automatic Sass compilation with file watching capabilities</li>
+                    <li>Comprehensive utility classes for spacing, colors, typography, and layout</li>
+                    <li>Clean, semantic CSS output optimized for performance</li>
+                    <li>Easy installation and setup process with clear documentation</li>
                     </ul>
                     <p className="text-vacchio-black/80 leading-relaxed mb-4">
-                    Beyond gameplay, the site spotlights the world and its characters. Each hero is introduced with a 
-                    concise bio and striking artwork, designed to immerse players in the game's universe.
+                    The framework successfully provides a streamlined alternative to larger CSS frameworks while maintaining 
+                    the flexibility and power needed for modern web development.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-12">
-                    This section balances visuals with copy, making it easy to scan while still telling a cohesive story 
-                    about the cast and their roles in the game.
+                    This project demonstrates the ability to create practical development tools that solve real problems 
+                    while maintaining clean code architecture and comprehensive documentation.
                     </p>
 
                     {/* Character Showcase Screenshot */}
                     <div className="mb-12">
                         <ScrollColorImage
-                            src="/webp/neutron3.webp"
-                            alt="Character Showcase Section"
+                            src="/webp/tailfeather3.webp"
+                            alt="Framework Documentation"
                             className="w-full h-auto opacity-90 rounded-lg border"
                         />
                     </div>
@@ -171,20 +164,25 @@ export default function Neutron() {
                 <section id="challenges">
                     <h2 className="text-2xl font-bold text-vacchio-black mb-6">Challenges & Solutions</h2>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    The primary challenge was achieving exceptional loading speeds for 4K video content on the hero section. 
-                    We solved this by implementing advanced AWS S3 caching strategies and video chunking techniques, 
-                    allowing massive video files to load almost instantly and giving visitors an immediate impression 
-                    of Neutron Controls' technical capabilities and performance standards.
+                    One of the main challenges was creating a utility-first framework that remained lightweight while 
+                    providing essential functionality. We carefully selected the most commonly used utility classes and 
+                    implemented a modular SCSS architecture that allows developers to include only what they need, 
+                    keeping the final CSS file size minimal.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-6">
-                    Another significant challenge was establishing a secure CI/CD pipeline that connected Neutron's internal 
-                    GitLab repository to the public deployment infrastructure. We created a complex but seamless pipeline 
-                    that maintains corporate security while enabling rapid deployment through GitHub to Vercel, ensuring 
-                    code never leaves their controlled environment inappropriately.
+                    Another significant challenge was designing an intuitive class naming system that would be familiar 
+                    to developers while remaining simple and memorable. We studied existing frameworks like Tailwind CSS 
+                    and created a simplified naming convention that maintains consistency and reduces the learning curve.
+                    </p>
+                    <p className="text-vacchio-black/80 leading-relaxed mb-6">
+                    Setting up an efficient build system with automatic compilation and file watching required careful 
+                    configuration of Sass compilation options. We implemented a streamlined build process that provides 
+                    fast compilation times and immediate feedback during development.
                     </p>
                     <p className="text-vacchio-black/80 leading-relaxed mb-0">
-                    Presenting character bios in a highly visual yet accessible layout drove a responsive grid with semantic 
-                    headings, keyboard focus states, and readable color contrast.
+                    Creating comprehensive documentation that would be helpful for developers of all skill levels was 
+                    important for adoption. We provided clear installation instructions, usage examples, and customization 
+                    guides to ensure developers could quickly integrate and extend the framework for their projects.
                     </p>
                 </section>
 
