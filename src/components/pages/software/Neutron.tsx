@@ -14,12 +14,12 @@ export default function Neutron() {
       description="High-performance corporate website with 4K video delivery and complex CI/CD pipeline."
       techStack={
         <>
-          <Nextjs className='w-4 h-4 grayscale opacity-50'/>
-          <Tailwind className='w-4 h-4 text-black opacity-50'/>
-          <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-          <Vercel className='w-4 h-4 text-black opacity-50'/>
-          <AmazonWebServices className='w-6 h-4 mt-px text-black opacity-50'/>
-          <JavaScript className='w-4 h-4 text-black opacity-50'/>
+                    <Nextjs className='w-4 h-4 grayscale opacity-50'/>
+                    <Tailwind className='w-4 h-4 text-black opacity-50'/>
+                    <ReactLogo className='w-4 h-4 text-black opacity-50'/>
+                    <Vercel className='w-4 h-4 text-black opacity-50'/>
+                    <AmazonWebServices className='w-6 h-4 mt-px text-black opacity-50'/>
+                    <JavaScript className='w-4 h-4 text-black opacity-50'/>
         </>
       }
       githubUrl="https://github.com/SolCaruso/vercel"

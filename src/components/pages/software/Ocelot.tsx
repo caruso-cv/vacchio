@@ -15,13 +15,13 @@ export default function Ocelot() {
       description="Modern game studio website with high-quality video content and advanced blog caching."
       techStack={
         <>
-          <Supabase className='w-4 h-4 grayscale'/>
-          <Nextjs className='w-4 h-4 grayscale opacity-50'/>
-          <Tailwind className='w-4 h-4 text-black opacity-50'/>
-          <Typescript className='w-4 h-4  text-black opacity-50'/>
-          <ReactLogo className='w-4 h-4 text-black opacity-50'/>
-          <Solana className='w-4 h-4 grayscale opacity-50'/>
-          <Vercel className='w-4 h-4 text-black opacity-50'/>
+                    <Supabase className='w-4 h-4 grayscale'/>
+                    <Nextjs className='w-4 h-4 grayscale opacity-50'/>
+                    <Tailwind className='w-4 h-4 text-black opacity-50'/>
+                    <Typescript className='w-4 h-4  text-black opacity-50'/>
+                    <ReactLogo className='w-4 h-4 text-black opacity-50'/>
+                    <Solana className='w-4 h-4 grayscale opacity-50'/>
+                    <Vercel className='w-4 h-4 text-black opacity-50'/>
         </>
       }
       githubUrl="https://github.com/SolCaruso/ocelot"
@@ -50,8 +50,8 @@ export default function Ocelot() {
       }}
       media={[
         { type: 'video', src: '/webm/MagicImage.webm', fallbackSrc: '/mp4/MagicImage.mp4' },
-        { type: 'image', src: '/png/ocelot2.png', alt: 'Ocelot Blog Page' },
-        { type: 'image', src: '/png/ocelot3.png', alt: 'Character Showcase Section' }
+        { type: 'image', src: '/webp/ocelot2.webp', alt: 'Ocelot Blog Page' },
+        { type: 'image', src: '/webp/ocelot3.webp', alt: 'Character Showcase Section' }
       ]}
     />
   )
