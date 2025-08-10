@@ -86,24 +86,20 @@ const data: { navMain: NavSection[] } = {
       url: "#",
       items: [
         {
-          title: "Portfolio Website",
-          url: "#",
-        },
-        {
           title: "Mobile Ordering App",
-          url: "#",
+          url: "https://vacchio.ca/kouyou",
         },
         {
           title: "Phone Case Store",
-          url: "#",
+          url: "https://vacchio.ca/casebase",
         },
         {
           title: "NFT Marketplace",
-          url: "#",
+          url: "https://vacchio.ca/arcanum",
         },
         {
           title: "City of Ottawa Site",
-          url: "#",
+          url: "https://vacchio.ca/ops",
         },
       ],
     },
@@ -113,23 +109,19 @@ const data: { navMain: NavSection[] } = {
       items: [
         {
           title: "Roadside Signs",
-          url: "#",
-        },
-        {
-          title: "Magazine Ads",
-          url: "#",
-        },
-        {
-          title: "Ad Campaigns",
-          url: "#",
+          url: "https://vacchio.myportfolio.com/cards",
         },
         {
           title: "Business Cards",
-          url: "#",
+          url: "https://vacchio.myportfolio.com/cards",
+        },
+        {
+          title: "Magazine Ads",
+          url: "https://vacchio.myportfolio.com/menus",
         },
         {
           title: "Menus",
-          url: "#",
+          url: "https://vacchio.myportfolio.com/menus",
         },
       ],
     },
@@ -139,15 +131,11 @@ const data: { navMain: NavSection[] } = {
       items: [
         {
           title: "Portraits",
-          url: "#",
+          url: "https://vacchio-photos.myportfolio.com/portait",
         },
         {
-          title: "Food",
-          url: "#",
-        },
-        {
-          title: "Golf Shoot",
-          url: "#",
+          title: "Urban",
+          url: "https://vacchio-photos.myportfolio.com/portfolio",
         },
       ],
     },
@@ -192,7 +180,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                             {item.items?.map((subItem) => (
                               <SidebarMenuSubItem key={subItem.title}>
                                 <SidebarMenuSubButton asChild isActive={subItem.isActive}>
-                                  <Link href={subItem.url}>{subItem.title}</Link>
+                                  <Link 
+                                    href={subItem.url}
+                                    target={subItem.url.startsWith('http') ? '_blank' : undefined}
+                                    rel={subItem.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                                  >
+                                    {subItem.title}
+                                  </Link>
                                 </SidebarMenuSubButton>
                               </SidebarMenuSubItem>
                             ))}
@@ -217,7 +211,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                       {item.items.map((subItem) => (
                         <SidebarMenuSubItem key={subItem.title}>
                           <SidebarMenuSubButton asChild isActive={subItem.isActive}>
-                            <Link href={subItem.url}>{subItem.title}</Link>
+                            <Link 
+                              href={subItem.url}
+                              target={subItem.url.startsWith('http') ? '_blank' : undefined}
+                              rel={subItem.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                            >
+                              {subItem.title}
+                            </Link>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                       ))}

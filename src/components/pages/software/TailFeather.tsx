@@ -1,5 +1,8 @@
 import React from 'react'
 import JavaScript from '@/components/logos/JavaScript'
+import HTML5 from '@/components/logos/HTML5'
+import CSSNew from '@/components/logos/CSSNew'
+import Sass from '@/components/logos/Sass'
 import ProjectLayout from '@/components/layout/ProjectLayout'
 
 export default function TailFeather() {
@@ -9,6 +12,9 @@ export default function TailFeather() {
       description="Lightweight utility-first CSS framework built with Sass, inspired by Tailwind CSS."
       techStack={
         <>
+          <HTML5 className='w-4 h-4 text-black opacity-50'/>
+          <CSSNew className='w-4 h-4 text-black opacity-50'/>
+          <Sass className='w-4 h-4 text-black opacity-50'/>
           <JavaScript className='w-4 h-4 text-black opacity-50'/>
         </>
       }

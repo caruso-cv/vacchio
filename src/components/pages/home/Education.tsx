@@ -19,7 +19,7 @@ const educationHistory: EducationItem[] = [
   },
   {
     school: 'Algonquin College',
-    program: 'Mobile/Web App Development & UX Design',
+    program: 'Web/Mobile User Experience Design',
     dates: '2022 to 2023',
   },
   {
@@ -35,7 +35,7 @@ export default function Education() {
       <h2 className="font-bold font-cantarell uppercase text-sm text-vacchio-black">Education</h2>
 
       <div className="mt-6 bg-[#E2E3E1]/20 backdrop-blur-lg rounded-lg overflow-hidden relative border z-20">
-        <div className="pt-8 px-6">
+        <div className="mt-2 lg:my-4 px-6">
           <ul className="divide-y divide-vacchio-black/10">
             {educationHistory.map(({ school, program, dates }) => (
               <li key={`${school}-${program}`} className="py-6">

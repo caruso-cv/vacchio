@@ -49,7 +49,7 @@ export default function Ocelot() {
         ]
       }}
       media={[
-        { type: 'video', src: '/webm/MagicImage.webm' },
+        { type: 'video', src: '/webm/MagicImage.webm', fallbackSrc: '/mp4/MagicImage.mp4' },
         { type: 'image', src: '/png/ocelot2.png', alt: 'Ocelot Blog Page' },
         { type: 'image', src: '/png/ocelot3.png', alt: 'Character Showcase Section' }
       ]}

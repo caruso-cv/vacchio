@@ -1,6 +1,8 @@
 import React from 'react'
 import JavaScript from '@/components/logos/JavaScript'
 import Tailwind from '@/components/logos/TailwindCSS'
+import HTML5 from '@/components/logos/HTML5'
+import CSSNew from '@/components/logos/CSSNew'
 import ProjectLayout from '@/components/layout/ProjectLayout'
 
 export default function Pokedex() {
@@ -10,6 +12,8 @@ export default function Pokedex() {
       description="Comprehensive Pokemon database application with PokeAPI integration and advanced search functionality."
       techStack={
         <>
+          <HTML5 className='w-4 h-4 text-black opacity-50'/>
+          <CSSNew className='w-4 h-4 text-black opacity-50'/>
           <JavaScript className='w-4 h-4 text-black opacity-50'/>
           <Tailwind className='w-4 h-4 text-black opacity-50'/>
         </>
@@ -48,7 +52,7 @@ export default function Pokedex() {
         ]
       }}
       media={[
-        { type: 'video', src: '/webm/pokedex.webm' },
+        { type: 'video', src: '/webm/pokedex.webm', fallbackSrc: '/mp4/pokedex.mp4' },
         { type: 'image', src: '/webp/pokedex2.webp', alt: 'Pokedex Application Interface' },
         { type: 'image', src: '/webp/pokedex3.webp', alt: 'Pokemon Detail Modal' }
       ]}

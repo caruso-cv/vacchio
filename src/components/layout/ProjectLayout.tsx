@@ -7,6 +7,7 @@ import ScrollColorVideo from '@/components/ui/ScrollColorVideo'
 interface MediaItem {
   type: 'video' | 'image'
   src: string
+  fallbackSrc?: string
   alt?: string
 }
 
@@ -88,6 +89,7 @@ export default function ProjectLayout({
                             {media[0].type === 'video' ? (
                                 <ScrollColorVideo
                                     src={media[0].src}
+                                    fallbackSrc={media[0].fallbackSrc}
                                     className="w-full h-auto"
                                 />
                             ) : (
@@ -128,6 +130,7 @@ export default function ProjectLayout({
                             {media[1].type === 'video' ? (
                                 <ScrollColorVideo
                                     src={media[1].src}
+                                    fallbackSrc={media[1].fallbackSrc}
                                     className="w-full h-auto"
                                 />
                             ) : (
@@ -164,6 +167,7 @@ export default function ProjectLayout({
                             {media[2].type === 'video' ? (
                                 <ScrollColorVideo
                                     src={media[2].src}
+                                    fallbackSrc={media[2].fallbackSrc}
                                     className="w-full h-auto"
                                 />
                             ) : (

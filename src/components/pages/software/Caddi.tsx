@@ -54,7 +54,7 @@ export default function Caddi() {
       }}
       media={[
         { type: 'image', src: '/webp/caddi2.webp', alt: 'Caddi AI Interface' },
-        { type: 'video', src: '/webm/caddi.webm' },
+        { type: 'video', src: '/webm/caddi.webm', fallbackSrc: '/mp4/caddi.mp4' },
         { type: 'image', src: '/webp/caddi3.webp', alt: '3D Divot Tool Builder' }
       ]}
     />

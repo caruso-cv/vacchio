@@ -51,7 +51,7 @@ export default function Neutron() {
         ]
       }}
       media={[
-        { type: 'video', src: '/webm/neutron.webm' },
+        { type: 'video', src: '/webm/neutron.webm', fallbackSrc: '/mp4/neutron.mp4' },
         { type: 'image', src: '/webp/neutron2.webp', alt: 'Neutron Controls Blog Page' },
         { type: 'image', src: '/webp/neutron3.webp', alt: 'Character Showcase Section' }
       ]}

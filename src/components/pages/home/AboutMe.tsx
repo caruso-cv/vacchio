@@ -22,23 +22,23 @@ export default function AboutMe() {
           <div className="pt-8 pb-6">
 
             {/* Main Content Grid - 1/3 Image + 2/3 Content */}
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
 
               {/* First Column - Image (1/3) */}
-              <div>
+              <div className="col-span-1 md:col-span-1 lg:col-span-1">
                 {/* Profile Image */}
-                <div className="flex justify-start">
+                <div className="flex justify-start lg:justify-start justify-center">
                   <ScrollColorImage 
                     src="/webp/carmen.webp" 
                     alt="Carmen Vacchio" 
-                    className="rounded-lg object-cover w-[400px] h-[400px] border opacity-90"
+                    className="rounded-lg object-cover w-full md:max-w-[400px] md:h-[400px] h-auto aspect-square border opacity-90"
                     containerClassName=" overflow-hidden"
                   />
                 </div>
               </div>
 
               {/* Content Area (2/3) */}
-              <div className="md:col-span-2 flex flex-col justify-between h-full ">
+              <div className="col-span-1 md:col-span-2 lg:col-span-2 flex flex-col justify-between h-full">
 
                 {/* Contact Section - inside right column, spaced between */}
                 <div className='hidden xl:flex mb-8 w-full justify-between'>
@@ -59,7 +59,12 @@ export default function AboutMe() {
                     </div>
                     <div className="flex flex-col w-32 justify-between">
                       <span className="font-bold text-base text-vacchio-black">Email</span>
-                      <span className="text-sm text-vacchio-black/50">carmen@zolas.ca</span>
+                      <a 
+                        href="mailto:carmen@zolas.ca" 
+                        className="text-sm text-vacchio-black/50 hover:underline transition-all duration-200 cursor-pointer"
+                      >
+                        carmen@zolas.ca
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4.5 pr-12">
@@ -69,7 +74,14 @@ export default function AboutMe() {
                     </div>
                     <div className="flex flex-col w-32 justify-between">
                       <span className="font-bold text-base text-vacchio-black">GitHub</span>
-                      <span className="text-sm text-vacchio-black/50">github.com/SolCaruso</span>
+                      <a 
+                        href="https://github.com/SolCaruso" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-vacchio-black/50 hover:underline transition-all duration-200 cursor-pointer"
+                      >
+                        github.com/SolCaruso
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4.5">
@@ -79,16 +91,23 @@ export default function AboutMe() {
                     </div>
                     <div className="flex flex-col w-32 justify-between">
                       <span className="font-bold text-base text-vacchio-black">LinkedIn</span>
-                      <span className="text-sm text-vacchio-black/50">linkedin.com/in/carmenvac</span>
+                      <a 
+                        href="https://linkedin.com/in/carmenvac" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-vacchio-black/50 hover:underline transition-all duration-200 cursor-pointer"
+                      >
+                        linkedin.com/in/carmenvac
+                      </a>
                     </div>
                   </div>
                 </div>
 
                 {/* Bio, Brands, and Skills Grid */}
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
 
                   {/* Bio Column */}
-                  <div className="md:col-span-2 flex flex-col justify-end pr-12">
+                  <div className="md:col-span-1 lg:col-span-2 flex flex-col justify-end lg:pr-12 pr-0">
 
                     {/* BIO */}
                     <div className='mb-6'>
@@ -115,7 +134,7 @@ export default function AboutMe() {
                   </div>
 
                   {/* Brands and Skills Column */}
-                  <div className="space-y-12">
+                  <div className="space-y-12 hidden lg:block lg:col-span-1">
 
                     {/* FAVOURITE BRANDS */}
                     <div>

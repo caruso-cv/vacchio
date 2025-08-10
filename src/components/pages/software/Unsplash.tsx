@@ -1,5 +1,7 @@
 import React from 'react'
 import JavaScript from '@/components/logos/JavaScript'
+import HTML5 from '@/components/logos/HTML5'
+import CSSNew from '@/components/logos/CSSNew'
 import ProjectLayout from '@/components/layout/ProjectLayout'
 
 export default function Unsplash() {
@@ -9,6 +11,8 @@ export default function Unsplash() {
       description="Photography browsing application with Unsplash API integration and camera specifications display."
       techStack={
         <>
+          <HTML5 className='w-4 h-4 text-black opacity-50'/>
+          <CSSNew className='w-4 h-4 text-black opacity-50'/>
           <JavaScript className='w-4 h-4 text-black opacity-50'/>
         </>
       }

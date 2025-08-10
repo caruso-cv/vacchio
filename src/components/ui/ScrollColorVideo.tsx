@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 interface ScrollColorVideoProps {
   src: string
+  fallbackSrc?: string
   className?: string
   containerClassName?: string
   muted?: boolean
@@ -11,6 +12,7 @@ interface ScrollColorVideoProps {
 
 export default function ScrollColorVideo({
   src,
+  fallbackSrc,
   className = 'w-full h-auto transition-all duration-700 ease-out',
   containerClassName = 'mb-12 rounded-lg overflow-hidden border',
   muted = true,
@@ -84,6 +86,7 @@ export default function ScrollColorVideo({
         preload="metadata"
       >
         <source src={src} type="video/webm" />
+        {fallbackSrc && <source src={fallbackSrc} type="video/mp4" />}
       </video>
     </div>
   )
