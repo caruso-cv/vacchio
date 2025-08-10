@@ -97,7 +97,7 @@ export default function Footer() {
                   Unsplash Clone
                 </Link>
                 <Link 
-                  href="/software/scss" 
+                  href="/software/tailfeather" 
                   className="text-xs text-vacchio-black/60 hover:text-vacchio-black transition-colors duration-200 cursor-pointer"
                 >
                   SCSS Framework
