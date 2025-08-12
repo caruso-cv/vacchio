@@ -87,19 +87,19 @@ const data: { navMain: NavSection[] } = {
       items: [
         {
           title: "Mobile Ordering App",
-          url: "https://vacchio.ca/kouyou",
+          url: "https://vacc0003.github.io/final/kouyou.html",
         },
         {
           title: "Phone Case Store",
-          url: "https://vacchio.ca/casebase",
+          url: "https://vacc0003.github.io/final/casebase.html",
         },
         {
           title: "NFT Marketplace",
-          url: "https://vacchio.ca/arcanum",
+          url: "https://vacc0003.github.io/final/arcanum.html",
         },
         {
           title: "City of Ottawa Site",
-          url: "https://vacchio.ca/ops",
+          url: "https://vacc0003.github.io/final/ops.html",
         },
       ],
     },

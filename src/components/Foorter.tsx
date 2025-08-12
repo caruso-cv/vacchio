@@ -114,7 +114,7 @@ export default function Footer() {
               </h3>
               <div className="flex flex-col gap-2">
                 <a 
-                  href="https://vacchio.ca/kouyou" 
+                  href="https://vacc0003.github.io/final/kouyou.html" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-vacchio-black/60 hover:text-vacchio-black transition-colors duration-200 cursor-pointer"
@@ -122,7 +122,7 @@ export default function Footer() {
                   Mobile Ordering App
                 </a>
                 <a 
-                  href="https://vacchio.ca/casebase" 
+                  href="https://vacc0003.github.io/final/casebase.html" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-vacchio-black/60 hover:text-vacchio-black transition-colors duration-200 cursor-pointer"
@@ -130,7 +130,7 @@ export default function Footer() {
                   Phone Case Store
                 </a>
                 <a 
-                  href="https://vacchio.ca/arcanum" 
+                  href="https://vacc0003.github.io/final/arcanum.html" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-vacchio-black/60 hover:text-vacchio-black transition-colors duration-200 cursor-pointer"
@@ -138,7 +138,7 @@ export default function Footer() {
                   NFT Marketplace
                 </a>
                 <a 
-                  href="https://vacchio.ca/ops" 
+                  href="https://vacc0003.github.io/final/ops.html" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-vacchio-black/60 hover:text-vacchio-black transition-colors duration-200 cursor-pointer"
