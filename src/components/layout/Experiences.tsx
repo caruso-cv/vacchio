@@ -20,7 +20,7 @@ export default function ExperienceCard({ period, title, company, description, te
   const CardContent = () => (
     <>
       <div className={cn(
-        "absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-50 ease-in-out-quad",
+        "absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad",
         isHovered && "bg-[#E2E3E1]/20 border-vacchio-black/20 backdrop-blur-lg"
       )}></div>
       <div className="flex gap-8 relative z-10 items-start">
@@ -32,7 +32,7 @@ export default function ExperienceCard({ period, title, company, description, te
         {/* Job details on the right */}
         <div className="flex-1">
           <h3 className={cn(
-            "text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-50 ease-in-out-quad",
+            "text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad",
             isHovered ? "text-vacchio-blue" : "text-vacchio-black"
           )}>
             {title}

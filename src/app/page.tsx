@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import ExperienceCard from '../components/layout/Experiences'
+import GitHub from '../components/logos/GitHub'
+import LinkedIn from '../components/logos/LinkedIn'
+import CodePen from '../components/logos/CodePen'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about')
@@ -94,19 +97,55 @@ export default function Home() {
 
         {/* Pagination Navigation */}
         <nav className="space-y-4 mt-12">
-          <div className={`flex items-center gap-4 group ${activeSection === 'about' ? 'active' : ''}`}>
-            <div className={`h-px transition-all duration-200 ${activeSection === 'about' ? 'w-16 bg-vacchio-black/70' : 'w-8 bg-vacchio-black/30 group-hover:w-16 group-hover:bg-vacchio-black/70'}`}></div>
-            <a href="#about" onClick={(e) => handleNavClick('about', e)} className={`text-xs font-bold uppercase transition-colors ${activeSection === 'about' ? 'text-vacchio-black/70' : 'text-vacchio-black/30 group-hover:text-vacchio-black/70'}`}>ABOUT</a>
+          <div className="w-fit group">
+            <a href="#about" onClick={(e) => handleNavClick('about', e)} className={`text-xs font-bold uppercase transition-colors flex items-center gap-4 ${activeSection === 'about' ? 'text-vacchio-black/70' : 'text-vacchio-black/30 group-hover:text-vacchio-black/70'}`}>
+              <div className={`h-px transition-all duration-200 ${activeSection === 'about' ? 'w-16 bg-vacchio-black/70' : 'w-8 bg-vacchio-black/30 group-hover:w-16 group-hover:bg-vacchio-black/70'}`}></div>
+              ABOUT
+            </a>
           </div>
-          <div className={`flex items-center gap-4 group ${activeSection === 'experience' ? 'active' : ''}`}>
-            <div className={`h-px transition-all duration-200 ${activeSection === 'experience' ? 'w-16 bg-vacchio-black/70' : 'w-8 bg-vacchio-black/30 group-hover:w-16 group-hover:bg-vacchio-black/70'}`}></div>
-            <a href="#experience" onClick={(e) => handleNavClick('experience', e)} className={`text-xs font-bold uppercase transition-colors ${activeSection === 'experience' ? 'text-vacchio-black/70' : 'text-vacchio-black/30 group-hover:text-vacchio-black/70'}`}>EXPERIENCE</a>
+          <div className="w-fit group">
+            <a href="#experience" onClick={(e) => handleNavClick('experience', e)} className={`text-xs font-bold uppercase transition-colors flex items-center gap-4 ${activeSection === 'experience' ? 'text-vacchio-black/70' : 'text-vacchio-black/30 group-hover:text-vacchio-black/70'}`}>
+              <div className={`h-px transition-all duration-200 ${activeSection === 'experience' ? 'w-16 bg-vacchio-black/70' : 'w-8 bg-vacchio-black/30 group-hover:w-16 group-hover:bg-vacchio-black/70'}`}></div>
+              EXPERIENCE
+            </a>
           </div>
-          <div className={`flex items-center gap-4 group ${activeSection === 'projects' ? 'active' : ''}`}>
-            <div className={`h-px transition-all duration-200 ${activeSection === 'projects' ? 'w-16 bg-vacchio-black/70' : 'w-8 bg-vacchio-black/30 group-hover:w-16 group-hover:bg-vacchio-black/70'}`}></div>
-            <a href="#projects" onClick={(e) => handleNavClick('projects', e)} className={`text-xs font-bold uppercase transition-colors ${activeSection === 'projects' ? 'text-vacchio-black/70' : 'text-vacchio-black/30 group-hover:text-vacchio-black/70'}`}>PROJECTS</a>
+          <div className="w-fit group">
+            <a href="#projects" onClick={(e) => handleNavClick('projects', e)} className={`text-xs font-bold uppercase transition-colors flex items-center gap-4 ${activeSection === 'projects' ? 'text-vacchio-black/70' : 'text-vacchio-black/30 group-hover:text-vacchio-black/70'}`}>
+              <div className={`h-px transition-all duration-200 ${activeSection === 'projects' ? 'w-16 bg-vacchio-black/70' : 'w-8 bg-vacchio-black/30 group-hover:w-16 group-hover:bg-vacchio-black/70'}`}></div>
+              PROJECTS
+            </a>
           </div>
         </nav>
+
+        {/* Social Media Links */}
+        <div className="mt-auto mb-14">
+          <div className="flex gap-4">
+            <a 
+              href="https://github.com/SolCaruso" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-200 ease-in-out-quad"
+            >
+              <GitHub />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/carmenvac/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-200 ease-in-out-quad"
+            >
+              <LinkedIn />
+            </a>
+            <a 
+              href="https://codepen.io/vacc0003" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-200 ease-in-out-quad"
+            >
+              <CodePen />
+            </a>
+          </div>
+        </div>
       </div>
       
       {/* Right side */}
