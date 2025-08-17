@@ -6,6 +6,7 @@ import GitHub from '../components/logos/GitHub'
 import LinkedIn from '../components/logos/LinkedIn'
 import CodePen from '../components/logos/CodePen'
 import { TextScramble } from '../components/ui/text-scramble'
+import { AnimatedGroup } from '../components/ui/animated-group'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about')
@@ -103,7 +104,20 @@ export default function Home() {
         </div>
 
         {/* Pagination Navigation */}
-        <nav className="space-y-4 mt-12">
+        <AnimatedGroup 
+          className="space-y-4 mt-12" 
+          preset="slide"
+          variants={{
+            container: {
+              visible: {
+                transition: {
+                  staggerChildren: 0.1,
+                  delayChildren: 0.2,
+                },
+              },
+            },
+          }}
+        >
           <div className="w-fit group">
             <a href="#about" onClick={(e) => handleNavClick('about', e)} className={`text-xs font-bold uppercase transition-colors flex items-center gap-4 ${activeSection === 'about' ? 'text-vacchio-black/70' : 'text-vacchio-black/30 group-hover:text-vacchio-black/70'}`}>
               <div className={`h-px transition-all duration-200 ${activeSection === 'about' ? 'w-16 bg-vacchio-black/70' : 'w-8 bg-vacchio-black/30 group-hover:w-16 group-hover:bg-vacchio-black/70'}`}></div>
@@ -122,7 +136,7 @@ export default function Home() {
               PROJECTS
             </a>
           </div>
-        </nav>
+        </AnimatedGroup>
 
         {/* Social Media Links */}
         <div className="mt-auto mb-14">
@@ -178,7 +192,33 @@ export default function Home() {
             id="experience" 
             className="mb-12 pt-12 group"
           >
-            <div className="space-y-14 relative group/experience">
+            <AnimatedGroup 
+              className="space-y-14 relative group/experience"
+              variants={{
+                container: {
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.05,
+                    },
+                  },
+                },
+                item: {
+                  hidden: { opacity: 0, y: 40, filter: 'blur(4px)' },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    filter: 'blur(0px)',
+                    transition: {
+                      duration: 1.2,
+                      type: 'spring',
+                      bounce: 0.3,
+                    },
+                  },
+                },
+              }}
+            >
               {experiences.map((experience, index) => (
                 <ExperienceCard
                   key={index}
@@ -194,7 +234,7 @@ export default function Home() {
                   }}
                 />
               ))}
-            </div>
+            </AnimatedGroup>
           </section>
 
           {/* Projects */}
