@@ -41,6 +41,7 @@
   --color-vacchio-yellow: var(--vacchio-yellow);
   --color-vacchio-dark-yellow: var(--vacchio-dark-yellow);
   --color-vacchio-black: var(--vacchio-black);
+  --color-vacchio-blue: var(--vacchio-blue);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -151,6 +152,7 @@ body {
   --vacchio-yellow: #E7C054;
   --vacchio-dark-yellow: #A57300;
   --vacchio-black: #1D1D1F;
+  --vacchio-blue: #0089EA;
 
 }
 
@@ -163,6 +165,17 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Custom text selection color */
+  ::selection {
+    background-color: var(--vacchio-yellow);
+    color: var(--vacchio-dark-yellow);
+  }
+  
+  ::-moz-selection {
+    background-color: var(--vacchio-yellow);
+    color: var(--vacchio-dark-yellow);
   }
 
   a {
