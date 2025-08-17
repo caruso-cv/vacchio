@@ -2,6 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { useState } from 'react'
 import { cn } from '../../lib/utils'
 import { motion } from 'framer-motion'
+import { TextShimmer } from '@/components/ui/text-shimmer'
 
 interface ExperienceCardProps {
   period: string
@@ -53,7 +54,9 @@ export default function ExperienceCard({ period, title, company, description, te
               </motion.div>
             )}
           </h3>
-          <p className="text-sm text-vacchio-black/30 mb-3 font-medium">{company}</p>
+          <TextShimmer className="text-sm mb-3 font-medium text-vacchio-black/30" duration={3}>
+            {company}
+          </TextShimmer>
           <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm">
             {description}
           </p>

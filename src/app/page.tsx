@@ -5,6 +5,7 @@ import ExperienceCard from '../components/layout/Experiences'
 import GitHub from '../components/logos/GitHub'
 import LinkedIn from '../components/logos/LinkedIn'
 import CodePen from '../components/logos/CodePen'
+import { TextScramble } from '../components/ui/text-scramble'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about')
@@ -13,7 +14,7 @@ export default function Home() {
   const experiences = [
           {
         period: "2024 — PRESENT",
-        title: "Frontend Developer",
+        title: "Software Developer",
         company: "Ocelot Technologies Ltd.",
         description: "Built and optimized a Next.js-powered game-studio site with Supabase backend, achieving sub-100 ms server response times and 0.66 s FCP. Developed interactive UI components for gamified web apps using React, Next.js, TypeScript, and Tailwind.",
         technologies: ["TypeScript", "React", "Next.js", "Tailwind", "Supabase"],
@@ -88,7 +89,13 @@ export default function Home() {
       <div className="w-1/2 flex flex-col px-8 py-8 pt-24 sticky top-0 h-screen">
         {/* Name at top */}
         <div className="mb-12">
-          <h1 className="text-5xl font-inter text-vacchio-black/80 pb-2 font-semibold">Carmen Vacchio</h1>
+          <TextScramble 
+            className="text-5xl font-inter text-vacchio-black/80 pb-2 font-semibold"
+            duration={1.2}
+            speed={0.03}
+          >
+            Carmen Vacchio
+          </TextScramble>
           <p className="text-3xl font-regular font-cormorant-garamond text-vacchio-black/70 pb-4">Software Developer</p>
           <p className="text-base font-regular text-vacchio-black/50 leading-relaxed max-w-sm">
             I build accessible, pixel perfect web experiences that blend engineering and design.
