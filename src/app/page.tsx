@@ -201,6 +201,7 @@ export default function Home() {
                     opacity: 1,
                     transition: {
                       staggerChildren: 0.05,
+                      delayChildren: 0.4,
                     },
                   },
                 },
