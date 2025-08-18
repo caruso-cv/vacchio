@@ -1,8 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@theme inline {
+/**************************************************** 
+                  Global Variables
+ *****************************************************/
 
+@theme inline {
   --font-sans: var(--font-cantarell);
   --font-serif: var(--font-cormorant-garamond);
   --font-display: var(--font-playfair);
@@ -57,7 +60,6 @@
   --text-shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.1);
   --text-shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.1);
   --text-shadow-2xl: 0 16px 32px rgba(0, 0, 0, 0.1);
-  
 
   /* Custom Easing Curves */
   --ease-in-quad:    cubic-bezier(.55, .085, .68, .53);
@@ -89,7 +91,6 @@
   --breakpoint-3xl: 120rem;      /* 1920px */
   --breakpoint-4xl: 161.25rem;   /* 2580px */
   --breakpoint-5xl: 192rem;      /* 3072px */
-
 }
 
 /* Custom Font Classes */
@@ -197,5 +198,80 @@ body {
     -webkit-user-drag: none;
   }
   
+}
+
+
+/**************************************************** 
+                  Load-in Animations
+ *****************************************************/
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+@keyframes slideInSimple {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pagination items */
+.pagination-item {
+  animation: slideInSimple 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.pagination-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.pagination-item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.pagination-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Experience cards */
+.experience-card {
+  animation: slideInFromBottom 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  opacity: 0; /* Start invisible, CSS animation will handle everything */
+  transition: opacity 0.2s ease-out; /* For hover effects after animation */
+}
+
+
+/**************************************************** 
+                  Hover Effects
+ *****************************************************/
+
+.group\/experience:hover .experience-card {
+  opacity: 0.5 !important; /* Fade other cards when any card is hovered */
+}
+
+.group\/experience:hover .experience-card:hover {
+  opacity: 1 !important; /* Restore full opacity for directly hovered card */
+}
+
+.experience-card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.experience-card:nth-child(2) {
+  animation-delay: 0.55s;
 }
 
