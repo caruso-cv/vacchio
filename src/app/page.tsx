@@ -18,7 +18,7 @@ export default function Home() {
           </h1>
           <p className="text-3xl font-regular font-cormorant-garamond text-vacchio-black/70 pb-4">Software Developer</p>
           <p className="text-base font-regular text-vacchio-black/50 leading-relaxed max-w-sm">
-            Passionate about creating software that combines thoughtful design with robust engineering.
+            Passionate about building software that combines thoughtful design with robust engineering.
           </p>
         </div>
         <Pagination />
