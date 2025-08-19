@@ -254,6 +254,47 @@ body {
   transition: opacity 0.2s ease-out; /* For hover effects after animation */
 }
 
+/* Project cards */
+.project-card {
+  animation: slideInFromBottom 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  opacity: 0; /* Start invisible, CSS animation will handle everything */
+  transition: opacity 0.2s ease-out; /* For hover effects after animation */
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.6s;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 0.65s;
+}
+
+.project-card:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.project-card:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.project-card:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.resume-button {
+  animation: slideInFromBottom 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  opacity: 0;
+}
+
+.resume-button {
+  animation-delay: 0.65s;
+}
+
+/* Project card image transitions */
+.project-card img {
+  transition: opacity 0.2s ease-out;
+}
+
 
 /**************************************************** 
                   Hover Effects
@@ -267,6 +308,44 @@ body {
   opacity: 1 !important; /* Restore full opacity for directly hovered card */
 }
 
+/* Project hover effects */
+.group\/projects:hover .project-card {
+  opacity: 0.5 !important; /* Fade other cards when any card is hovered */
+}
+
+.group\/projects:hover .project-card:hover {
+  opacity: 1 !important; /* Restore full opacity for directly hovered card */
+}
+
+/* Project card image transitions - ensure they follow the same opacity rules */
+.group\/projects:hover .project-card img {
+  opacity: 0.5 !important;
+  transition: opacity 0.2s ease-out;
+}
+
+.group\/projects:hover .project-card:hover img {
+  opacity: 0.6 !important; /* Keep the original image opacity when card is hovered */
+  transition: opacity 0.2s ease-out;
+}
+
+/* Individual project card hover effects for the specific group names */
+.group\/caddi:hover .project-card,
+.group\/pokedex:hover .project-card,
+.group\/unsplash:hover .project-card,
+.group\/neutron:hover .project-card,
+.group\/tailfeather:hover .project-card {
+  opacity: 1 !important;
+}
+
+.group\/caddi:hover .project-card img,
+.group\/pokedex:hover .project-card img,
+.group\/unsplash:hover .project-card img,
+.group\/neutron:hover .project-card img,
+.group\/tailfeather:hover .project-card img {
+  opacity: 0.6 !important;
+  transition: opacity 0.2s ease-out;
+}
+
 .experience-card:nth-child(1) {
   animation-delay: 0.5s;
 }
@@ -274,4 +353,3 @@ body {
 .experience-card:nth-child(2) {
   animation-delay: 0.55s;
 }
-

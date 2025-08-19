@@ -3,11 +3,12 @@ import { TextShimmer } from '../ui/text-shimmer'
 
 export default function Experiences() {
   return (
-    <section 
-      id="experience" 
-      className="mb-12 pt-12 group"
-    >
-      <div className="space-y-14 relative group/experience">
+    <>
+      <section 
+        id="experience" 
+        className="mb-18 pt-18 group"
+      >
+      <div className="space-y-14 relative group/experience mb-12">
         {/* Ocelot Experience Card */}
         <a 
           href="https://ocelot-pearl.vercel.app/"
@@ -15,7 +16,7 @@ export default function Experiences() {
           rel="noopener noreferrer"
           className="relative group/ocelot block experience-card"
         >
-          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/ocelot:bg-[#E2E3E1]/20 group-hover/ocelot:border-vacchio-black/20 group-hover/ocelot:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/ocelot:bg-[#E2E3E1]/40 group-hover/ocelot:shadow-xs group-hover/ocelot:border-vacchio-black/10 group-hover/ocelot:backdrop-blur-lg"></div>
           <div className="flex gap-8 relative z-10 items-start">
             <div className="flex-shrink-0 py-1.5 w-32">
               <p className="text-xs text-vacchio-black/40 font-semibold uppercase">2024 — PRESENT</p>
@@ -23,11 +24,11 @@ export default function Experiences() {
             <div className="flex-1">
               <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/ocelot:text-vacchio-blue">
                 SOFTWARE DEVELOPER
-                <div className="transition-all duration-500 ease-in-out group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue">
+                <div className="transition-all duration-200 ease-in-out group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue">
                   <ArrowUpRight className="w-4 h-4 mt-1" />
                 </div>
               </h3>
-              <TextShimmer className="text-sm mb-3 font-medium text-vacchio-black/30" duration={3}>
+              <TextShimmer className="text-sm font-medium text-vacchio-black/30" duration={3}>
                 Ocelot Technologies Ltd.
               </TextShimmer>
               <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm">
@@ -51,15 +52,15 @@ export default function Experiences() {
           rel="noopener noreferrer"
           className="relative group/neutron block experience-card"
         >
-          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/neutron:bg-[#E2E3E1]/20 group-hover/neutron:border-vacchio-black/20 group-hover/neutron:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/neutron:bg-[#E2E3E1]/40 group-hover/neutron:shadow-xs group-hover/neutron:border-vacchio-black/10 group-hover/neutron:backdrop-blur-lg"></div>
           <div className="flex gap-8 relative z-10 items-start">
             <div className="flex-shrink-0 py-1.5 w-32">
-              <p className="text-xs text-vacchio-black/40 font-semibold uppercase">Jan. 25 — Apr. 25</p>
+              <p className="text-xs text-vacchio-black/40 font-semibold uppercase">Jan — Apr 2025</p>
             </div>
             <div className="flex-1">
               <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/neutron:text-vacchio-blue">
                 SOFTWARE DEVELOPER • CO-OP
-                <div className="transition-all duration-500 ease-in-out group-hover/neutron:translate-x-1 group-hover/neutron:-translate-y-1 text-vacchio-black/60 group-hover/neutron:text-vacchio-blue">
+                <div className="transition-all duration-200 ease-in-out group-hover/neutron:translate-x-1 group-hover/neutron:-translate-y-1 text-vacchio-black/60 group-hover/neutron:text-vacchio-blue">
                   <ArrowUpRight className="w-4 h-4 mt-1" />
                 </div>
               </h3>
@@ -83,6 +84,22 @@ export default function Experiences() {
           </div>
         </a>
       </div>
-    </section>
-  )
+
+                    {/* View Full Resume Button */}
+       <div className="mb-22 relative z-20 resume-button">
+         <a 
+           href="https://drive.google.com/file/d/1V3Ge1V0qLqDq0mtDPI68vQcOwzeuqNjJ/view?usp=sharing"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-colors duration-200 ease-in-out-quad text-vacchio-black/80 hover:text-vacchio-blue group/button"
+         >
+           <span>VIEW FULL RESUME</span>
+           <div className="transition-all duration-200 ease-in-out group-hover/button:translate-x-1 group-hover/button:-translate-y-1 text-vacchio-black/80 group-hover/button:text-vacchio-blue">
+             <ArrowUpRight className="w-4 h-4" />
+           </div>
+         </a>
+       </div>
+     </section>
+   </>
+ )
 }

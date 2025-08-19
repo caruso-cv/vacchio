@@ -7,7 +7,7 @@ export default function Pagination() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 300
+      const scrollPosition = window.scrollY
       
       const aboutElement = document.getElementById('about')
       const experienceElement = document.getElementById('experience')
@@ -15,30 +15,23 @@ export default function Pagination() {
       
       if (aboutElement && experienceElement && projectsElement) {
         const aboutTop = aboutElement.offsetTop
-        const aboutHeight = aboutElement.offsetHeight
         const experienceTop = experienceElement.offsetTop
-        const experienceHeight = experienceElement.offsetHeight
         const projectsTop = projectsElement.offsetTop
         
-        // When at the very top, highlight about
-        if (scrollPosition < 400) {
+        // Section detection based on scroll position with proper thresholds
+        if (scrollPosition < experienceTop - 200) {
           setActiveSection('about')
-        }
-        // Trigger experience when halfway through about
-        else if (scrollPosition >= aboutTop + (aboutHeight / 2) && scrollPosition < experienceTop + (experienceHeight / 2)) {
+        } else if (scrollPosition < projectsTop - 200) {
           setActiveSection('experience')
-        }
-        // Trigger projects when halfway through experience
-        else if (scrollPosition >= experienceTop + (experienceHeight / 2) && scrollPosition < projectsTop) {
-          setActiveSection('projects')
-        }
-        // When actually in the projects section
-        else if (scrollPosition >= projectsTop) {
+        } else {
           setActiveSection('projects')
         }
       }
     }
 
+    // Call handleScroll immediately to set initial state
+    handleScroll()
+    
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])

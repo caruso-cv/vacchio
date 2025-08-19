@@ -1,7 +1,9 @@
 import Experience from '../components/layout/Experience'
+import Projects from '../components/layout/Projects'
 import Pagination from '../components/layout/Pagination'
 import About from '../components/layout/About'
 import SocialLinks from '../components/footer/SocialLinks'
+import Links from '../components/layout/Links'
 
 export default function Home() {
 
@@ -16,7 +18,7 @@ export default function Home() {
           </h1>
           <p className="text-3xl font-regular font-cormorant-garamond text-vacchio-black/70 pb-4">Software Developer</p>
           <p className="text-base font-regular text-vacchio-black/50 leading-relaxed max-w-sm">
-            I build accessible, pixel perfect web experiences that blend engineering and design.
+            Passionate about creating software that combines thoughtful design with robust engineering.
           </p>
         </div>
         <Pagination />
@@ -28,9 +30,11 @@ export default function Home() {
         <div className="p-8 pt-24 max-w-2xl">
           <About />
           <Experience />
+          <Projects />
+          <Links />
         </div>
       </div>
-      
+
     </div>
   )
 }
