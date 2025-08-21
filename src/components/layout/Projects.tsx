@@ -5,8 +5,16 @@ export default function Projects() {
   return (
     <section 
       id="projects" 
-      className="mb-18 pt-12 group"
+      className="mb-18 pt-10 group"
     >
+
+      {/* Divider */}
+      <div className="flex items-center mb-10 opacity-50">
+          <div className="flex-1 h-px bg-vacchio-black/20"></div>
+          <span className="px-4 text-xs font-medium text-vacchio-black/40 uppercase tracking-wider select-text">Projects</span>
+          <div className="flex-1 h-px bg-vacchio-black/20"></div>
+      </div>
+
       <div className="space-y-10 relative group/projects mb-10">
 
         {/* Caddi Project Card */}

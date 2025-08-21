@@ -6,8 +6,16 @@ export default function Experiences() {
     <>
       <section 
         id="experience" 
-        className="mb-18 pt-18 group"
+        className="mb-18 pt-14 group"
       >
+
+      {/* Divider */}
+      <div className="flex items-center mb-10 opacity-50">
+        <div className="flex-1 h-px bg-vacchio-black/20"></div>
+        <span className="px-4 text-xs font-medium text-vacchio-black/40 uppercase tracking-wider select-text">Experience</span>
+        <div className="flex-1 h-px bg-vacchio-black/20"></div>
+      </div>
+      
       <div className="space-y-14 relative group/experience mb-12">
         {/* Ocelot Experience Card */}
         <a 
