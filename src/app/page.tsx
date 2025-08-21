@@ -4,6 +4,7 @@ import Pagination from '../components/layout/Pagination'
 import About from '../components/layout/About'
 import SocialLinks from '../components/footer/SocialLinks'
 import Links from '../components/layout/Links'
+import Footer from '../components/footer/Footer'
 
 export default function Home() {
 
@@ -32,6 +33,7 @@ export default function Home() {
           <Experience />
           <Projects />
           <Links />
+          <Footer />
         </div>
       </div>
 

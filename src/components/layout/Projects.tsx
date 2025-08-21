@@ -28,20 +28,20 @@ export default function Projects() {
               />
             </div>
             <div className="flex-1">
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/caddi:text-vacchio-blue">
+              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/caddi:text-vacchio-blue select-text">
                 CADDI AI INC.
                 <div className="transition-all duration-200 ease-in-out group-hover/caddi:translate-x-1 group-hover/caddi:-translate-y-1 text-vacchio-black/60 group-hover/caddi:text-vacchio-blue">
                   <ArrowUpRight className="w-4 h-4 mt-1" />
                 </div>
               </h3>
-              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm">
+              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
                 E-commerce platform built with Next.js and Supabase, featuring a shopping cart, 3D product builder, and payment integration.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">Three.js</span>
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">Next.js</span>
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">Stripe</span>
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">Supabase</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">Three.js</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">Next.js</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">Stripe</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">Supabase</span>
               </div>
             </div>
           </div>
@@ -66,20 +66,20 @@ export default function Projects() {
               />
             </div>
             <div className="flex-1">
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/pokedex:text-vacchio-blue">
+              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/pokedex:text-vacchio-blue select-text">
                 POKEDEX
                 <div className="transition-all duration-200 ease-in-out group-hover/pokedex:translate-x-1 group-hover/pokedex:-translate-y-1 text-vacchio-black/60 group-hover/pokedex:text-vacchio-blue">
                   <ArrowUpRight className="w-4 h-4 mt-1" />
                 </div>
               </h3>
-              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm">
+              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
                 Interactive Pokemon database with search, filtering, and detailed information. Built with the PokeAPI for real-time data.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">HTML + CSS</span>
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">JavaScript</span>
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">Tailwind</span>
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">PokeAPI</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">HTML + CSS</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">JavaScript</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">Tailwind</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">PokeAPI</span>
               </div>
             </div>
           </div>
@@ -104,19 +104,19 @@ export default function Projects() {
               />
             </div>
             <div className="flex-1">
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/unsplash:text-vacchio-blue">
+              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/unsplash:text-vacchio-blue select-text">
                 UNSPLASH CLONE
                 <div className="transition-all duration-200 ease-in-out group-hover/unsplash:translate-x-1 group-hover/unsplash:-translate-y-1 text-vacchio-black/60 group-hover/unsplash:text-vacchio-blue">
                   <ArrowUpRight className="w-4 h-4 mt-1" />
                 </div>
               </h3>
-              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm">
+              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
                 A fun short school project of an Unsplash page. Features include download functionality, responsive design, and image optimization.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">HTML + CSS</span>
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">JavaScript</span>
-                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full">Tailwind</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">HTML + CSS</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">JavaScript</span>
+                <span className="px-3 py-1 text-vacchio-blue bg-vacchio-blue/8 text-xs rounded-full select-text">Tailwind</span>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Projects() {
            href="https://drive.google.com/file/d/1V3Ge1V0qLqDq0mtDPI68vQcOwzeuqNjJ/view?usp=sharing"
            target="_blank"
            rel="noopener noreferrer"
-           className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-colors duration-200 ease-in-out-quad text-vacchio-black/80 hover:text-vacchio-blue group/button"
+           className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-colors duration-200 ease-in-out-quad text-vacchio-black/80 hover:text-vacchio-blue group/button select-text"
          >
            <span>VIEW FULL PROJECT ARCHIVE</span>
            <div className="transition-all duration-200 ease-in-out group-hover/button:translate-x-1 text-vacchio-black/80 group-hover/button:text-vacchio-blue">

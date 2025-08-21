@@ -31,10 +31,10 @@ export default function Experiences() {
             </div>
 
             <div className="flex-1 flex flex-col justify-center">
-              <TextShimmer className="text-sm font-medium text-vacchio-black/30" duration={3}>
+              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text" duration={3}>
                 Written by Dan Hollick
               </TextShimmer>
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/ocelot:text-vacchio-blue">
+              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/ocelot:text-vacchio-blue select-text">
                 A reference manual for making software
                 <div className="transition-all duration-200 ease-in-out group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue">
                   <ArrowUpRight className="w-4 h-4 mt-1" />
@@ -65,10 +65,10 @@ export default function Experiences() {
             </div>
 
             <div className="flex-1 flex flex-col justify-center">
-              <TextShimmer className="text-sm font-medium text-vacchio-black/30" duration={3}>
+              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text" duration={3}>
                 Written by Brittany Chiang
               </TextShimmer>
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/ocelot:text-vacchio-blue">
+              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/ocelot:text-vacchio-blue select-text">
                 5 Common Accessibility Pitfalls to Avoid
                 <div className="transition-all duration-200 ease-in-out group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue">
                   <ArrowUpRight className="w-4 h-4 mt-1" />
