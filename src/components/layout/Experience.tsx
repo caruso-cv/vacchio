@@ -6,37 +6,56 @@ export default function Experiences() {
     <>
       <section 
         id="experience" 
-        className="mb-18 pt-14 group"
+        className="mb-14 pt-6 sm:pt-14 group"
       >
+      
+      <h2 className="lg:hidden text-sm font-bold mb-10 uppercase">Experience</h2>
 
       {/* Divider */}
-      <div className="flex items-center mb-10 opacity-50">
-        <div className="flex-1 h-px bg-vacchio-black/20"></div>
-        <span className="px-4 text-xs font-medium text-vacchio-black/40 uppercase tracking-wider select-text">Experience</span>
-        <div className="flex-1 h-px bg-vacchio-black/20"></div>
+      <div className="items-center mb-10 section-divider hidden lg:flex">
+        <div className="flex-1 h-px bg-vacchio-black/10"></div>
+        <span className="px-4 text-xs font-medium text-vacchio-black/20 uppercase tracking-wider select-text">Experience</span>
+        <div className="flex-1 h-px bg-vacchio-black/10"></div>
       </div>
       
       <div className="space-y-14 relative group/experience mb-12">
         {/* Ocelot Experience Card */}
-        <a 
-          href="https://ocelot-pearl.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative group/ocelot block experience-card"
-        >
-          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/ocelot:bg-[#E2E3E1]/40 group-hover/ocelot:shadow-xs group-hover/ocelot:border-vacchio-black/10 group-hover/ocelot:backdrop-blur-lg"></div>
+        <div className="relative group/ocelot block experience-card">
+          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/ocelot:bg-[#E2E3E1]/40 lg:group-hover/ocelot:shadow-xs lg:group-hover/ocelot:border-vacchio-black/10 lg:group-hover/ocelot:backdrop-blur-lg"></div>
+          <a 
+            href="https://ocelot-pearl.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 hidden lg:block z-20"
+          ></a>
           <div className="flex gap-8 relative z-10 items-start">
-            <div className="flex-shrink-0 py-1.5 w-32">
+            <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <p className="text-xs text-vacchio-black/40 font-semibold uppercase select-text">2024 — PRESENT</p>
             </div>
             <div className="flex-1">
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/ocelot:text-vacchio-blue select-text">
+              <div className="sm:hidden">
+                <p className="text-2xs text-vacchio-black/40 font-semibold uppercase mb-1 sm:mb-2 select-text">2024 — PRESENT</p>
+              </div>
+              <div className="lg:hidden">
+                <a 
+                  href="https://ocelot-pearl.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                >
+                  <span>SOFTWARE DEVELOPER</span>
+                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                    <ArrowUpRight className="ml-1 w-4 h-4" />
+                  </span>
+                </a>
+              </div>
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/ocelot:text-vacchio-blue select-text">
                 SOFTWARE DEVELOPER
-                <div className="transition-all duration-200 ease-in-out group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue">
-                  <ArrowUpRight className="w-4 h-4 mt-1" />
-                </div>
+                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/ocelot:translate-x-1 lg:group-hover/ocelot:-translate-y-1 text-vacchio-black/60 lg:group-hover/ocelot:text-vacchio-blue align-text-bottom">
+                  <ArrowUpRight className="ml-1 w-4 h-4" />
+                </span>
               </h3>
-              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text" duration={3}>
+              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text mb-2" duration={3}>
                 Ocelot Technologies Ltd.
               </TextShimmer>
               <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
@@ -51,28 +70,45 @@ export default function Experiences() {
               </div>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Neutron Experience Card */}
-        <a 
-          href="https://www.neutroncontrols.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative group/neutron block experience-card"
-        >
-          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/neutron:bg-[#E2E3E1]/40 group-hover/neutron:shadow-xs group-hover/neutron:border-vacchio-black/10 group-hover/neutron:backdrop-blur-lg"></div>
+        <div className="relative group/neutron block experience-card">
+          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/neutron:bg-[#E2E3E1]/40 lg:group-hover/neutron:shadow-xs lg:group-hover/neutron:border-vacchio-black/10 lg:group-hover/neutron:backdrop-blur-lg"></div>
+          <a 
+            href="https://www.neutroncontrols.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 hidden lg:block z-20"
+          ></a>
           <div className="flex gap-8 relative z-10 items-start">
-            <div className="flex-shrink-0 py-1.5 w-32">
+            <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <p className="text-xs text-vacchio-black/40 font-semibold uppercase select-text">Jan — Apr 2025</p>
             </div>
             <div className="flex-1">
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/neutron:text-vacchio-blue select-text">
+              <div className="sm:hidden">
+                <p className="text-2xs text-vacchio-black/40 font-semibold uppercase mb-1 sm:mb-2 select-text">Jan — Apr 2025</p>
+              </div>
+              <div className="lg:hidden">
+                <a 
+                  href="https://www.neutroncontrols.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                >
+                  <span>SOFTWARE DEVELOPER • CO-OP</span>
+                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                    <ArrowUpRight className="ml-1 w-4 h-4" />
+                  </span>
+                </a>
+              </div>
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/neutron:text-vacchio-blue select-text">
                 SOFTWARE DEVELOPER • CO-OP
-                <div className="transition-all duration-200 ease-in-out group-hover/neutron:translate-x-1 group-hover/neutron:-translate-y-1 text-vacchio-black/60 group-hover/neutron:text-vacchio-blue">
-                  <ArrowUpRight className="w-4 h-4 mt-1" />
-                </div>
+                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/neutron:translate-x-1 lg:group-hover/neutron:-translate-y-1 text-vacchio-black/60 lg:group-hover/neutron:text-vacchio-blue align-text-bottom">
+                  <ArrowUpRight className="ml-1 w-4 h-4" />
+                </span>
               </h3>
-              <TextShimmer className="text-sm mb-3 font-medium text-vacchio-black/30 select-text" duration={3}>
+              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text mb-2" duration={3}>
                 Neutron Controls
               </TextShimmer>
               <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
@@ -90,7 +126,7 @@ export default function Experiences() {
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
 
                     {/* View Full Resume Button */}

@@ -170,6 +170,12 @@ body {
     @apply bg-background text-foreground;
   }
 
+  /* Custom text size classes */
+  .text-2xs {
+    font-size: 0.6875rem; /* 11px */
+    line-height: 0.875rem; /* 14px */
+  }
+
   /* Custom text selection color */
   ::selection {
     background-color: var(--vacchio-light-blue);
@@ -300,30 +306,35 @@ body {
                   Hover Effects
  *****************************************************/
 
-.group\/experience:hover .experience-card {
-  opacity: 0.5 !important; /* Fade other cards when any card is hovered */
+/* Experience hover effects - only on lg screens and above */
+@media (min-width: 1024px) {
+  .group\/experience:hover .experience-card {
+    opacity: 0.5 !important; /* Fade other cards when any card is hovered */
+  }
+
+  .group\/experience:hover .experience-card:hover {
+    opacity: 1 !important; /* Restore full opacity for directly hovered card */
+  }
+
+  /* Project hover effects - only on lg screens and above */
+  .group\/projects:hover .project-card {
+    opacity: 0.5 !important; /* Fade other cards when any card is hovered */
+  }
+
+  .group\/projects:hover .project-card:hover {
+    opacity: 1 !important; /* Restore full opacity for directly hovered card */
+  }
 }
 
-.group\/experience:hover .experience-card:hover {
-  opacity: 1 !important; /* Restore full opacity for directly hovered card */
-}
-
-/* Project hover effects */
-.group\/projects:hover .project-card {
-  opacity: 0.5 !important; /* Fade other cards when any card is hovered */
-}
-
-.group\/projects:hover .project-card:hover {
-  opacity: 1 !important; /* Restore full opacity for directly hovered card */
-}
-
-/* Individual project card hover effects for the specific group names */
-.group\/caddi:hover .project-card,
-.group\/pokedex:hover .project-card,
-.group\/unsplash:hover .project-card,
-.group\/neutron:hover .project-card,
-.group\/tailfeather:hover .project-card {
-  opacity: 1 !important;
+/* Individual project card hover effects for the specific group names - only on lg screens and above */
+@media (min-width: 1024px) {
+  .group\/caddi:hover .project-card,
+  .group\/pokedex:hover .project-card,
+  .group\/unsplash:hover .project-card,
+  .group\/neutron:hover .project-card,
+  .group\/tailfeather:hover .project-card {
+    opacity: 1 !important;
+  }
 }
 
 .experience-card:nth-child(1) {
@@ -332,4 +343,11 @@ body {
 
 .experience-card:nth-child(2) {
   animation-delay: 0.55s;
+}
+
+/* Section dividers */
+.section-divider {
+  animation: slideInFromBottom 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
 }

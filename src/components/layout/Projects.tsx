@@ -5,28 +5,32 @@ export default function Projects() {
   return (
     <section 
       id="projects" 
-      className="mb-18 pt-10 group"
+      className="mb-18 sm:pt-8 group"
     >
 
       {/* Divider */}
-      <div className="flex items-center mb-10 opacity-50">
-          <div className="flex-1 h-px bg-vacchio-black/20"></div>
-          <span className="px-4 text-xs font-medium text-vacchio-black/40 uppercase tracking-wider select-text">Projects</span>
-          <div className="flex-1 h-px bg-vacchio-black/20"></div>
+      <div className="hidden lg:flex items-center mb-10 section-divider">
+          <div className="flex-1 h-px bg-vacchio-black/10"></div>
+          <span className="px-4 text-xs font-medium text-vacchio-black/20 uppercase tracking-wider select-text">Projects</span>
+          <div className="flex-1 h-px bg-vacchio-black/10"></div>
       </div>
+
+      {/* Mobile heading */}
+      <h2 className="lg:hidden text-sm font-bold mb-10 uppercase">Projects</h2>
 
       <div className="space-y-10 relative group/projects mb-10">
 
         {/* Caddi Project Card */}
-        <a 
-          href="https://caddi.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative group/caddi block project-card"
-        >
-          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/caddi:bg-[#E2E3E1]/40 group-hover/caddi:shadow-xs group-hover/caddi:border-vacchio-black/10 group-hover/caddi:backdrop-blur-lg"></div>
+        <div className="relative group/caddi block project-card">
+          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/caddi:bg-[#E2E3E1]/40 lg:group-hover/caddi:shadow-xs lg:group-hover/caddi:border-vacchio-black/10 lg:group-hover/caddi:backdrop-blur-lg"></div>
+          <a 
+            href="https://caddi.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 hidden lg:block z-20"
+          ></a>
           <div className="flex gap-8 relative z-10 items-start">
-            <div className="flex-shrink-0 py-1.5 w-32">
+            <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 
                 src="/png/caddi.png" 
                 alt="Caddi Project" 
@@ -36,11 +40,24 @@ export default function Projects() {
               />
             </div>
             <div className="flex-1">
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/caddi:text-vacchio-blue select-text">
+              <div className="lg:hidden">
+                <a 
+                  href="https://caddi.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                >
+                  <span>CADDI AI INC.</span>
+                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                    <ArrowUpRight className="ml-1 w-4 h-4" />
+                  </span>
+                </a>
+              </div>
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/caddi:text-vacchio-blue select-text">
                 CADDI AI INC.
-                <div className="transition-all duration-200 ease-in-out group-hover/caddi:translate-x-1 group-hover/caddi:-translate-y-1 text-vacchio-black/60 group-hover/caddi:text-vacchio-blue">
-                  <ArrowUpRight className="w-4 h-4 mt-1" />
-                </div>
+                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/caddi:translate-x-1 lg:group-hover/caddi:-translate-y-1 text-vacchio-black/60 lg:group-hover/caddi:text-vacchio-blue align-text-bottom">
+                  <ArrowUpRight className="ml-1 w-4 h-4" />
+                </span>
               </h3>
               <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
                 E-commerce platform built with Next.js and Supabase, featuring a shopping cart, 3D product builder, and payment integration.
@@ -53,18 +70,19 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Pokedex Project Card */}
-        <a 
-          href="https://solcaruso.github.io/pokedex/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative group/pokedex block project-card"
-        >
-          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/pokedex:bg-[#E2E3E1]/40 group-hover/pokedex:shadow-xs group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:backdrop-blur-lg"></div>
+        <div className="relative group/pokedex block project-card">
+          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/pokedex:bg-[#E2E3E1]/40 lg:group-hover/pokedex:shadow-xs lg:group-hover/pokedex:border-vacchio-black/10 lg:group-hover/pokedex:backdrop-blur-lg"></div>
+          <a 
+            href="https://solcaruso.github.io/pokedex/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 hidden lg:block z-20"
+          ></a>
           <div className="flex gap-8 relative z-10 items-start">
-            <div className="flex-shrink-0 py-1.5 w-32">
+            <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 
                 src="/png/pokedex.png" 
                 alt="Pokedex Project" 
@@ -74,11 +92,24 @@ export default function Projects() {
               />
             </div>
             <div className="flex-1">
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/pokedex:text-vacchio-blue select-text">
+              <div className="lg:hidden">
+                <a 
+                  href="https://solcaruso.github.io/pokedex/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                >
+                  <span>POKEDEX</span>
+                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                    <ArrowUpRight className="ml-1 w-4 h-4" />
+                  </span>
+                </a>
+              </div>
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/pokedex:text-vacchio-blue select-text">
                 POKEDEX
-                <div className="transition-all duration-200 ease-in-out group-hover/pokedex:translate-x-1 group-hover/pokedex:-translate-y-1 text-vacchio-black/60 group-hover/pokedex:text-vacchio-blue">
-                  <ArrowUpRight className="w-4 h-4 mt-1" />
-                </div>
+                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/pokedex:translate-x-1 lg:group-hover/pokedex:-translate-y-1 text-vacchio-black/60 lg:group-hover/pokedex:text-vacchio-blue align-text-bottom">
+                  <ArrowUpRight className="ml-1 w-4 h-4" />
+                </span>
               </h3>
               <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
                 Interactive Pokemon database with search, filtering, and detailed information. Built with the PokeAPI for real-time data.
@@ -91,18 +122,19 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Unsplash Project Card */}
-        <a 
-          href="https://solcaruso.github.io/unsplash-clone/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative group/unsplash block project-card"
-        >
-          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad group-hover/unsplash:bg-[#E2E3E1]/40 group-hover/unsplash:shadow-xs group-hover/unsplash:border-vacchio-black/10 group-hover/unsplash:backdrop-blur-lg"></div>
+        <div className="relative group/unsplash block project-card">
+          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/unsplash:bg-[#E2E3E1]/40 lg:group-hover/unsplash:shadow-xs lg:group-hover/unsplash:border-vacchio-black/10 lg:group-hover/unsplash:backdrop-blur-lg"></div>
+          <a 
+            href="https://solcaruso.github.io/unsplash-clone/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 hidden lg:block z-20"
+          ></a>
           <div className="flex gap-8 relative z-10 items-start">
-            <div className="flex-shrink-0 py-1.5 w-32">
+            <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 
                 src="/png/unsplash.png" 
                 alt="Unsplash Project" 
@@ -112,11 +144,24 @@ export default function Projects() {
               />
             </div>
             <div className="flex-1">
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 flex items-center gap-1 transition-colors duration-200 ease-in-out-quad group-hover/unsplash:text-vacchio-blue select-text">
+              <div className="lg:hidden">
+                <a 
+                  href="https://solcaruso.github.io/unsplash-clone/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                >
+                  <span>UNSPLASH CLONE</span>
+                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                    <ArrowUpRight className="ml-1 w-4 h-4" />
+                  </span>
+                </a>
+              </div>
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/unsplash:text-vacchio-blue select-text">
                 UNSPLASH CLONE
-                <div className="transition-all duration-200 ease-in-out group-hover/unsplash:translate-x-1 group-hover/unsplash:-translate-y-1 text-vacchio-black/60 group-hover/unsplash:text-vacchio-blue">
-                  <ArrowUpRight className="w-4 h-4 mt-1" />
-                </div>
+                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/unsplash:translate-x-1 lg:group-hover/unsplash:-translate-y-1 text-vacchio-black/60 lg:group-hover/unsplash:text-vacchio-blue align-text-bottom">
+                  <ArrowUpRight className="ml-1 w-4 h-4" />
+                </span>
               </h3>
               <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
                 A fun short school project of an Unsplash page. Features include download functionality, responsive design, and image optimization.
@@ -128,7 +173,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
 
       {/* View Full Resume Button */}
