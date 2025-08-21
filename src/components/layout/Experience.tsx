@@ -129,16 +129,16 @@ export default function Experiences() {
         </div>
       </div>
 
-                    {/* View Full Resume Button */}
+      {/* View Full Resume Button */}
        <div className="mb-22 relative z-20 resume-button">
          <a 
            href="https://drive.google.com/file/d/1V3Ge1V0qLqDq0mtDPI68vQcOwzeuqNjJ/view?usp=sharing"
            target="_blank"
            rel="noopener noreferrer"
-           className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-colors duration-200 ease-in-out-quad text-vacchio-black/80 hover:text-vacchio-blue group/button select-text"
+           className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-colors duration-100 ease-out-quad text-vacchio-black/80 hover:text-vacchio-blue group/button select-text"
          >
            <span>VIEW FULL RESUME</span>
-           <div className="transition-all duration-200 ease-in-out group-hover/button:translate-x-1 group-hover/button:-translate-y-1 text-vacchio-black/80 group-hover/button:text-vacchio-blue">
+           <div className="transition-all duration-100 ease-out-quad group-hover/button:translate-x-1 group-hover/button:-translate-y-1 text-vacchio-black/80 group-hover/button:text-vacchio-blue">
              <ArrowUpRight className="w-4 h-4" />
            </div>
          </a>

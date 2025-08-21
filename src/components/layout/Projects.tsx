@@ -176,16 +176,16 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* View Full Resume Button */}
+      {/* View Full Projects Button */}
       <div className="relative z-20 resume-button">
          <a 
            href="https://drive.google.com/file/d/1V3Ge1V0qLqDq0mtDPI68vQcOwzeuqNjJ/view?usp=sharing"
            target="_blank"
            rel="noopener noreferrer"
-           className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-colors duration-200 ease-in-out-quad text-vacchio-black/80 hover:text-vacchio-blue group/button select-text"
+           className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-all duration-100 ease-out-quad text-vacchio-black/80 underline underline-offset-6 decoration-transparent hover:decoration-vacchio-blue group/button select-text"
          >
            <span>VIEW FULL PROJECT ARCHIVE</span>
-           <div className="transition-all duration-200 ease-in-out group-hover/button:translate-x-1 text-vacchio-black/80 group-hover/button:text-vacchio-blue">
+           <div className="transition-all duration-100 ease-out-quad group-hover/button:translate-x-1 text-vacchio-black/80">
              <ArrowRight className="w-4 h-4" />
            </div>
          </a>
