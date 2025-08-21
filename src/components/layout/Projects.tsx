@@ -24,7 +24,7 @@ export default function Projects() {
                 alt="Caddi Project" 
                 width={150} 
                 height={81} 
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-60 border-vacchio-black/05 border group-hover/caddi:border-vacchio-black/10 group-hover/caddi:border"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/caddi:border-vacchio-black/10 group-hover/caddi:border transition-opacity duration-200 ease-in-out-quad"
               />
             </div>
             <div className="flex-1">
@@ -62,7 +62,7 @@ export default function Projects() {
                 alt="Pokedex Project" 
                 width={150} 
                 height={81}  
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-60 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-200 ease-in-out-quad"
               />
             </div>
             <div className="flex-1">
@@ -100,7 +100,7 @@ export default function Projects() {
                 alt="Unsplash Project" 
                 width={150} 
                 height={81} 
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-50 border-vacchio-black/05 border group-hover/unsplash:border-vacchio-black/10 group-hover/unsplash:border"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/unsplash:border-vacchio-black/10 group-hover/unsplash:border group-hover/projects:opacity-80 transition-opacity duration-200 ease-in-out-quad"
               />
             </div>
             <div className="flex-1">

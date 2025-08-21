@@ -26,7 +26,7 @@ export default function Experiences() {
                 alt="Making Software" 
                 width={150} 
                 height={81}  
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-60 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-200 ease-in-out-quad"
               />
             </div>
 
@@ -60,7 +60,7 @@ export default function Experiences() {
                 alt="Accessibility" 
                 width={150} 
                 height={81}  
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-60 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-200 ease-in-out-quad"
               />
             </div>
 

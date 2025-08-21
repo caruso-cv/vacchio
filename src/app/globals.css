@@ -317,17 +317,6 @@ body {
   opacity: 1 !important; /* Restore full opacity for directly hovered card */
 }
 
-/* Project card image transitions - ensure they follow the same opacity rules */
-.group\/projects:hover .project-card img {
-  opacity: 0.5 !important;
-  transition: opacity 0.2s ease-out;
-}
-
-.group\/projects:hover .project-card:hover img {
-  opacity: 0.6 !important; /* Keep the original image opacity when card is hovered */
-  transition: opacity 0.2s ease-out;
-}
-
 /* Individual project card hover effects for the specific group names */
 .group\/caddi:hover .project-card,
 .group\/pokedex:hover .project-card,
@@ -335,15 +324,6 @@ body {
 .group\/neutron:hover .project-card,
 .group\/tailfeather:hover .project-card {
   opacity: 1 !important;
-}
-
-.group\/caddi:hover .project-card img,
-.group\/pokedex:hover .project-card img,
-.group\/unsplash:hover .project-card img,
-.group\/neutron:hover .project-card img,
-.group\/tailfeather:hover .project-card img {
-  opacity: 0.6 !important;
-  transition: opacity 0.2s ease-out;
 }
 
 .experience-card:nth-child(1) {
