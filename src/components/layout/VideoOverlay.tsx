@@ -10,6 +10,8 @@ export default function VideoOverlay() {
         playsInline
         className="w-full h-full object-cover opacity-40 "
         poster="/webp/shadow.webp"
+        aria-hidden="true"
+        role="presentation"
       >
         <source src="/webm/shadow.webm" type="video/webm" />
         {/* Fallback image for browsers that don't support WebM */}

@@ -1,0 +1,21 @@
+{
+  "name": "Carmen Vacchio - Software Developer",
+  "short_name": "Carmen Vacchio",
+  "description": "Portfolio and projects of Carmen Vacchio, Software Developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/svg/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}

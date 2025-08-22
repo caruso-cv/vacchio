@@ -63,7 +63,7 @@ export default function ArchivePage() {
   ]
 
   return (
-    <div className="min-h-screen">
+    <main className="min-h-screen">
       <div className="max-w-7xl mx-auto">
         <div className="p-6 md:p-12 pt-12 md:pt-14 lg:pt-24 lg:p-6 lg:pr-10">
           {/* Header */}
@@ -97,15 +97,16 @@ export default function ArchivePage() {
                   </td>
                   <td className="py-6 pr-8 text-xs text-vacchio-black/80 font-semibold uppercase align-top">
                     <div className="pt-1">
-                      <a 
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-2 text-vacchio-black/80 hover:text-vacchio-blue transition-colors duration-100 ease-out-quad md:hidden"
-                      >
-                        <span>{project.name}</span>
-                        <ArrowUpRight className="w-3 h-3 transition-transform duration-100 ease-out-quad group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                      </a>
+                                          <a 
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Visit ${project.name} project`}
+                      className="group inline-flex items-center gap-2 text-vacchio-black/80 hover:text-vacchio-blue transition-colors duration-100 ease-out-quad md:hidden"
+                    >
+                      <span>{project.name}</span>
+                      <ArrowUpRight className="w-3 h-3 transition-transform duration-100 ease-out-quad group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+                    </a>
                       <span className="hidden md:inline">{project.name}</span>
                     </div>
                   </td>
@@ -131,10 +132,11 @@ export default function ArchivePage() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`Visit ${project.name} project`}
                       className="group inline-flex items-center gap-1 text-sm text-vacchio-black/40 hover:text-vacchio-blue transition-colors duration-100 ease-out-quad select-text"
                     >
                       <span className="text-sm font-medium">{project.linkText}</span>
-                      <ArrowUpRight className="w-3 h-3 transition-transform duration-100 ease-out-quad group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      <ArrowUpRight className="w-3 h-3 transition-transform duration-100 ease-out-quad group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
                     </a>
                   </td>
                 </tr>
@@ -143,6 +145,6 @@ export default function ArchivePage() {
           </table>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

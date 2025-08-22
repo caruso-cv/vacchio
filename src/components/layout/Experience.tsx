@@ -26,8 +26,11 @@ export default function Experiences() {
             href="https://ocelot-pearl.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Ocelot Technologies Ltd."
             className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 hidden lg:block z-20"
-          ></a>
+          >
+            <span className="sr-only">Visit Ocelot Technologies Ltd.</span>
+          </a>
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <p className="text-xs text-vacchio-black/40 font-semibold uppercase select-text">2024 — PRESENT</p>
@@ -79,8 +82,11 @@ export default function Experiences() {
             href="https://www.neutroncontrols.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Neutron Controls"
             className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 hidden lg:block z-20"
-          ></a>
+          >
+            <span className="sr-only">Visit Neutron Controls</span>
+          </a>
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <p className="text-xs text-vacchio-black/40 font-semibold uppercase select-text">Jan — Apr 2025</p>
@@ -135,6 +141,7 @@ export default function Experiences() {
            href="https://drive.google.com/file/d/1V3Ge1V0qLqDq0mtDPI68vQcOwzeuqNjJ/view?usp=sharing"
            target="_blank"
            rel="noopener noreferrer"
+           aria-label="View full resume (opens in new tab)"
            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-colors duration-100 ease-out-quad text-vacchio-black/80 hover:text-vacchio-blue group/button select-text"
          >
            <span>VIEW FULL RESUME</span>

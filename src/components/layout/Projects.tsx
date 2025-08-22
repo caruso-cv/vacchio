@@ -28,8 +28,11 @@ export default function Projects() {
             href="https://caddi.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Caddi AI Inc. project"
             className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 hidden lg:block z-20"
-          ></a>
+          >
+            <span className="sr-only">Visit Caddi AI Inc. project</span>
+          </a>
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 
@@ -80,8 +83,11 @@ export default function Projects() {
             href="https://solcaruso.github.io/pokedex/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Pokedex project"
             className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 hidden lg:block z-20"
-          ></a>
+          >
+            <span className="sr-only">Visit Pokedex project</span>
+          </a>
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 
@@ -132,8 +138,11 @@ export default function Projects() {
             href="https://solcaruso.github.io/unsplash-clone/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Unsplash Clone project"
             className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 hidden lg:block z-20"
-          ></a>
+          >
+            <span className="sr-only">Visit Unsplash Clone project</span>
+          </a>
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 

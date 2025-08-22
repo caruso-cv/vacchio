@@ -9,7 +9,7 @@ import Footer from '../components/footer/Footer'
 export default function Home() {
 
   return (
-    <div className="flex min-h-screen max-w-7xl mx-auto">
+    <main className="flex min-h-screen max-w-7xl mx-auto">
 
       {/* Left side - Fixed (hidden on lg screens and below) */}
       <div className="hidden lg:flex lg:w-1/2 flex-col px-8 py-8 pt-24 sticky top-0 h-screen">
@@ -51,6 +51,6 @@ export default function Home() {
         </div>
       </div>
 
-    </div>
+    </main>
   )
 }
