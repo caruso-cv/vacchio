@@ -14,7 +14,7 @@ export default function Experiences() {
       {/* Divider */}
       <div className="items-center mb-10 section-divider hidden lg:flex">
         <div className="flex-1 h-px bg-vacchio-black/10"></div>
-        <span className="px-4 text-xs font-medium text-vacchio-black/20 uppercase tracking-wider select-text">Experience</span>
+        <span className="px-4 text-xs font-medium text-stone-600/50 uppercase tracking-wider select-text">Experience</span>
         <div className="flex-1 h-px bg-vacchio-black/10"></div>
       </div>
       
@@ -58,10 +58,10 @@ export default function Experiences() {
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
-              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text mb-2" duration={3}>
+              <TextShimmer className="text-sm font-medium text-stone-600/50 select-text mb-2" duration={3}>
                 Ocelot Technologies Ltd.
               </TextShimmer>
-              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
+              <p className="text-vacchio-black/60 mb-4 leading-relaxed text-sm select-text">
                 Built and optimized a Next.js-powered game-studio site with Supabase backend, achieving sub-100 ms server response times and 0.66 s FCP. Developed interactive UI components for gamified web apps using React, Next.js, TypeScript, and Tailwind.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
@@ -114,10 +114,10 @@ export default function Experiences() {
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
-              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text mb-2" duration={3}>
+              <TextShimmer className="text-sm font-medium text-stone-600/50 select-text mb-2" duration={3}>
                 Neutron Controls
               </TextShimmer>
-              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
+              <p className="text-vacchio-black/60 mb-4 leading-relaxed text-sm select-text">
                 Created custom GitLab CI/CD pipeline to mirror GitHub repos and trigger Vercel deployments. Built React/Next.js site with Tailwind CSS and HLS streaming via Amazon S3 + CloudFront for sub-second playback.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">

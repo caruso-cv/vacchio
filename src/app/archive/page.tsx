@@ -111,7 +111,7 @@ export default function ArchivePage() {
                     </div>
                   </td>
                   <td className="hidden py-6 pr-8 lg:table-cell align-top">
-                    <TextShimmer className="text-sm font-medium text-vacchio-black/40" duration={3}>
+                    <TextShimmer className="text-sm font-medium text-vacchio-black/50" duration={3}>
                       {project.madeAt}
                     </TextShimmer>
                   </td>
@@ -133,7 +133,7 @@ export default function ArchivePage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Visit ${project.name} project`}
-                      className="group inline-flex items-center gap-1 text-sm text-vacchio-black/40 hover:text-vacchio-blue transition-colors duration-100 ease-out-quad select-text"
+                      className="group inline-flex items-center gap-1 text-sm text-vacchio-black/50 hover:text-vacchio-blue transition-colors duration-100 ease-out-quad select-text"
                     >
                       <span className="text-sm font-medium">{project.linkText}</span>
                       <ArrowUpRight className="w-3 h-3 transition-transform duration-100 ease-out-quad group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />

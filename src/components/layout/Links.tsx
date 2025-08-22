@@ -12,7 +12,7 @@ export default function Experiences() {
       {/* Divider */}
       <div className="flex items-center mb-10 section-divider">
         <div className="flex-1 h-px bg-vacchio-black/10"></div>
-        <span className="px-4 text-xs font-medium text-vacchio-black/20 uppercase tracking-wider select-text">Good Reads</span>
+        <span className="px-4 text-xs font-medium text-stone-600/50 uppercase tracking-wider select-text">Good Reads</span>
         <div className="flex-1 h-px bg-vacchio-black/10"></div>
       </div>
         
@@ -39,7 +39,7 @@ export default function Experiences() {
             </div>
 
             <div className="flex-1 flex flex-col justify-center">
-              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text" duration={3}>
+              <TextShimmer className="text-sm font-medium text-stone-600/50 select-text" duration={3}>
                 Written by Dan Hollick
               </TextShimmer>
               <h3 className="text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad group-hover/ocelot:text-vacchio-blue select-text">
@@ -73,7 +73,7 @@ export default function Experiences() {
             </div>
 
             <div className="flex-1 flex flex-col justify-center">
-              <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text" duration={3}>
+              <TextShimmer className="text-sm font-medium text-stone-600/50 select-text" duration={3}>
                 Via WorkOS
               </TextShimmer>
               <h3 className="text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad group-hover/ocelot:text-vacchio-blue select-text">

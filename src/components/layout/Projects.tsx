@@ -12,7 +12,7 @@ export default function Projects() {
       {/* Divider */}
       <div className="hidden lg:flex items-center mb-10 section-divider">
           <div className="flex-1 h-px bg-vacchio-black/10"></div>
-          <span className="px-4 text-xs font-medium text-vacchio-black/20 uppercase tracking-wider select-text">Projects</span>
+          <span className="px-4 text-xs font-medium text-stone-600/50 uppercase tracking-wider select-text">Projects</span>
           <div className="flex-1 h-px bg-vacchio-black/10"></div>
       </div>
 
@@ -63,7 +63,7 @@ export default function Projects() {
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
-              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
+              <p className="text-vacchio-black/60 mb-4 leading-relaxed text-sm select-text">
                 E-commerce platform built with Next.js and Supabase, featuring a shopping cart, 3D product builder, and payment integration.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
@@ -118,7 +118,7 @@ export default function Projects() {
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
-              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
+              <p className="text-vacchio-black/60 mb-4 leading-relaxed text-sm select-text">
                 Interactive Pokemon database with search, filtering, and detailed information. Built with the PokeAPI for real-time data.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
@@ -173,7 +173,7 @@ export default function Projects() {
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
-              <p className="text-vacchio-black/50 mb-4 leading-relaxed text-sm select-text">
+              <p className="text-vacchio-black/60 mb-4 leading-relaxed text-sm select-text">
                 A fun short school project of an Unsplash page. Features include download functionality, responsive design, and image optimization.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
