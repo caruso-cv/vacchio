@@ -21,7 +21,7 @@ export default function Experiences() {
       <div className="space-y-14 relative group/experience mb-12">
         {/* Ocelot Experience Card */}
         <div className="relative group/ocelot block experience-card">
-          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/ocelot:bg-[#E2E3E1]/40 lg:group-hover/ocelot:shadow-xs lg:group-hover/ocelot:border-vacchio-black/10 lg:group-hover/ocelot:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/ocelot:bg-[#E2E3E1]/40 lg:group-hover/ocelot:shadow-xs lg:group-hover/ocelot:border-vacchio-black/10 lg:group-hover/ocelot:backdrop-blur-lg"></div>
           <a 
             href="https://ocelot-pearl.vercel.app/"
             target="_blank"
@@ -41,17 +41,17 @@ export default function Experiences() {
                   href="https://ocelot-pearl.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"
                 >
                   <span>SOFTWARE DEVELOPER</span>
-                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                  <span className="inline-block transition-all duration-100 ease-out-quad group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
                     <ArrowUpRight className="ml-1 w-4 h-4" />
                   </span>
                 </a>
               </div>
-              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/ocelot:text-vacchio-blue select-text">
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad lg:group-hover/ocelot:text-vacchio-blue select-text">
                 SOFTWARE DEVELOPER
-                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/ocelot:translate-x-1 lg:group-hover/ocelot:-translate-y-1 text-vacchio-black/60 lg:group-hover/ocelot:text-vacchio-blue align-text-bottom">
+                <span className="inline-block transition-all duration-100 ease-out-quad lg:group-hover/ocelot:translate-x-1 lg:group-hover/ocelot:-translate-y-1 text-vacchio-black/60 lg:group-hover/ocelot:text-vacchio-blue align-text-bottom">
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
@@ -74,7 +74,7 @@ export default function Experiences() {
 
         {/* Neutron Experience Card */}
         <div className="relative group/neutron block experience-card">
-          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/neutron:bg-[#E2E3E1]/40 lg:group-hover/neutron:shadow-xs lg:group-hover/neutron:border-vacchio-black/10 lg:group-hover/neutron:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/neutron:bg-[#E2E3E1]/40 lg:group-hover/neutron:shadow-xs lg:group-hover/neutron:border-vacchio-black/10 lg:group-hover/neutron:backdrop-blur-lg"></div>
           <a 
             href="https://www.neutroncontrols.com/"
             target="_blank"
@@ -94,17 +94,17 @@ export default function Experiences() {
                   href="https://www.neutroncontrols.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"
                 >
                   <span>SOFTWARE DEVELOPER • CO-OP</span>
-                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                  <span className="inline-block transition-all duration-100 ease-out-quad group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
                     <ArrowUpRight className="ml-1 w-4 h-4" />
                   </span>
                 </a>
               </div>
-              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/neutron:text-vacchio-blue select-text">
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad lg:group-hover/neutron:text-vacchio-blue select-text">
                 SOFTWARE DEVELOPER • CO-OP
-                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/neutron:translate-x-1 lg:group-hover/neutron:-translate-y-1 text-vacchio-black/60 lg:group-hover/neutron:text-vacchio-blue align-text-bottom">
+                <span className="inline-block transition-all duration-100 ease-out-quad lg:group-hover/neutron:translate-x-1 lg:group-hover/neutron:-translate-y-1 text-vacchio-black/60 lg:group-hover/neutron:text-vacchio-blue align-text-bottom">
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>

@@ -25,7 +25,7 @@ export default function Experiences() {
           rel="noopener noreferrer"
           className="relative group/ocelot block experience-card"
         >
-          <div className="absolute inset-0 -top-3 -bottom-3 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/ocelot:bg-[#E2E3E1]/40 lg:group-hover/ocelot:shadow-xs lg:group-hover/ocelot:border-vacchio-black/10 lg:group-hover/ocelot:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-3 -bottom-3 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/ocelot:bg-[#E2E3E1]/40 lg:group-hover/ocelot:shadow-xs lg:group-hover/ocelot:border-vacchio-black/10 lg:group-hover/ocelot:backdrop-blur-lg"></div>
           <div className="flex gap-8 relative z-10 items-center">
            
           <div className="flex-shrink-0 py-1.5 w-32">
@@ -34,7 +34,7 @@ export default function Experiences() {
                 alt="Making Software" 
                 width={150} 
                 height={81}  
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-200 ease-in-out-quad"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-100 ease-out-quad"
               />
             </div>
 
@@ -42,9 +42,9 @@ export default function Experiences() {
               <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text" duration={3}>
                 Written by Dan Hollick
               </TextShimmer>
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad group-hover/ocelot:text-vacchio-blue select-text">
+              <h3 className="text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad group-hover/ocelot:text-vacchio-blue select-text">
                 A reference manual for making software
-                <span className="inline-block transition-all duration-200 ease-in-out group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue align-text-bottom">
+                <span className="inline-block transition-all duration-100 ease-out-quad group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue align-text-bottom">
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
@@ -59,7 +59,7 @@ export default function Experiences() {
           rel="noopener noreferrer"
           className="relative group/ocelot block experience-card"
         >
-          <div className="absolute inset-0 -top-3 -bottom-3 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/ocelot:bg-[#E2E3E1]/40 lg:group-hover/ocelot:shadow-xs lg:group-hover/ocelot:border-vacchio-black/10 lg:group-hover/ocelot:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-3 -bottom-3 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/ocelot:bg-[#E2E3E1]/40 lg:group-hover/ocelot:shadow-xs lg:group-hover/ocelot:border-vacchio-black/10 lg:group-hover/ocelot:backdrop-blur-lg"></div>
           <div className="flex gap-8 relative z-10 items-center">
            
           <div className="flex-shrink-0 py-1.5 w-32">
@@ -68,7 +68,7 @@ export default function Experiences() {
                 alt="Accessibility" 
                 width={150} 
                 height={81}  
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-200 ease-in-out-quad"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-100 ease-out-quad"
               />
             </div>
 
@@ -76,9 +76,9 @@ export default function Experiences() {
               <TextShimmer className="text-sm font-medium text-vacchio-black/30 select-text" duration={3}>
                 Via WorkOS
               </TextShimmer>
-              <h3 className="text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad group-hover/ocelot:text-vacchio-blue select-text">
+              <h3 className="text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad group-hover/ocelot:text-vacchio-blue select-text">
                 What are JSON Web Tokens?
-                <span className="inline-block transition-all duration-200 ease-in-out group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue align-text-bottom">
+                <span className="inline-block transition-all duration-100 ease-out-quad group-hover/ocelot:translate-x-1 group-hover/ocelot:-translate-y-1 text-vacchio-black/60 group-hover/ocelot:text-vacchio-blue align-text-bottom">
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>

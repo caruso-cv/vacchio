@@ -1,5 +1,6 @@
 import { ArrowUpRight, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Projects() {
   return (
@@ -22,7 +23,7 @@ export default function Projects() {
 
         {/* Caddi Project Card */}
         <div className="relative group/caddi block project-card">
-          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/caddi:bg-[#E2E3E1]/40 lg:group-hover/caddi:shadow-xs lg:group-hover/caddi:border-vacchio-black/10 lg:group-hover/caddi:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/caddi:bg-[#E2E3E1]/40 lg:group-hover/caddi:shadow-xs lg:group-hover/caddi:border-vacchio-black/10 lg:group-hover/caddi:backdrop-blur-lg"></div>
           <a 
             href="https://caddi.vercel.app/"
             target="_blank"
@@ -36,7 +37,7 @@ export default function Projects() {
                 alt="Caddi Project" 
                 width={150} 
                 height={81} 
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/caddi:border-vacchio-black/10 group-hover/caddi:border transition-opacity duration-200 ease-in-out-quad"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/caddi:border-vacchio-black/10 group-hover/caddi:border transition-opacity duration-100 ease-out-quad"
               />
             </div>
             <div className="flex-1">
@@ -45,17 +46,17 @@ export default function Projects() {
                   href="https://caddi.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"
                 >
                   <span>CADDI AI INC.</span>
-                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                  <span className="inline-block transition-all duration-100 ease-out-quad group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
                     <ArrowUpRight className="ml-1 w-4 h-4" />
                   </span>
                 </a>
               </div>
-              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/caddi:text-vacchio-blue select-text">
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad lg:group-hover/caddi:text-vacchio-blue select-text">
                 CADDI AI INC.
-                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/caddi:translate-x-1 lg:group-hover/caddi:-translate-y-1 text-vacchio-black/60 lg:group-hover/caddi:text-vacchio-blue align-text-bottom">
+                <span className="inline-block transition-all duration-100 ease-out-quad lg:group-hover/caddi:translate-x-1 lg:group-hover/caddi:-translate-y-1 text-vacchio-black/60 lg:group-hover/caddi:text-vacchio-blue align-text-bottom">
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
@@ -74,7 +75,7 @@ export default function Projects() {
 
         {/* Pokedex Project Card */}
         <div className="relative group/pokedex block project-card">
-          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/pokedex:bg-[#E2E3E1]/40 lg:group-hover/pokedex:shadow-xs lg:group-hover/pokedex:border-vacchio-black/10 lg:group-hover/pokedex:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/pokedex:bg-[#E2E3E1]/40 lg:group-hover/pokedex:shadow-xs lg:group-hover/pokedex:border-vacchio-black/10 lg:group-hover/pokedex:backdrop-blur-lg"></div>
           <a 
             href="https://solcaruso.github.io/pokedex/"
             target="_blank"
@@ -88,7 +89,7 @@ export default function Projects() {
                 alt="Pokedex Project" 
                 width={150} 
                 height={81}  
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-200 ease-in-out-quad"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/pokedex:border-vacchio-black/10 group-hover/pokedex:border transition-opacity duration-100 ease-out-quad"
               />
             </div>
             <div className="flex-1">
@@ -97,17 +98,17 @@ export default function Projects() {
                   href="https://solcaruso.github.io/pokedex/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"
                 >
                   <span>POKEDEX</span>
-                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                  <span className="inline-block transition-all duration-100 ease-out-quad group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
                     <ArrowUpRight className="ml-1 w-4 h-4" />
                   </span>
                 </a>
               </div>
-              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/pokedex:text-vacchio-blue select-text">
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad lg:group-hover/pokedex:text-vacchio-blue select-text">
                 POKEDEX
-                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/pokedex:translate-x-1 lg:group-hover/pokedex:-translate-y-1 text-vacchio-black/60 lg:group-hover/pokedex:text-vacchio-blue align-text-bottom">
+                <span className="inline-block transition-all duration-100 ease-out-quad lg:group-hover/pokedex:translate-x-1 lg:group-hover/pokedex:-translate-y-1 text-vacchio-black/60 lg:group-hover/pokedex:text-vacchio-blue align-text-bottom">
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
@@ -126,7 +127,7 @@ export default function Projects() {
 
         {/* Unsplash Project Card */}
         <div className="relative group/unsplash block project-card">
-          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-200 ease-in-out-quad lg:group-hover/unsplash:bg-[#E2E3E1]/40 lg:group-hover/unsplash:shadow-xs lg:group-hover/unsplash:border-vacchio-black/10 lg:group-hover/unsplash:backdrop-blur-lg"></div>
+          <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/unsplash:bg-[#E2E3E1]/40 lg:group-hover/unsplash:shadow-xs lg:group-hover/unsplash:border-vacchio-black/10 lg:group-hover/unsplash:backdrop-blur-lg"></div>
           <a 
             href="https://solcaruso.github.io/unsplash-clone/"
             target="_blank"
@@ -140,7 +141,7 @@ export default function Projects() {
                 alt="Unsplash Project" 
                 width={150} 
                 height={81} 
-                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/unsplash:border-vacchio-black/10 group-hover/unsplash:border group-hover/projects:opacity-80 transition-opacity duration-200 ease-in-out-quad"
+                className="w-[150px] h-[81px] object-fill rounded-sm opacity-80 border-vacchio-black/05 border group-hover/unsplash:border-vacchio-black/10 group-hover/unsplash:border group-hover/projects:opacity-80 transition-opacity duration-100 ease-out-quad"
               />
             </div>
             <div className="flex-1">
@@ -149,17 +150,17 @@ export default function Projects() {
                   href="https://solcaruso.github.io/unsplash-clone/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad hover:text-vacchio-blue select-text"
+                  className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"
                 >
                   <span>UNSPLASH CLONE</span>
-                  <span className="inline-block transition-all duration-200 ease-in-out group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
+                  <span className="inline-block transition-all duration-100 ease-out-quad group-hover/link:translate-x-1 group-hover/link:-translate-y-1 text-vacchio-black/60 group-hover/link:text-vacchio-blue align-text-bottom">
                     <ArrowUpRight className="ml-1 w-4 h-4" />
                   </span>
                 </a>
               </div>
-              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-200 ease-in-out-quad lg:group-hover/unsplash:text-vacchio-blue select-text">
+              <h3 className="hidden lg:block text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad lg:group-hover/unsplash:text-vacchio-blue select-text">
                 UNSPLASH CLONE
-                <span className="inline-block transition-all duration-200 ease-in-out lg:group-hover/unsplash:translate-x-1 lg:group-hover/unsplash:-translate-y-1 text-vacchio-black/60 lg:group-hover/unsplash:text-vacchio-blue align-text-bottom">
+                <span className="inline-block transition-all duration-100 ease-out-quad lg:group-hover/unsplash:translate-x-1 lg:group-hover/unsplash:-translate-y-1 text-vacchio-black/60 lg:group-hover/unsplash:text-vacchio-blue align-text-bottom">
                   <ArrowUpRight className="ml-1 w-4 h-4" />
                 </span>
               </h3>
@@ -176,19 +177,17 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* View Full Projects Button */}
-      <div className="relative z-20 resume-button">
-         <a 
-           href="https://drive.google.com/file/d/1V3Ge1V0qLqDq0mtDPI68vQcOwzeuqNjJ/view?usp=sharing"
-           target="_blank"
-           rel="noopener noreferrer"
+             {/* View Full Projects Button */}
+       <div className="relative z-20 resume-button">
+         <Link 
+           href="/archive"
            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase transition-all duration-100 ease-out-quad text-vacchio-black/80 underline underline-offset-6 decoration-transparent hover:decoration-vacchio-blue group/button select-text"
          >
            <span>VIEW FULL PROJECT ARCHIVE</span>
            <div className="transition-all duration-100 ease-out-quad group-hover/button:translate-x-1 text-vacchio-black/80">
              <ArrowRight className="w-4 h-4" />
            </div>
-         </a>
+         </Link>
        </div>
     </section>
   )

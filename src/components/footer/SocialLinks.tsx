@@ -10,7 +10,7 @@ export default function SocialLinks() {
           href="https://github.com/SolCaruso" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-200 ease-in-out-quad"
+          className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-100 ease-out-quad"
         >
           <GitHub />
         </a>
@@ -18,7 +18,7 @@ export default function SocialLinks() {
           href="https://www.linkedin.com/in/carmenvac/" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-200 ease-in-out-quad"
+          className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-100 ease-out-quad"
         >
           <LinkedIn />
         </a>
@@ -26,7 +26,7 @@ export default function SocialLinks() {
           href="https://codepen.io/vacc0003" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-200 ease-in-out-quad"
+          className="text-vacchio-black/30 hover:text-vacchio-black/60 transition-all duration-100 ease-out-quad"
         >
           <CodePen />
         </a>
