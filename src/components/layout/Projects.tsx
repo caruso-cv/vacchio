@@ -33,7 +33,7 @@ export default function Projects() {
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 
-                src="/png/caddi.png" 
+                src="/webp/caddi.webp" 
                 alt="Caddi Project" 
                 width={150} 
                 height={81} 
@@ -85,7 +85,7 @@ export default function Projects() {
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 
-                src="/png/pokedex.png" 
+                src="/webp/pokedex.webp" 
                 alt="Pokedex Project" 
                 width={150} 
                 height={81}  
@@ -137,7 +137,7 @@ export default function Projects() {
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
               <Image 
-                src="/png/unsplash.png" 
+                src="/webp/unsplash.webp" 
                 alt="Unsplash Project" 
                 width={150} 
                 height={81} 

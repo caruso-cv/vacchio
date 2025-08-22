@@ -30,7 +30,7 @@ export default function Experiences() {
            
           <div className="flex-shrink-0 py-1.5 w-32">
               <Image 
-                src="/png/software.png" 
+                src="/webp/software.webp" 
                 alt="Making Software" 
                 width={150} 
                 height={81}  
@@ -64,7 +64,7 @@ export default function Experiences() {
            
           <div className="flex-shrink-0 py-1.5 w-32">
               <Image 
-                src="/png/workos.png" 
+                src="/webp/workos.webp" 
                 alt="Accessibility" 
                 width={150} 
                 height={81}  
