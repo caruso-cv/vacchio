@@ -33,11 +33,11 @@ export default function Experiences() {
           </a>
           <div className="flex gap-8 relative z-10 items-start">
             <div className="hidden sm:block flex-shrink-0 py-1.5 w-32">
-              <p className="text-xs text-vacchio-black/40 font-semibold uppercase select-text">2024 — PRESENT</p>
+              <p className="text-xs text-vacchio-black/40 font-semibold uppercase select-text">May — Aug 2025</p>
             </div>
             <div className="flex-1">
               <div className="sm:hidden">
-                <p className="text-2xs text-vacchio-black/40 font-semibold uppercase mb-1 sm:mb-2 select-text">2024 — PRESENT</p>
+                <p className="text-2xs text-vacchio-black/40 font-semibold uppercase mb-1 sm:mb-2 select-text">May — Aug 2025</p>
               </div>
               <div className="lg:hidden">
                 <a 
