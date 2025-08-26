@@ -19,7 +19,7 @@ export default function VideoOverlay() {
           src="/webp/shadow.webp" 
           alt="Shadow effect" 
           fill
-          className="object-cover "
+          className="object-cover brightness-50"
         />
       </video>
     </div>
