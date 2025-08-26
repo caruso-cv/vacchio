@@ -9,7 +9,7 @@ export default function About() {
           Currently, I&apos;m pursuing a Bachelor&apos;s in <a href="https://admissions.carleton.ca/programs/computer-science/" target="_blank" rel="noopener noreferrer" className="text-vacchio-black/70 font-bold tracking-tighter hover:text-vacchio-blue transition-all duration-100 select-text ease-out-quad">Computer Science </a>at <a href="https://carleton.ca/" target="_blank" rel="noopener noreferrer" className="text-vacchio-black/70 font-bold tracking-tighter hover:text-vacchio-blue transition-all duration-100 select-text ease-out-quad">Carleton University</a>, building on a diploma in <a href="https://www.algonquincollege.com/mediaanddesign/program/interactive-media-design/" target="_blank" rel="noopener noreferrer" className="text-vacchio-black/70 font-bold tracking-tighter hover:text-vacchio-blue transition-all duration-100 select-text ease-out-quad">Interaction Design</a> and hands-on experience with React, Next.js, TypeScript, and modern web development.
         </p>
         <p>
-          I work at the intersection of engineering and design, building products that blend front-end architecture with systems design to create high-performing, reliable, and secure experiences.
+          I enjoy working at the intersection of engineering and design, building high-performing, reliable, and secure experiences.
         </p>
       </div>
     </section>
