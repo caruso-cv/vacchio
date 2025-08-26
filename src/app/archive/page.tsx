@@ -56,9 +56,9 @@ export default function ArchivePage() {
         year: "2024",
         name: "Sportsbook Site/Docs",
         link: "https://www.revolver.ag/",
-        linkText: "revolver.gg",
+        linkText: "revolver.ag",
         madeAt: "Ocelot Technologies.ltd",
-        technologies: ["React", "JavaScript", "Next.js", "Tailwind", "Vercel"]
+        technologies: ["React", "JSX", "MDX", "Next.js", "Tailwind", "Vercel"]
     },
   ]
 
