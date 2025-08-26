@@ -25,7 +25,7 @@ export default function Projects() {
         <div className="relative group/caddi block project-card">
           <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/caddi:bg-[#E2E3E1]/40 lg:group-hover/caddi:shadow-xs lg:group-hover/caddi:border-vacchio-black/10 lg:group-hover/caddi:backdrop-blur-lg"></div>
           <a 
-            href="https://caddi.vercel.app/"
+            href="https://www.caddiai.com/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit Caddi AI Inc. project"
@@ -46,7 +46,7 @@ export default function Projects() {
             <div className="flex-1">
               <div className="lg:hidden">
                 <a 
-                  href="https://caddi.vercel.app/"
+                  href="https://www.caddiai.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"
