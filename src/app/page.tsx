@@ -19,7 +19,7 @@ export default function Home() {
           </h1>
           <p className="text-3xl font-regular font-cormorant-garamond text-vacchio-black/70 pb-4">Software Developer</p>
           <p className="text-base font-regular text-vacchio-black/60 leading-relaxed max-w-sm">
-            Passionate about creating thoughtfully designed, performant interfaces. 
+            Passionate about creating thoughtfully designed, secure, and performant interfaces. 
           </p>
         </div>
         <Pagination />
@@ -36,7 +36,7 @@ export default function Home() {
             </h1>
             <p className="text-2xl sm:text-3xl font-regular font-cormorant-garamond text-vacchio-black/70 pb-4">Software Developer</p>
             <p className="text-base font-regular text-vacchio-black/60 leading-relaxed max-w-sm">
-              Passionate about creating thoughtfully designed, performant interfaces. 
+              Passionate about creating thoughtfully designed, secure, and performant interfaces. 
             </p>
             <div className="mt-8">
               <SocialLinks />
