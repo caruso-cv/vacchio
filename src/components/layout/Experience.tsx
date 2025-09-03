@@ -23,7 +23,7 @@ export default function Experiences() {
         <div className="relative group/ocelot block experience-card">
           <div className="absolute inset-0 -top-5 -bottom-5 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/ocelot:bg-[#E2E3E1]/40 lg:group-hover/ocelot:shadow-xs lg:group-hover/ocelot:border-vacchio-black/10 lg:group-hover/ocelot:backdrop-blur-lg"></div>
           <a 
-            href="https://ocelot-pearl.vercel.app/"
+            href="https://guildsaga.com/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit Ocelot Technologies Ltd."
@@ -41,7 +41,7 @@ export default function Experiences() {
               </div>
               <div className="lg:hidden">
                 <a 
-                  href="https://ocelot-pearl.vercel.app/"
+                  href="https://guildsaga.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"

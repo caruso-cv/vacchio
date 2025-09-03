@@ -7,7 +7,7 @@ export default function ArchivePage() {
     {
         year: "2025",
         name: "Game Studio Site",
-        link: "https://ocelot-pearl.vercel.app/",
+        link: "https://guildsaga.com/",
         linkText: "guildsaga.com",
         madeAt: "Ocelot Technologies.ltd",
         technologies: ["TypeScript", "Next.js", "React", "Supabase", "Shadcn", "Motion", "Tailwind", "Vercel"]
