@@ -237,7 +237,7 @@ body {
   }
 }
 
-/* Individual project card hover effects for the specific group names - only on lg screens and above */
+  /* Individual project card hover effects for the specific group names - only on lg screens and above */
 @media (min-width: 1024px) {
   .group\/caddi:hover .project-card,
   .group\/pokedex:hover .project-card,
@@ -247,5 +247,6 @@ body {
     opacity: 1 !important;
   }
 }
+
 
 
