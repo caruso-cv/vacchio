@@ -31,7 +31,7 @@ export default function ArchivePage() {
     {
         year: "2025",
         name: "CSS Framework",
-        link: "https://solcaruso.github.io/tailfeather/",
+        link: "https://caruso-cv.github.io/tailfeather/",
         linkText: "tailfeather.io",
         madeAt: "Algonquin College",
         technologies: ["SCSS","HTML + CSS", "JavaScript"]
@@ -39,7 +39,7 @@ export default function ArchivePage() {
     {
         year: "2024",
         name: "Pokedex",
-        link: "https://solcaruso.github.io/pokedex/",
+        link: "https://caruso-cv.github.io/pokedex/",
         linkText: "pokedex.io",
         madeAt: "Algonquin College",
         technologies: ["HTML + CSS", "JavaScript", "Tailwind", "PokeAPI"]
@@ -47,7 +47,7 @@ export default function ArchivePage() {
     {
         year: "2024",
         name: "Unsplash Clone",
-        link: "https://solcaruso.github.io/unsplash-clone/",
+        link: "https://caruso-cv.github.io/unsplash-clone/",
         linkText: "unsplash-clone.io",
         madeAt: "Algonquin College",
         technologies: ["HTML + CSS", "JavaScript", "Tailwind"]

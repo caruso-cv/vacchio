@@ -80,7 +80,7 @@ export default function Projects() {
         <div className="relative group/pokedex block project-card">
           <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/pokedex:bg-[#E2E3E1]/40 lg:group-hover/pokedex:shadow-xs lg:group-hover/pokedex:border-vacchio-black/10 lg:group-hover/pokedex:backdrop-blur-lg"></div>
           <a 
-            href="https://solcaruso.github.io/pokedex/"
+            href="https://caruso-cv.github.io/pokedex/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit Pokedex project"
@@ -101,7 +101,7 @@ export default function Projects() {
             <div className="flex-1">
               <div className="lg:hidden">
                 <a 
-                  href="https://solcaruso.github.io/pokedex/"
+                  href="https://caruso-cv.github.io/pokedex/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"
@@ -135,7 +135,7 @@ export default function Projects() {
         <div className="relative group/unsplash block project-card">
           <div className="absolute inset-0 -top-4 -bottom-4 -left-5 -right-5 rounded-sm border border-transparent transition-all duration-100 ease-out-quad lg:group-hover/unsplash:bg-[#E2E3E1]/40 lg:group-hover/unsplash:shadow-xs lg:group-hover/unsplash:border-vacchio-black/10 lg:group-hover/unsplash:backdrop-blur-lg"></div>
           <a 
-            href="https://solcaruso.github.io/unsplash-clone/"
+            href="https://caruso-cv.github.io/unsplash-clone/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit Unsplash Clone project"
@@ -156,7 +156,7 @@ export default function Projects() {
             <div className="flex-1">
               <div className="lg:hidden">
                 <a 
-                  href="https://solcaruso.github.io/unsplash-clone/"
+                  href="https://caruso-cv.github.io/unsplash-clone/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/link inline-flex items-center gap-1 text-sm font-bold uppercase mb-1 mt-1 transition-colors duration-100 ease-out-quad hover:text-vacchio-blue select-text"
