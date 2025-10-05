@@ -7,7 +7,7 @@ export default function SocialLinks() {
     <div className="mt-auto mb-14">
       <div className="flex gap-4">
         <a 
-          href="https://github.com/SolCaruso" 
+          href="https://github.com/caruso-cv" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Visit GitHub profile"
